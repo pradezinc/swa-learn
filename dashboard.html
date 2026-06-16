@@ -1028,14 +1028,14 @@ window.handleImport = async (e) => {
 // ── NAVIGATION
 window.studyLang = (code) => {
   localStorage.setItem("swa-active-lang", code);
-  window.location.href = "index.html";
+  window.location.href = "study.html";
 };
 window.openStudy = () => {
-  window.location.href = "index.html";
+  window.location.href = "study.html";
 };
 window.studyWeak = () => {
   localStorage.setItem("swa-study-weak", "true");
-  window.location.href = "index.html";
+  window.location.href = "study.html";
 };
 window.cyclePillarLang = () => {
   const keys = Object.keys(userData.languages||{}).filter(k=>userData.languages[k].active);
