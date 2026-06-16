@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>SWA Learn — Study</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1D9E75">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="SWA Learn">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --teal:#1D9E75;--teal-l:#E1F5EE;
+  --blue:#378ADD;--blue-l:#E6F1FB;
+  --purple:#7F77DD;--purple-l:#EEEDFE;
+  --red:#E24B4A;--red-l:#FCEBEB;
+  --amber:#EF9F27;--amber-l:#FAEEDA;
+  --coral:#D85A30;--coral-l:#FAECE7;
+  --green:#639922;--green-l:#EAF3DE;
+  --bg:#f7f6f3;--surface:#fff;--surface2:#f0efe9;--surface3:#e8e7e0;
+  --text:#1a1a18;--text2:#6b6b63;--text3:#a0a098;
+  --border:rgba(0,0,0,.10);--border2:rgba(0,0,0,.18);
+  --r:16px;--rsm:10px;
+  --font:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+@media(prefers-color-scheme:dark){
+  :root{
+    --bg:#1a1917;--surface:#252420;--surface2:#2f2e29;--surface3:#3a3930;
+    --text:#f0efe9;--text2:#a0a090;--text3:#666658;
+    --border:rgba(255,255,255,.10);--border2:rgba(255,255,255,.18);
+    --teal-l:#0a3327;--blue-l:#0a1e38;--purple-l:#1a1840;
+    --red-l:#3a1010;--amber-l:#3a2800;--coral-l:#3a1200;--green-l:#173404;
+  }
+}
+html,body{height:100%;overflow:hidden}
+body{font-family:var(--font);background:var(--bg);color:var(--text);
+  display:flex;flex-direction:column}
+
+/* ── HEADER ── */
+.hdr{
+  background:var(--surface);border-bottom:.5px solid var(--border2);
+  padding:0 1rem;display:flex;align-items:center;
+  justify-content:space-between;height:52px;flex-shrink:0;
+}
+.hdr-left{display:flex;align-items:center;gap:10px}
+.back-btn{
+  width:36px;height:36px;border-radius:50%;border:.5px solid var(--border2);
+  background:var(--surface);cursor:pointer;font-size:18px;
+  display:flex;align-items:center;justify-content:center;color:var(--text2);
+}
+.lang-badge{display:flex;align-items:center;gap:6px}
+.lang-flag{font-size:22px}
+.lang-name{font-size:15px;font-weight:700;letter-spacing:-.02em}
+.hdr-right{display:flex;align-items:center;gap:8px}
+.hdr-btn{
+  width:36px;height:36px;border-radius:50%;border:.5px solid var(--border2);
+  background:var(--surface);cursor:pointer;font-size:16px;
+  display:flex;align-items:center;justify-content:center;color:var(--text2);
+}
+
+/* ── PILLAR TABS ── */
+.pillar-tabs{
+  display:flex;overflow-x:auto;background:var(--surface);
+  border-bottom:.5px solid var(--border2);scrollbar-width:none;
+  flex-shrink:0;padding:0 .5rem;
+}
+.pillar-tabs::-webkit-scrollbar{display:none}
+.ptab{
+  padding:10px 14px;border:none;background:none;font-family:var(--font);
+  font-size:12px;font-weight:600;color:var(--text2);cursor:pointer;
+  white-space:nowrap;border-bottom:2px solid transparent;
+  transition:all .2s;flex-shrink:0;display:flex;align-items:center;gap:5px;
+}
+.ptab.active{color:var(--teal);border-bottom-color:var(--teal)}
+
+/* ── LEVEL + CATEGORY BARS ── */
+.filter-bar{
+  padding:.6rem 1rem;background:var(--surface);
+  border-bottom:.5px solid var(--border);flex-shrink:0;
+  display:flex;flex-direction:column;gap:.5rem;
+}
+.level-row{display:flex;gap:5px}
+.lv-btn{
+  padding:4px 12px;border-radius:20px;border:1px solid var(--border2);
+  background:var(--surface);font-size:11px;font-weight:700;
+  cursor:pointer;color:var(--text2);font-family:var(--font);
+  letter-spacing:.04em;transition:all .2s;
+}
+.lv-btn.active-a1{background:var(--teal-l);color:var(--teal);border-color:var(--teal)}
+.lv-btn.active-a2{background:var(--blue-l);color:var(--blue);border-color:var(--blue)}
+.lv-btn.active-b1{background:var(--purple-l);color:var(--purple);border-color:var(--purple)}
+.lv-btn.active-b2{background:var(--amber-l);color:var(--amber);border-color:var(--amber)}
+.lv-btn.active-all{background:var(--surface2);color:var(--text);border-color:var(--text2)}
+.cat-row{display:flex;gap:5px;overflow-x:auto;scrollbar-width:none}
+.cat-row::-webkit-scrollbar{display:none}
+.cat-btn{
+  white-space:nowrap;padding:4px 11px;border-radius:20px;
+  border:.5px solid var(--border2);background:var(--surface);
+  font-size:11px;font-weight:500;cursor:pointer;color:var(--text2);
+  transition:all .2s;font-family:var(--font);flex-shrink:0;
+}
+.cat-btn.active{background:var(--teal);color:#fff;border-color:var(--teal)}
+
+/* ── STATS BAR ── */
+.stats-bar{
+  display:flex;gap:0;background:var(--surface2);
+  padding:.4rem 1rem;flex-shrink:0;align-items:center;
+  justify-content:space-between;
+}
+.stat-item{display:flex;align-items:center;gap:5px;font-size:12px}
+.stat-val{font-weight:700;color:var(--text)}
+.stat-lbl{color:var(--text2)}
+.prog-mini{flex:1;height:4px;background:var(--surface3);
+  border-radius:2px;overflow:hidden;margin:0 .75rem}
+.prog-mini-fill{height:100%;border-radius:2px;
+  background:var(--teal);transition:width .4s}
+
+/* ── MODE TOGGLE ── */
+.mode-row{
+  display:flex;padding:.5rem 1rem;gap:6px;
+  background:var(--surface);border-bottom:.5px solid var(--border);
+  flex-shrink:0;align-items:center;justify-content:space-between;
+}
+.mode-pills{display:flex;gap:4px;background:var(--surface2);
+  border-radius:20px;padding:3px}
+.mode-btn{
+  padding:5px 14px;border-radius:17px;border:none;font-size:11px;
+  font-family:var(--font);cursor:pointer;background:transparent;
+  color:var(--text2);font-weight:600;transition:all .2s;
+}
+.mode-btn.active{background:var(--surface);color:var(--text);
+  box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.deck-info{font-size:11px;color:var(--text2);font-weight:500}
+
+/* ── MAIN STUDY AREA ── */
+.study-area{
+  flex:1;overflow:hidden;display:flex;
+  flex-direction:column;padding:.75rem 1rem;gap:.75rem;
+  position:relative;
+}
+
+/* ── FLASHCARD ── */
+.card-scene{perspective:1200px;flex:1;min-height:0}
+.flashcard{
+  width:100%;height:100%;transform-style:preserve-3d;
+  transition:transform .45s cubic-bezier(.4,0,.2,1);
+  cursor:pointer;position:relative;
+  /* swipe support */
+  touch-action:pan-y;
+}
+.flashcard.flipped{transform:rotateY(180deg)}
+.card-face{
+  position:absolute;inset:0;border-radius:20px;
+  backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  display:flex;flex-direction:column;align-items:center;
+  justify-content:center;border:.5px solid var(--border);
+  background:var(--surface);overflow:hidden;padding:1.25rem;
+}
+.card-back{transform:rotateY(180deg)}
+
+/* badges */
+.lv-badge{
+  position:absolute;top:12px;left:12px;font-size:10px;
+  font-weight:700;letter-spacing:.06em;padding:3px 9px;border-radius:20px;
+}
+.badge-a1{background:var(--teal-l);color:var(--teal)}
+.badge-a2{background:var(--blue-l);color:var(--blue)}
+.badge-b1{background:var(--purple-l);color:var(--purple)}
+.badge-b2{background:var(--amber-l);color:var(--amber)}
+.cat-badge{
+  position:absolute;top:12px;right:12px;font-size:10px;
+  color:var(--text2);background:var(--surface2);
+  padding:3px 9px;border-radius:20px;
+}
+.freq-badge{
+  position:absolute;top:12px;right:12px;font-size:10px;
+  font-weight:700;background:var(--amber-l);color:var(--amber);
+  padding:3px 9px;border-radius:20px;
+}
+
+/* front */
+.card-emoji{font-size:72px;line-height:1;margin-bottom:10px;text-align:center}
+.card-svg{width:140px;height:140px;margin-bottom:10px}
+.tap-hint{display:flex;flex-direction:column;align-items:center;gap:5px}
+.tap-ring{
+  width:42px;height:42px;border-radius:50%;
+  border:1.5px solid var(--border2);
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;color:var(--text2);
+  animation:breathe 2.4s ease-in-out infinite;
+}
+@keyframes breathe{0%,100%{opacity:.3;transform:scale(1)}50%{opacity:1;transform:scale(1.1)}}
+.tap-lbl{font-size:11px;color:var(--text3)}
+.swipe-hint{
+  position:absolute;bottom:12px;left:0;right:0;
+  display:flex;justify-content:center;gap:16px;
+  font-size:11px;color:var(--text3);
+}
+.swipe-h{display:flex;align-items:center;gap:3px}
+
+/* back */
+.word-main{font-size:30px;font-weight:700;letter-spacing:-.02em;
+  color:var(--text);text-align:center;margin-bottom:3px}
+.word-ph{font-size:12px;color:var(--text2);font-style:italic;margin-bottom:8px}
+.grammar-row{display:flex;gap:5px;flex-wrap:wrap;justify-content:center;margin-bottom:8px}
+.gpill{font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;
+  background:var(--surface2);color:var(--text2)}
+.gpill.art{background:var(--teal-l);color:var(--teal)}
+.gpill.verb{background:var(--coral-l);color:var(--coral)}
+.gpill.adj{background:var(--amber-l);color:var(--amber)}
+.gpill.freq{background:var(--amber-l);color:var(--amber)}
+.word-ex{font-size:13px;color:var(--text2);font-style:italic;
+  text-align:center;line-height:1.6;max-width:90%;
+  border-left:2px solid var(--border2);padding-left:10px;margin-bottom:6px}
+.word-en{font-size:12px;color:var(--text3);text-align:center;margin-bottom:6px}
+.en-note{font-size:11px;color:var(--blue);background:var(--blue-l);
+  padding:5px 10px;border-radius:8px;text-align:center;
+  max-width:92%;line-height:1.5}
+.conj-box{width:92%;background:var(--surface2);border-radius:8px;
+  overflow:hidden;margin-top:6px}
+.conj-row{display:flex;font-size:11px;border-bottom:.5px solid var(--border)}
+.conj-row:last-child{border-bottom:none}
+.conj-pro{padding:4px 8px;color:var(--text2);min-width:45px;
+  background:var(--surface3);font-weight:500}
+.conj-v{padding:4px 8px;color:var(--text);font-weight:600}
+.flip-hint{position:absolute;bottom:10px;right:14px;font-size:10px;color:var(--text3)}
+
+/* ── ANSWER BUTTONS ── */
+.ans-row{display:flex;gap:8px;flex-shrink:0}
+.ans-btn{
+  flex:1;padding:13px;border-radius:14px;border:1.5px solid var(--border2);
+  font-size:14px;font-weight:700;cursor:pointer;transition:all .15s;
+  font-family:var(--font);background:var(--surface);
+  display:flex;align-items:center;justify-content:center;gap:6px;
+}
+.ans-btn:active{transform:scale(.97)}
+.ans-no{border-color:var(--red);color:var(--red)}
+.ans-no:hover{background:var(--red-l)}
+.ans-yes{border-color:var(--teal);color:var(--teal)}
+.ans-yes:hover{background:var(--teal-l)}
+
+/* ── QUIZ OPTIONS ── */
+.quiz-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;flex-shrink:0}
+.qopt{
+  padding:12px;border-radius:13px;border:1.5px solid var(--border2);
+  font-size:13px;font-weight:500;cursor:pointer;transition:all .18s;
+  font-family:var(--font);background:var(--surface);
+  color:var(--text);text-align:left;line-height:1.3;
+}
+.qopt:active{transform:scale(.97)}
+.qopt.correct{background:var(--teal-l);border-color:var(--teal);color:var(--teal)}
+.qopt.wrong{background:var(--red-l);border-color:var(--red);color:var(--red)}
+.qopt:disabled{cursor:default}
+
+/* ── TYPE ANSWER ── */
+.type-area{flex-shrink:0}
+.type-input{
+  width:100%;padding:12px 14px;border-radius:13px;
+  border:1.5px solid var(--border2);background:var(--surface);
+  font-size:16px;font-family:var(--font);color:var(--text);
+  outline:none;transition:border-color .2s;
+}
+.type-input:focus{border-color:var(--teal)}
+.type-input.correct{border-color:var(--teal);background:var(--teal-l)}
+.type-input.wrong{border-color:var(--red);background:var(--red-l)}
+.type-submit{
+  width:100%;padding:12px;border-radius:13px;border:none;
+  background:var(--teal);color:#fff;font-size:14px;font-weight:700;
+  cursor:pointer;font-family:var(--font);margin-top:6px;
+}
+
+/* ── NAV ── */
+.nav-row{
+  display:flex;align-items:center;justify-content:center;
+  gap:10px;flex-shrink:0;
+}
+.nav-btn{
+  width:42px;height:42px;border-radius:50%;border:.5px solid var(--border2);
+  background:var(--surface);cursor:pointer;font-size:17px;color:var(--text2);
+  display:flex;align-items:center;justify-content:center;transition:all .15s;
+}
+.nav-btn:hover{color:var(--text)}
+.card-ctr{font-size:13px;color:var(--text2);min-width:75px;
+  text-align:center;font-weight:600}
+.act-btn{
+  padding:7px 14px;border-radius:9px;border:.5px solid var(--border2);
+  background:var(--surface);font-size:12px;cursor:pointer;
+  color:var(--text2);font-family:var(--font);font-weight:500;
+}
+
+/* ── SWIPE INDICATOR ── */
+.swipe-overlay{
+  position:absolute;top:50%;transform:translateY(-50%);
+  pointer-events:none;opacity:0;transition:opacity .1s;
+  font-size:48px;z-index:10;
+}
+.swipe-right-indicator{left:20px}
+.swipe-left-indicator{right:20px}
+
+/* ── COMPLETE SCREEN ── */
+.complete-screen{
+  position:absolute;inset:0;background:var(--bg);
+  display:none;flex-direction:column;align-items:center;
+  justify-content:center;padding:2rem;text-align:center;z-index:50;
+}
+.complete-screen.show{display:flex}
+.comp-emoji{font-size:64px;margin-bottom:1rem}
+.comp-title{font-size:24px;font-weight:700;margin-bottom:.4rem}
+.comp-sub{font-size:14px;color:var(--text2);margin-bottom:1.5rem}
+.comp-score{font-size:48px;font-weight:700;color:var(--teal);margin-bottom:.4rem}
+.comp-detail{font-size:13px;color:var(--text2);margin-bottom:2rem}
+.comp-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;
+  width:100%;max-width:320px;margin-bottom:2rem}
+.comp-stat{background:var(--surface);border-radius:12px;padding:12px;text-align:center}
+.comp-stat-n{font-size:22px;font-weight:700}
+.comp-stat-l{font-size:11px;color:var(--text2);margin-top:2px}
+.restart-btn{
+  padding:13px 30px;border-radius:14px;border:none;
+  background:var(--teal);color:#fff;font-size:15px;font-weight:700;
+  cursor:pointer;font-family:var(--font);margin-bottom:10px;width:100%;
+  max-width:320px;
+}
+.next-btn{
+  padding:11px 30px;border-radius:14px;
+  border:.5px solid var(--border2);
+  background:var(--surface);font-size:14px;font-weight:600;
+  cursor:pointer;font-family:var(--font);color:var(--text2);
+  width:100%;max-width:320px;
+}
+
+/* ── SETTINGS SHEET ── */
+.sheet-overlay{
+  position:fixed;inset:0;background:rgba(0,0,0,.5);
+  z-index:200;display:none;align-items:flex-end;
+}
+.sheet-overlay.show{display:flex}
+.sheet{
+  background:var(--surface);border-radius:24px 24px 0 0;
+  width:100%;max-height:80vh;overflow-y:auto;
+  padding:1.25rem 1.25rem 2.5rem;
+}
+.sheet-handle{width:36px;height:4px;background:var(--border2);
+  border-radius:2px;margin:0 auto 1.25rem}
+.sheet-title{font-size:17px;font-weight:700;margin-bottom:1.25rem}
+.setting-row{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:13px 0;border-bottom:.5px solid var(--border);
+}
+.setting-row:last-child{border-bottom:none}
+.setting-lbl{font-size:14px;font-weight:500}
+.setting-desc{font-size:11px;color:var(--text2);margin-top:2px}
+.toggle{width:46px;height:26px;border-radius:13px;background:var(--surface2);
+  border:.5px solid var(--border2);cursor:pointer;position:relative;
+  transition:background .2s;flex-shrink:0}
+.toggle.on{background:var(--teal)}
+.toggle::after{content:'';position:absolute;top:2px;left:2px;width:21px;
+  height:21px;border-radius:50%;background:#fff;transition:transform .2s;
+  box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.toggle.on::after{transform:translateX(20px)}
+.sel-pill{display:flex;gap:3px;background:var(--surface2);
+  border-radius:20px;padding:3px}
+.sel-opt{padding:4px 10px;border-radius:17px;border:none;font-size:11px;
+  font-weight:600;cursor:pointer;background:transparent;
+  color:var(--text2);font-family:var(--font)}
+.sel-opt.active{background:var(--surface);color:var(--text);
+  box-shadow:0 1px 3px rgba(0,0,0,.1)}
+
+/* ── CONFETTI ── */
+.conf-wrap{position:fixed;top:0;left:0;width:100%;height:100%;
+  pointer-events:none;overflow:hidden;z-index:999}
+.conf-p{position:absolute;top:-10px;font-size:16px;
+  animation:fall linear forwards;background:transparent}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+
+/* ── TOAST ── */
+.toast{
+  position:fixed;bottom:20px;left:50%;transform:translateX(-50%);
+  background:var(--text);color:var(--bg);padding:9px 18px;
+  border-radius:20px;font-size:13px;font-weight:500;
+  opacity:0;transition:opacity .25s;pointer-events:none;
+  white-space:nowrap;z-index:300;
+}
+.toast.show{opacity:1}
+
+/* ── EMPTY STATE ── */
+.empty-state{
+  flex:1;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  text-align:center;padding:2rem;color:var(--text2);
+}
+.empty-icon{font-size:48px;margin-bottom:1rem}
+.empty-title{font-size:16px;font-weight:600;color:var(--text);margin-bottom:.5rem}
+.empty-sub{font-size:13px;line-height:1.6}
+
+/* ── CONVERSATION ── */
+.conv-list{flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:.75rem}
+.conv-card{background:var(--surface);border-radius:14px;
+  border:.5px solid var(--border);overflow:hidden;cursor:pointer}
+.conv-card-hdr{padding:12px 14px;background:var(--teal);color:#fff;
+  display:flex;align-items:center;justify-content:space-between}
+.conv-card-title{font-size:14px;font-weight:700}
+.conv-card-sub{font-size:11px;opacity:.85;margin-top:2px}
+.conv-preview{padding:10px 14px;display:flex;flex-direction:column;gap:4px}
+.conv-line{font-size:12px;color:var(--text2);line-height:1.5}
+.conv-line strong{color:var(--text)}
+.conv-expand{
+  display:none;padding:0 14px 12px;flex-direction:column;gap:8px
+}
+.conv-expand.show{display:flex}
+.bubble{max-width:85%;padding:8px 12px;border-radius:12px;line-height:1.5}
+.bubble-left{background:var(--surface2);border-radius:12px 12px 12px 3px;
+  align-self:flex-start}
+.bubble-right{background:var(--teal-l);border-radius:12px 12px 3px 12px;
+  align-self:flex-end;border:.5px solid var(--teal-l)}
+.bubble-spk{font-size:9px;font-weight:700;color:var(--text2);
+  margin-bottom:2px;text-transform:uppercase;letter-spacing:.04em}
+.bubble-de{font-size:13px;color:var(--text)}
+.bubble-en{font-size:11px;color:var(--text2);font-style:italic;margin-top:2px}
+.bubble-note{font-size:10px;color:var(--blue);background:var(--blue-l);
+  padding:2px 7px;border-radius:6px;display:inline-block;margin-top:3px}
+.conv-tip{font-size:11px;color:var(--text2);font-style:italic;
+  padding:8px 12px;background:var(--surface2);border-radius:8px;margin-top:4px}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="hdr">
+  <div class="hdr-left">
+    <button class="back-btn" onclick="goBack()">←</button>
+    <div class="lang-badge">
+      <span class="lang-flag" id="hdr-flag">🇩🇪</span>
+      <span class="lang-name" id="hdr-name">Deutsch</span>
+    </div>
+  </div>
+  <div class="hdr-right">
+    <button class="hdr-btn" onclick="shuffleDeck()">🔀</button>
+    <button class="hdr-btn" onclick="openSettings()">⚙️</button>
+  </div>
+</div>
+
+<!-- PILLAR TABS -->
+<div class="pillar-tabs" id="pillar-tabs"></div>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <div class="level-row" id="level-row"></div>
+  <div class="cat-row" id="cat-row"></div>
+</div>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <span class="stat-val" id="st-right">0</span>
+    <span class="stat-lbl">✓</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-val" id="st-wrong">0</span>
+    <span class="stat-lbl">✗</span>
+  </div>
+  <div class="prog-mini">
+    <div class="prog-mini-fill" id="st-prog" style="width:0%"></div>
+  </div>
+  <div class="stat-item">
+    <span class="stat-val" id="st-ctr">0/0</span>
+  </div>
+</div>
+
+<!-- MODE ROW -->
+<div class="mode-row" id="mode-row">
+  <div class="mode-pills">
+    <button class="mode-btn active" id="mb-flash" onclick="setMode('flash')">Cards</button>
+    <button class="mode-btn" id="mb-mc" onclick="setMode('mc')">Quiz</button>
+    <button class="mode-btn" id="mb-type" onclick="setMode('type')">Type</button>
+  </div>
+  <div class="deck-info" id="deck-info">0 cards</div>
+</div>
+
+<!-- MAIN STUDY AREA -->
+<div class="study-area" id="study-area">
+
+  <!-- FLASHCARD -->
+  <div class="card-scene" id="card-scene">
+    <div class="flashcard" id="flashcard"
+      onclick="handleCardTap()"
+      ontouchstart="swipeStart(event)"
+      ontouchmove="swipeMove(event)"
+      ontouchend="swipeEnd(event)">
+      <!-- FRONT -->
+      <div class="card-face" id="card-front">
+        <span class="lv-badge badge-a1" id="cf-badge">A1</span>
+        <span class="cat-badge" id="cf-cat"></span>
+        <div id="cf-visual"></div>
+        <div class="tap-hint">
+          <div class="tap-ring">?</div>
+          <div class="tap-lbl" id="cf-prompt">What is this in German?</div>
+        </div>
+        <div class="swipe-hint">
+          <span class="swipe-h">← Wrong</span>
+          <span class="swipe-h">Tap to reveal</span>
+          <span class="swipe-h">Right ✓ →</span>
+        </div>
+      </div>
+      <!-- BACK -->
+      <div class="card-face card-back" id="card-back">
+        <span class="lv-badge badge-a1" id="cb-badge">A1</span>
+        <div id="cb-visual"></div>
+        <div class="word-main" id="cb-word">der Apfel</div>
+        <div class="word-ph" id="cb-ph">[ˈapfl̩]</div>
+        <div class="grammar-row" id="cb-grammar"></div>
+        <div class="word-ex" id="cb-ex"></div>
+        <div class="word-en" id="cb-en"></div>
+        <div class="en-note" id="cb-note"></div>
+        <div class="conj-box" id="cb-conj" style="display:none"></div>
+        <span class="flip-hint">Tap to flip back</span>
+      </div>
+      <!-- SWIPE INDICATORS -->
+      <div class="swipe-overlay swipe-right-indicator" id="swipe-right">✓</div>
+      <div class="swipe-overlay swipe-left-indicator" id="swipe-left">✗</div>
+    </div>
+  </div>
+
+  <!-- ANSWER BUTTONS (flash mode) -->
+  <div class="ans-row" id="ans-row" style="display:none">
+    <button class="ans-btn ans-no" onclick="answer(false)">✗ Again</button>
+    <button class="ans-btn ans-yes" onclick="answer(true)">✓ Got it!</button>
+  </div>
+
+  <!-- QUIZ OPTIONS (mc mode) -->
+  <div class="quiz-grid" id="quiz-grid" style="display:none"></div>
+
+  <!-- TYPE ANSWER -->
+  <div class="type-area" id="type-area" style="display:none">
+    <input class="type-input" id="type-input"
+      placeholder="Type the German word..."
+      autocomplete="off" autocorrect="off"
+      autocapitalize="none" spellcheck="false"
+      onkeydown="typeKeyDown(event)">
+    <button class="type-submit" onclick="checkType()">Check →</button>
+  </div>
+
+  <!-- NAV -->
+  <div class="nav-row" id="nav-row">
+    <button class="nav-btn" onclick="prevCard()">←</button>
+    <span class="card-ctr" id="card-ctr">1 / 0</span>
+    <button class="nav-btn" onclick="nextCard()">→</button>
+    <button class="act-btn" onclick="resetSession()">↺</button>
+  </div>
+
+  <!-- CONVERSATION VIEW (shown when conv pillar active) -->
+  <div class="conv-list" id="conv-list" style="display:none"></div>
+
+  <!-- EMPTY STATE -->
+  <div class="empty-state" id="empty-state" style="display:none">
+    <div class="empty-icon">📭</div>
+    <div class="empty-title">No cards in this deck</div>
+    <div class="empty-sub">Try selecting a different level or category</div>
+  </div>
+
+  <!-- COMPLETE SCREEN -->
+  <div class="complete-screen" id="complete-screen">
+    <div class="comp-emoji" id="comp-emoji">🎉</div>
+    <div class="comp-title">Round Complete!</div>
+    <div class="comp-sub" id="comp-sub">You finished all cards!</div>
+    <div class="comp-score" id="comp-score">—</div>
+    <div class="comp-grid">
+      <div class="comp-stat">
+        <div class="comp-stat-n" id="cs-right" style="color:var(--teal)">0</div>
+        <div class="comp-stat-l">Correct</div>
+      </div>
+      <div class="comp-stat">
+        <div class="comp-stat-n" id="cs-wrong" style="color:var(--red)">0</div>
+        <div class="comp-stat-l">Incorrect</div>
+      </div>
+      <div class="comp-stat">
+        <div class="comp-stat-n" id="cs-mastered" style="color:var(--purple)">0</div>
+        <div class="comp-stat-l">Mastered</div>
+      </div>
+      <div class="comp-stat">
+        <div class="comp-stat-n" id="cs-streak" style="color:var(--amber)">0🔥</div>
+        <div class="comp-stat-l">Best Streak</div>
+      </div>
+    </div>
+    <button class="restart-btn" onclick="restartDeck()">Study Again 🔄</button>
+    <button class="next-btn" onclick="studyWeak()">Study Weak Words 📚</button>
+  </div>
+
+</div>
+
+<!-- SETTINGS SHEET -->
+<div class="sheet-overlay" id="settings-sheet">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-title">Study Settings</div>
+
+    <div class="setting-row">
+      <div>
+        <div class="setting-lbl">Starting Pillar</div>
+        <div class="setting-desc">Which section opens first</div>
+      </div>
+      <div class="sel-pill" id="start-pill"></div>
+    </div>
+
+    <div class="setting-row">
+      <div>
+        <div class="setting-lbl">Default Mode</div>
+        <div class="setting-desc">Cards, Quiz or Type</div>
+      </div>
+      <div class="sel-pill">
+        <button class="sel-opt" id="dm-flash" onclick="setDefaultMode('flash')">Cards</button>
+        <button class="sel-opt" id="dm-mc" onclick="setDefaultMode('mc')">Quiz</button>
+        <button class="sel-opt" id="dm-type" onclick="setDefaultMode('type')">Type</button>
+      </div>
+    </div>
+
+    <div class="setting-row">
+      <div>
+        <div class="setting-lbl">Show English Notes</div>
+        <div class="setting-desc">Grammar tips on card back</div>
+      </div>
+      <div class="toggle on" id="tog-notes" onclick="toggleSetting('showNotes')"></div>
+    </div>
+
+    <div class="setting-row">
+      <div>
+        <div class="setting-lbl">Show Phonetics</div>
+        <div class="setting-desc">Pronunciation guide</div>
+      </div>
+      <div class="toggle on" id="tog-ph" onclick="toggleSetting('showPh')"></div>
+    </div>
+
+    <div class="setting-row">
+      <div>
+        <div class="setting-lbl">Show Conjugation</div>
+        <div class="setting-desc">Verb tables on card back</div>
+      </div>
+      <div class="toggle on" id="tog-conj" onclick="toggleSetting('showConj')"></div>
+    </div>
+
+    <div class="setting-row">
+      <div>
+        <div class="setting-lbl">Spaced Repetition</div>
+        <div class="setting-desc">Smart review scheduling</div>
+      </div>
+      <div class="toggle on" id="tog-srs" onclick="toggleSetting('srs')"></div>
+    </div>
+
+    <div class="setting-row">
+      <div>
+        <div class="setting-lbl">Show B2 (Advanced)</div>
+        <div class="setting-desc">Include advanced words</div>
+      </div>
+      <div class="toggle" id="tog-b2" onclick="toggleSetting('showB2')"></div>
+    </div>
+
+    <div class="setting-row" style="border:none;margin-top:.5rem">
+      <button onclick="closeSettings()"
+        style="width:100%;padding:12px;border-radius:12px;border:.5px solid var(--border2);
+        background:var(--surface);font-size:14px;font-weight:600;cursor:pointer;
+        font-family:var(--font);color:var(--text2)">
+        Done
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="conf-wrap" id="conf"></div>
+<div class="toast" id="toast"></div>
+
+<!-- ENGINE -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+<script>
+// ═══════════════════════════════════════
+//  SWA LEARN — STUDY ENGINE
+// ═══════════════════════════════════════
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCpW2epwNkTiZjZ1AJPVWY2dEHsJLqdXYU",
+  authDomain: "swa-learn-6625a.firebaseapp.com",
+  projectId: "swa-learn-6625a",
+  storageBucket: "swa-learn-6625a.firebasestorage.app",
+  messagingSenderId: "755955864193",
+  appId: "1:755955864193:web:05bbcd9c3a8daa130c7380"
+};
+
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.firestore();
+
+// ── STATE
+let langCode = localStorage.getItem("swa-active-lang") || "de";
+let langData = null;
+let userData = null;
+let currentUser = null;
+
+// Study state
+let activePillar = "vocab";
+let activeLevel  = "A1";
+let activeCat    = "Alle";
+let mode         = "flash"; // flash | mc | type
+let deck         = [];
+let idx          = 0;
+let flipped      = false;
+let qAnswered    = false;
+let bestStreak   = 0;
+let curStreak    = 0;
+
+// Session stats
+let sess = { right:0, wrong:0, seen: new Set() };
+
+// Settings
+let settings = {
+  startPillar: "vocab",
+  defaultMode: "flash",
+  showNotes:   true,
+  showPh:      true,
+  showConj:    true,
+  srs:         true,
+  showB2:      false
+};
+
+// Swipe
+let touchStartX = 0;
+let touchStartY = 0;
+let touchStartTime = 0;
+
+// Pillars config
+const PILLARS = [
+  { key:"vocab",   icon:"📚", label:"Vocab"   },
+  { key:"freq",    icon:"⚡", label:"Freq"    },
+  { key:"chunks",  icon:"🧩", label:"Chunks"  },
+  { key:"verbs",   icon:"🏃", label:"Verbs"   },
+  { key:"fillers", icon:"🔗", label:"Connect" },
+  { key:"conv",    icon:"💬", label:"Talk"    },
+];
+
+// ── INIT
+auth.onAuthStateChanged(async user => {
+  if(!user){
+    window.location.replace("login.html");
+    return;
+  }
+  currentUser = user;
+  await loadUserData();
+  await loadLangData();
+  applySettings();
+  buildPillarTabs();
+  buildLevelRow();
+  setActivePillar(settings.startPillar);
+  setMode(settings.defaultMode);
+  updateHeader();
+});
+
+async function loadUserData(){
+  const snap = await db.collection("users").doc(currentUser.uid).get();
+  if(snap.exists){
+    userData = snap.data();
+    settings = {...settings, ...(userData.settings || {})};
+  } else {
+    userData = { settings, progress:{}, languages:{}, timeLog:{} };
+  }
+}
+
+async function saveProgress(){
+  if(!currentUser || !userData) return;
+  try {
+    await db.collection("users").doc(currentUser.uid).set(userData, {merge:true});
+  } catch(e){ console.warn("Save failed:", e); }
+}
+
+async function loadLangData(){
+  try {
+    const res = await fetch(`data/${langCode}.json`);
+    langData = await res.json();
+  } catch(e){
+    showToast("Could not load language data");
+    console.error(e);
+  }
+}
+
+// ── HEADER
+function updateHeader(){
+  if(!langData) return;
+  document.getElementById("hdr-flag").textContent = langData.meta.flag;
+  document.getElementById("hdr-name").textContent = langData.meta.name;
+}
+
+// ── PILLAR TABS
+function buildPillarTabs(){
+  const tabs = document.getElementById("pillar-tabs");
+  tabs.innerHTML = "";
+  PILLARS.forEach(p => {
+    const btn = document.createElement("button");
+    btn.className = "ptab";
+    btn.id = "ptab-" + p.key;
+    btn.innerHTML = `${p.icon} ${p.label}`;
+    btn.onclick = () => setActivePillar(p.key);
+    tabs.appendChild(btn);
+  });
+
+  // Build start pillar selector in settings
+  const pill = document.getElementById("start-pill");
+  if(pill){
+    pill.innerHTML = PILLARS.map(p =>
+      `<button class="sel-opt ${settings.startPillar===p.key?'active':''}"
+        id="sp-${p.key}" onclick="setStartPillar('${p.key}')">${p.icon}</button>`
+    ).join("");
+  }
+}
+
+function setActivePillar(key){
+  activePillar = key;
+  document.querySelectorAll(".ptab").forEach(t => t.classList.remove("active"));
+  const tab = document.getElementById("ptab-"+key);
+  if(tab){ tab.classList.add("active"); tab.scrollIntoView({inline:"center",behavior:"smooth"}); }
+
+  // Show/hide mode row (not for conv)
+  document.getElementById("mode-row").style.display = key==="conv" ? "none" : "flex";
+
+  // Build categories for this pillar
+  buildCatRow();
+  buildLevelRow();
+  activeCat = "Alle";
+
+  if(key === "conv"){
+    renderConversations();
+  } else {
+    filterAndRender();
+  }
+}
+
+// ── LEVEL ROW
+function buildLevelRow(){
+  const row = document.getElementById("level-row");
+  if(!langData){ row.innerHTML=""; return; }
+  const levels = ["Alle", ...langData.meta.levels.filter(l =>
+    settings.showB2 || l !== "B2"
+  )];
+  row.innerHTML = levels.map(l => {
+    const cls = activeLevel===l
+      ? `active-${l.toLowerCase()}`
+      : "";
+    return `<button class="lv-btn ${cls}" onclick="setLevel('${l}')">${l}</button>`;
+  }).join("");
+}
+
+function setLevel(l){
+  activeLevel = l;
+  buildLevelRow();
+  buildCatRow();
+  activeCat = "Alle";
+  if(activePillar === "conv") renderConversations();
+  else filterAndRender();
+}
+
+// ── CATEGORY ROW
+function buildCatRow(){
+  const row = document.getElementById("cat-row");
+  if(!langData || !langData[activePillar]){ row.innerHTML=""; return; }
+  const items = langData[activePillar];
+  let cats = new Set();
+  items.forEach(item => {
+    if(itemMatchesLevel(item)) cats.add(item.cat || "General");
+  });
+  const catArr = ["Alle", ...cats];
+  row.innerHTML = catArr.map(c =>
+    `<button class="cat-btn ${activeCat===c?'active':''}"
+      onclick="setCat('${c.replace(/'/g,"\\'")}')">
+      ${c==="Alle"?"🗂️ Alle":c}
+    </button>`
+  ).join("");
+}
+
+function setCat(c){
+  activeCat = c;
+  buildCatRow();
+  if(activePillar === "conv") renderConversations();
+  else filterAndRender();
+}
+
+function itemMatchesLevel(item){
+  if(activeLevel === "Alle") return settings.showB2 || item.lvl !== "B2";
+  return item.lvl === activeLevel;
+}
+
+// ── FILTER DECK
+function filterAndRender(){
+  if(!langData || !langData[activePillar]){ showEmpty(); return; }
+  const all = langData[activePillar];
+  deck = all.filter(item => {
+    const lvlOk = itemMatchesLevel(item);
+    const catOk = activeCat === "Alle" || (item.cat || "General") === activeCat;
+    return lvlOk && catOk;
+  });
+
+  // SRS: sort by score (weakest first)
+  if(settings.srs && userData){
+    const scores = userData.progress?.[langCode]?.[activePillar]?.scores || {};
+    deck.sort((a,b) => {
+      const ka = getItemKey(a), kb = getItemKey(b);
+      const sa = scores[ka] || {correct:0, wrong:0};
+      const sb = scores[kb] || {correct:0, wrong:0};
+      const rateA = sa.correct / Math.max(1, sa.correct + sa.wrong);
+      const rateB = sb.correct / Math.max(1, sb.correct + sb.wrong);
+      return rateA - rateB; // weakest first
+    });
+  }
+
+  if(deck.length === 0){ showEmpty(); return; }
+  hideEmpty();
+
+  idx = 0; flipped = false; qAnswered = false;
+  sess = { right:0, wrong:0, seen:new Set() };
+  bestStreak = 0; curStreak = 0;
+
+  document.getElementById("complete-screen").classList.remove("show");
+  document.getElementById("card-scene").style.display = "";
+  document.getElementById("nav-row").style.display = "";
+  document.getElementById("conv-list").style.display = "none";
+
+  document.getElementById("flashcard").classList.remove("flipped");
+  document.getElementById("ans-row").style.display = "none";
+  document.getElementById("quiz-grid").style.display = "none";
+  document.getElementById("type-area").style.display = "none";
+
+  document.getElementById("deck-info").textContent = deck.length + " cards";
+  updateStats();
+
+  if(mode === "mc") buildQuizOptions();
+  else if(mode === "type") showTypeInput();
+
+  renderCard();
+}
+
+function getItemKey(item){
+  return item.de || item.rank?.toString() || JSON.stringify(item).slice(0,30);
+}
+
+// ── RENDER CARD
+function renderCard(){
+  if(!deck.length) return;
+  const item = deck[idx];
+
+  // Level badge
+  const lv = (item.lvl || activeLevel || "A1").toLowerCase();
+  ["cf-badge","cb-badge"].forEach(id => {
+    const el = document.getElementById(id);
+    el.textContent = item.lvl || activeLevel || "A1";
+    el.className = `lv-badge badge-${lv}`;
+  });
+
+  // Category badge
+  document.getElementById("cf-cat").textContent = item.cat || "";
+
+  // Front visual
+  const cfv = document.getElementById("cf-visual");
+  if(item.emoji){
+    cfv.innerHTML = `<div class="card-emoji">${item.emoji}</div>`;
+  } else {
+    cfv.innerHTML = "";
+  }
+
+  // Front prompt
+  const prompt = document.getElementById("cf-prompt");
+  if(activePillar === "vocab") prompt.textContent = "What is this in German?";
+  else if(activePillar === "freq") prompt.textContent = `Rank #${item.rank} — translate!`;
+  else if(activePillar === "verbs") prompt.textContent = "What action is this?";
+  else if(activePillar === "chunks") prompt.textContent = item.situation || "What would you say?";
+  else if(activePillar === "fillers") prompt.textContent = "What does this connector mean?";
+  else prompt.textContent = "What is the German word?";
+
+  // Back visual (same emoji)
+  const cbv = document.getElementById("cb-visual");
+  if(item.emoji){
+    cbv.innerHTML = `<div class="card-emoji" style="font-size:52px;margin-bottom:6px">${item.emoji}</div>`;
+  } else {
+    cbv.innerHTML = "";
+  }
+
+  // Back content
+  document.getElementById("cb-word").textContent = item.de || "";
+  document.getElementById("cb-ph").textContent = settings.showPh ? (item.ph||"") : "";
+
+  // Grammar pills
+  const gr = document.getElementById("cb-grammar");
+  gr.innerHTML = "";
+  if(item.art){
+    const p = document.createElement("span");
+    p.className = "gpill " + (item.art.includes("(m)")||item.art.includes("(f)")||item.art.includes("(n)") ? "art" : item.art==="Verb"||item.type ? "verb" : "adj");
+    p.textContent = item.art || item.type || "";
+    gr.appendChild(p);
+  } else if(item.type){
+    const p = document.createElement("span");
+    p.className = "gpill verb";
+    p.textContent = item.type;
+    gr.appendChild(p);
+  }
+  if(item.plural){
+    const p = document.createElement("span");
+    p.className = "gpill";
+    p.textContent = "Pl: " + item.plural;
+    gr.appendChild(p);
+  }
+  if(item.pp){
+    const p = document.createElement("span");
+    p.className = "gpill";
+    p.textContent = "PP: " + item.pp;
+    gr.appendChild(p);
+  }
+  if(item.pos){
+    const p = document.createElement("span");
+    p.className = "gpill freq";
+    p.textContent = item.pos;
+    gr.appendChild(p);
+  }
+
+  // Example
+  document.getElementById("cb-ex").textContent = item.ex || (item.formal ? "Formal: " + item.formal : "");
+  document.getElementById("cb-en").textContent = "🇬🇧 " + (item.en || "");
+
+  // English note
+  const noteEl = document.getElementById("cb-note");
+  if(settings.showNotes && item.note){
+    noteEl.textContent = "💡 " + item.note;
+    noteEl.style.display = "";
+  } else {
+    noteEl.style.display = "none";
+  }
+
+  // Conjugation table for verbs
+  const conjBox = document.getElementById("cb-conj");
+  if(settings.showConj && item.conj){
+    conjBox.style.display = "";
+    conjBox.innerHTML = Object.entries(item.conj).map(([pro, form]) =>
+      `<div class="conj-row">
+        <span class="conj-pro">${pro}</span>
+        <span class="conj-v">${form}</span>
+      </div>`
+    ).join("");
+  } else {
+    conjBox.style.display = "none";
+  }
+
+  // Counter
+  document.getElementById("card-ctr").textContent = (idx+1) + " / " + deck.length;
+  updateStats();
+}
+
+// ── STATS
+function updateStats(){
+  document.getElementById("st-right").textContent = sess.right;
+  document.getElementById("st-wrong").textContent = sess.wrong;
+  document.getElementById("st-ctr").textContent   = (idx+1) + "/" + deck.length;
+  const pct = deck.length > 0 ? Math.round(sess.seen.size / deck.length * 100) : 0;
+  document.getElementById("st-prog").style.width  = pct + "%";
+}
+
+// ── CARD INTERACTION
+function handleCardTap(){
+  if(mode !== "flash") return;
+  flipCard();
+}
+
+function flipCard(){
+  if(mode !== "flash") return;
+  flipped = !flipped;
+  document.getElementById("flashcard").classList.toggle("flipped", flipped);
+  if(flipped){
+    sess.seen.add(idx);
+    document.getElementById("ans-row").style.display = "flex";
+    recordProgress(null); // seen
+    updateStats();
+  } else {
+    document.getElementById("ans-row").style.display = "none";
+  }
+}
+
+// ── ANSWER
+function answer(correct){
+  if(correct){ sess.right++; curStreak++; bestStreak=Math.max(bestStreak,curStreak); celebrate(); }
+  else { sess.wrong++; curStreak=0; showToast("Nochmal! 📚"); }
+  sess.seen.add(idx);
+  recordProgress(correct);
+  updateStats();
+
+  flipped = false;
+  document.getElementById("flashcard").classList.remove("flipped");
+  document.getElementById("ans-row").style.display = "none";
+  setTimeout(nextCard, 300);
+}
+
+// ── SWIPE
+function swipeStart(e){
+  const t = e.touches[0];
+  touchStartX = t.clientX;
+  touchStartY = t.clientY;
+  touchStartTime = Date.now();
+}
+
+function swipeMove(e){
+  if(mode !== "flash" || !flipped) return;
+  const dx = e.touches[0].clientX - touchStartX;
+  const card = document.getElementById("flashcard");
+  card.style.transform = `rotateY(180deg) translateX(${-dx*0.3}px) rotate(${dx*0.03}deg)`;
+  const rEl = document.getElementById("swipe-right");
+  const lEl = document.getElementById("swipe-left");
+  if(dx > 30){ rEl.style.opacity = Math.min(1, (dx-30)/60); lEl.style.opacity=0; }
+  else if(dx < -30){ lEl.style.opacity = Math.min(1, (-dx-30)/60); rEl.style.opacity=0; }
+  else { rEl.style.opacity=0; lEl.style.opacity=0; }
+}
+
+function swipeEnd(e){
+  const dx = e.changedTouches[0].clientX - touchStartX;
+  const dy = e.changedTouches[0].clientY - touchStartY;
+  const dt = Date.now() - touchStartTime;
+  const card = document.getElementById("flashcard");
+  document.getElementById("swipe-right").style.opacity=0;
+  document.getElementById("swipe-left").style.opacity=0;
+  card.style.transform = "";
+
+  if(Math.abs(dy) > Math.abs(dx)) return; // vertical scroll, ignore
+
+  if(!flipped && Math.abs(dx) < 10 && dt < 300){
+    // Tap — flip
+    flipCard(); return;
+  }
+
+  if(flipped && Math.abs(dx) > 60){
+    if(dx > 0) answer(true);   // swipe right = correct
+    else       answer(false);  // swipe left  = wrong
+  }
+}
+
+// ── QUIZ MODE
+function buildQuizOptions(){
+  const item = deck[idx];
+  if(!item) return;
+  const grid = document.getElementById("quiz-grid");
+  grid.style.display = "grid";
+  grid.innerHTML = "";
+  qAnswered = false;
+  sess.seen.add(idx);
+
+  // Show card front
+  document.getElementById("flashcard").classList.remove("flipped");
+
+  // Pick 3 wrong answers from same pillar
+  const pool = langData[activePillar].filter(i => getItemKey(i) !== getItemKey(item));
+  const wrongs = shuffle([...pool]).slice(0,3).map(i => ({
+    text: i.de || i.en || "",
+    key: getItemKey(i)
+  }));
+  const correct = { text: item.de || "", key: getItemKey(item) };
+  const opts = shuffle([correct, ...wrongs]);
+
+  opts.forEach(opt => {
+    const btn = document.createElement("button");
+    btn.className = "qopt";
+    btn.textContent = opt.text;
+    btn.onclick = () => {
+      if(qAnswered) return;
+      qAnswered = true;
+      const ok = opt.key === correct.key;
+      btn.classList.add(ok ? "correct" : "wrong");
+      grid.querySelectorAll(".qopt").forEach(b => {
+        b.disabled = true;
+        if(b.textContent === correct.text) b.classList.add("correct");
+      });
+      if(ok){ sess.right++; curStreak++; bestStreak=Math.max(bestStreak,curStreak); celebrate(); }
+      else { sess.wrong++; curStreak=0; }
+      recordProgress(ok);
+      updateStats();
+      setTimeout(() => { qAnswered=false; nextCard(); }, 1000);
+    };
+    grid.appendChild(btn);
+  });
+}
+
+// ── TYPE MODE
+function showTypeInput(){
+  document.getElementById("type-area").style.display = "";
+  const input = document.getElementById("type-input");
+  input.value = "";
+  input.className = "type-input";
+  setTimeout(()=>input.focus(), 100);
+}
+
+function typeKeyDown(e){
+  if(e.key === "Enter") checkType();
+}
+
+function checkType(){
+  const item = deck[idx];
+  const input = document.getElementById("type-input");
+  const typed = input.value.trim().toLowerCase();
+  const correct = (item.de || "").toLowerCase();
+  // Allow without article
+  const correctNoArt = correct.replace(/^(der|die|das)\s+/i,"").trim();
+  const ok = typed === correct || typed === correctNoArt;
+  input.className = "type-input " + (ok ? "correct" : "wrong");
+  if(ok){ sess.right++; curStreak++; bestStreak=Math.max(bestStreak,curStreak); celebrate(); }
+  else { sess.wrong++; curStreak=0;
+    // Show correct answer briefly
+    input.value = "✓ " + item.de;
+    input.className = "type-input wrong";
+  }
+  recordProgress(ok);
+  updateStats();
+  setTimeout(()=>{ nextCard(); }, 1000);
+}
+
+// ── NAVIGATION
+function nextCard(){
+  if(idx >= deck.length - 1){
+    showComplete(); return;
+  }
+  idx++;
+  flipped = false;
+  qAnswered = false;
+  document.getElementById("flashcard").classList.remove("flipped");
+  document.getElementById("ans-row").style.display = "none";
+  document.getElementById("quiz-grid").style.display = "none";
+  document.getElementById("type-area").style.display = "none";
+
+  renderCard();
+  if(mode === "mc") buildQuizOptions();
+  else if(mode === "type") showTypeInput();
+}
+
+function prevCard(){
+  if(idx <= 0) return;
+  idx--;
+  flipped = false;
+  document.getElementById("flashcard").classList.remove("flipped");
+  document.getElementById("ans-row").style.display = "none";
+  document.getElementById("quiz-grid").style.display = "none";
+  document.getElementById("type-area").style.display = "none";
+  renderCard();
+  if(mode === "mc") buildQuizOptions();
+  else if(mode === "type") showTypeInput();
+}
+
+function setMode(m){
+  mode = m;
+  ["flash","mc","type"].forEach(id => {
+    document.getElementById("mb-"+id).classList.toggle("active", m===id);
+  });
+  flipped = false;
+  document.getElementById("flashcard").classList.remove("flipped");
+  document.getElementById("ans-row").style.display = "none";
+  document.getElementById("quiz-grid").style.display = "none";
+  document.getElementById("type-area").style.display = "none";
+  if(m === "mc" && deck.length) buildQuizOptions();
+  else if(m === "type" && deck.length) showTypeInput();
+}
+
+function shuffleDeck(){
+  deck = shuffle(deck);
+  idx = 0; flipped = false; qAnswered = false;
+  sess = { right:0, wrong:0, seen:new Set() };
+  document.getElementById("flashcard").classList.remove("flipped");
+  document.getElementById("ans-row").style.display = "none";
+  document.getElementById("quiz-grid").style.display = "none";
+  document.getElementById("type-area").style.display = "none";
+  renderCard();
+  if(mode === "mc") buildQuizOptions();
+  else if(mode === "type") showTypeInput();
+  showToast("Deck shuffled! 🔀");
+}
+
+function resetSession(){
+  idx = 0; flipped = false; qAnswered = false;
+  sess = { right:0, wrong:0, seen:new Set() };
+  curStreak = 0; bestStreak = 0;
+  document.getElementById("complete-screen").classList.remove("show");
+  document.getElementById("card-scene").style.display = "";
+  document.getElementById("nav-row").style.display = "";
+  document.getElementById("flashcard").classList.remove("flipped");
+  document.getElementById("ans-row").style.display = "none";
+  document.getElementById("quiz-grid").style.display = "none";
+  document.getElementById("type-area").style.display = "none";
+  renderCard();
+  updateStats();
+  if(mode === "mc") buildQuizOptions();
+  else if(mode === "type") showTypeInput();
+}
+
+function restartDeck(){ resetSession(); }
+
+function studyWeak(){
+  // Filter to struggling words only
+  const scores = userData?.progress?.[langCode]?.[activePillar]?.scores || {};
+  deck = deck.filter(item => {
+    const s = scores[getItemKey(item)];
+    return s && s.wrong > s.correct;
+  });
+  if(deck.length === 0){ showToast("No weak words! You're doing great! 🌟"); resetSession(); return; }
+  resetSession();
+}
+
+// ── COMPLETE SCREEN
+function showComplete(){
+  const tot = sess.right + sess.wrong;
+  const pct = tot > 0 ? Math.round(sess.right/tot*100) : 0;
+  document.getElementById("comp-score").textContent = pct + "%";
+  document.getElementById("comp-emoji").textContent = pct>=80?"🏆":pct>=60?"🎉":"💪";
+  document.getElementById("comp-sub").textContent =
+    `${pct>=80?"Excellent":"Keep going"}! ${deck.length} cards completed.`;
+  document.getElementById("cs-right").textContent = sess.right;
+  document.getElementById("cs-wrong").textContent = sess.wrong;
+  document.getElementById("cs-streak").textContent = bestStreak + "🔥";
+
+  // Count mastered
+  const scores = userData?.progress?.[langCode]?.[activePillar]?.scores || {};
+  const mastered = Object.values(scores).filter(s => s.correct >= 3 && s.wrong === 0).length;
+  document.getElementById("cs-mastered").textContent = mastered;
+
+  document.getElementById("complete-screen").classList.add("show");
+  document.getElementById("card-scene").style.display = "none";
+  document.getElementById("nav-row").style.display = "none";
+  bigConfetti();
+  saveProgress();
+}
+
+// ── CONVERSATIONS
+function renderConversations(){
+  document.getElementById("card-scene").style.display = "none";
+  document.getElementById("nav-row").style.display = "none";
+  document.getElementById("ans-row").style.display = "none";
+  document.getElementById("quiz-grid").style.display = "none";
+  document.getElementById("type-area").style.display = "none";
+  document.getElementById("complete-screen").classList.remove("show");
+
+  const list = document.getElementById("conv-list");
+  list.style.display = "flex";
+
+  if(!langData?.conv){ list.innerHTML="<p>No conversations loaded</p>"; return; }
+
+  let convs = langData.conv.filter(c => {
+    const lvlOk = activeLevel==="Alle" || c.lvl===activeLevel;
+    const catOk = activeCat==="Alle" || c.cat===activeCat;
+    return lvlOk && catOk;
+  });
+
+  if(convs.length === 0){ list.innerHTML=`<div class="empty-state"><div class="empty-icon">💬</div><div class="empty-title">No conversations</div><div class="empty-sub">Try a different level or category</div></div>`; return; }
+
+  list.innerHTML = convs.map((conv, ci) => `
+    <div class="conv-card">
+      <div class="conv-card-hdr" onclick="toggleConv(${ci})">
+        <div>
+          <div class="conv-card-title">${conv.icon} ${conv.title}</div>
+          <div class="conv-card-sub">${conv.scenario}</div>
+        </div>
+        <div style="font-size:12px;opacity:.8">${conv.lvl}</div>
+      </div>
+      <div class="conv-expand" id="conv-${ci}">
+        ${conv.lines.map((line, li) => `
+          <div style="display:flex;flex-direction:column;align-items:${li%2===1?'flex-end':'flex-start'}">
+            <div class="bubble ${li%2===1?'bubble-right':'bubble-left'}">
+              <div class="bubble-spk">${line.speaker}</div>
+              <div class="bubble-de">${line.de}</div>
+              <div class="bubble-en">${line.en}</div>
+              ${line.note ? `<div class="bubble-note">💡 ${line.note}</div>` : ""}
+            </div>
+          </div>
+        `).join("")}
+        <div class="conv-tip">💡 ${conv.tip}</div>
+      </div>
+    </div>
+  `).join("");
+}
+
+function toggleConv(ci){
+  const el = document.getElementById("conv-"+ci);
+  el.classList.toggle("show");
+}
+
+// ── FIREBASE PROGRESS
+function recordProgress(correct){
+  if(!userData || correct === null) return;
+  const key = getItemKey(deck[idx]);
+  if(!userData.progress) userData.progress = {};
+  if(!userData.progress[langCode]) userData.progress[langCode] = {};
+  if(!userData.progress[langCode][activePillar])
+    userData.progress[langCode][activePillar] = {scores:{}, mastered:[], struggling:[]};
+
+  const p = userData.progress[langCode][activePillar];
+  if(!p.scores[key]) p.scores[key] = {correct:0, wrong:0, last:""};
+
+  if(correct === true){
+    p.scores[key].correct++;
+    p.scores[key].last = new Date().toISOString().split("T")[0];
+    // Mastered = correct 3+ times with no wrong
+    if(p.scores[key].correct >= 3 && p.scores[key].wrong === 0){
+      if(!p.mastered.includes(key)) p.mastered.push(key);
+      p.struggling = p.struggling.filter(k => k !== key);
+    }
+  } else if(correct === false){
+    p.scores[key].wrong++;
+    if(!p.struggling.includes(key)) p.struggling.push(key);
+    p.mastered = p.mastered.filter(k => k !== key);
+  }
+
+  // Save every 5 answers to avoid too many writes
+  const total = sess.right + sess.wrong;
+  if(total % 5 === 0) saveProgress();
+}
+
+// ── SETTINGS
+function applySettings(){
+  document.getElementById("tog-notes").classList.toggle("on", settings.showNotes);
+  document.getElementById("tog-ph").classList.toggle("on", settings.showPh);
+  document.getElementById("tog-conj").classList.toggle("on", settings.showConj);
+  document.getElementById("tog-srs").classList.toggle("on", settings.srs);
+  document.getElementById("tog-b2").classList.toggle("on", settings.showB2);
+  ["flash","mc","type"].forEach(m => {
+    const el = document.getElementById("dm-"+m);
+    if(el) el.classList.toggle("active", settings.defaultMode===m);
+  });
+}
+
+function toggleSetting(key){
+  settings[key] = !settings[key];
+  if(userData) userData.settings = settings;
+  applySettings();
+  saveProgress();
+  if(key==="showB2") buildLevelRow();
+  renderCard();
+}
+
+function setDefaultMode(m){
+  settings.defaultMode = m;
+  if(userData) userData.settings = settings;
+  applySettings();
+  saveProgress();
+  setMode(m);
+}
+
+function setStartPillar(key){
+  settings.startPillar = key;
+  if(userData) userData.settings = settings;
+  saveProgress();
+  document.querySelectorAll("[id^='sp-']").forEach(b => b.classList.remove("active"));
+  const el = document.getElementById("sp-"+key);
+  if(el) el.classList.add("active");
+}
+
+function openSettings(){
+  document.getElementById("settings-sheet").classList.add("show");
+  applySettings();
+}
+
+function closeSettings(){
+  document.getElementById("settings-sheet").classList.remove("show");
+}
+
+// ── NAVIGATION
+function goBack(){
+  saveProgress();
+  window.location.href = "dashboard.html";
+}
+
+// ── HELPERS
+function shuffle(arr){
+  const a=[...arr];
+  for(let i=a.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [a[i],a[j]]=[a[j],a[i]];
+  }
+  return a;
+}
+
+function showEmpty(){
+  document.getElementById("card-scene").style.display = "none";
+  document.getElementById("nav-row").style.display = "none";
+  document.getElementById("empty-state").style.display = "flex";
+}
+
+function hideEmpty(){
+  document.getElementById("empty-state").style.display = "none";
+}
+
+function celebrate(){
+  const e=["⭐","🌟","✨","🎉","🦋","🎈","💫"];
+  const w=document.getElementById("conf");
+  for(let i=0;i<6;i++){
+    const el=document.createElement("div");
+    el.className="conf-p";
+    el.style.cssText=`left:${15+Math.random()*70}%;animation-duration:${.7+Math.random()*.5}s;animation-delay:${Math.random()*.2}s;font-size:${12+Math.random()*14}px`;
+    el.textContent=e[Math.floor(Math.random()*e.length)];
+    w.appendChild(el);
+    setTimeout(()=>el.remove(),1400);
+  }
+}
+
+function bigConfetti(){
+  for(let i=0;i<20;i++) setTimeout(celebrate,i*80);
+}
+
+function showToast(msg){
+  const t=document.getElementById("toast");
+  t.textContent=msg;
+  t.classList.add("show");
+  setTimeout(()=>t.classList.remove("show"),2000);
+}
+
+// Keyboard shortcuts
+document.addEventListener("keydown",e=>{
+  if(e.key==="ArrowRight") nextCard();
+  if(e.key==="ArrowLeft")  prevCard();
+  if(e.key===" "){e.preventDefault(); if(mode==="flash") flipCard();}
+  if(e.key==="1" && flipped) answer(false);
+  if(e.key==="2" && flipped) answer(true);
+});
+
+// Close settings on outside tap
+document.getElementById("settings-sheet").addEventListener("click", e => {
+  if(e.target === document.getElementById("settings-sheet")) closeSettings();
+});
+</script>
+
+</body>
+</html>
