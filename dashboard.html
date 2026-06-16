@@ -320,6 +320,9 @@ main{max-width:700px;margin:0 auto;padding:1.25rem 1rem 5rem}
 .eta-text{font-size:13px;color:var(--purple);font-weight:500;line-height:1.5}
 .eta-text strong{font-size:15px;display:block}
 </style>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
 </head>
 <body>
 
@@ -514,13 +517,7 @@ main{max-width:700px;margin:0 auto;padding:1.25rem 1rem 5rem}
 
 <div class="toast" id="toast"></div>
 
-<script type="module">
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-import { getAuth, signOut as fbSignOut, onAuthStateChanged }
-  from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
-import { getFirestore, doc, getDoc, setDoc, updateDoc, serverTimestamp }
-  from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
-
+<script>
 const firebaseConfig = {
   apiKey: "AIzaSyCpW2epwNkTiZjZ1AJPVWY2dEHsJLqdXYU",
   authDomain: "swa-learn-6625a.firebaseapp.com",
@@ -530,9 +527,9 @@ const firebaseConfig = {
   appId: "1:755955864193:web:05bbcd9c3a8daa130c7380"
 };
 
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getFirestore(app);
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.firestore();
 
 // ── AVAILABLE LANGUAGES (expandable)
 const AVAILABLE_LANGS = [
@@ -587,7 +584,7 @@ let settings = {
 let pillarLangIdx = 0;
 
 // ── AUTH
-onAuthStateChanged(auth, async user => {
+auth.onAuthStateChanged(async user => {
   if(!user){
     window.location.href = "login.html";
     return;
@@ -600,9 +597,9 @@ onAuthStateChanged(auth, async user => {
 
 // ── LOAD USER DATA
 async function loadUserData(){
-  const ref = doc(db, "users", currentUser.uid);
-  const snap = await getDoc(ref);
-  if(snap.exists()){
+  const ref = db.collection("users").doc(currentUser.uid);
+  const snap = await ref.get();
+  if(snap.exists){
     userData = snap.data();
     settings = {...settings, ...userData.settings};
   } else {
@@ -619,15 +616,15 @@ async function loadUserData(){
       settings: settings,
       timeLog: {}
     };
-    await setDoc(ref, userData);
+    await ref.set(userData);
   }
 }
 
 // ── SAVE USER DATA
 async function saveUserData(){
   if(!currentUser) return;
-  const ref = doc(db, "users", currentUser.uid);
-  await setDoc(ref, userData, {merge: true});
+  const ref = db.collection("users").doc(currentUser.uid);
+  await ref.set(userData, {merge: true});
 }
 
 // ── RENDER DASHBOARD
@@ -961,7 +958,7 @@ window.toggleSetting = (key) => {
 
 window.signOut = async () => {
   if(trackInterval) clearInterval(trackInterval);
-  await fbSignOut(auth);
+  await auth.signOut();
   window.location.href = "login.html";
 };
 
