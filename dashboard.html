@@ -1061,6 +1061,9 @@ window.closeLangModal = (e) => {
   if(!e || e.target===document.getElementById("lang-modal"))
     document.getElementById("lang-modal").classList.remove("show");
 };
+window.renderLangOptions = renderLangOptions;
+window.openSettings = window.openSettings;
+window.studyLang = window.studyLang;
 
 // ── HELPERS
 function todayKey(){
