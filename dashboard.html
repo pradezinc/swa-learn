@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SWA Learn — Dashboard</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1D9E75">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="SWA Learn">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --teal:#1D9E75;--teal-l:#E1F5EE;--teal-d:#0a3327;
+  --blue:#378ADD;--blue-l:#E6F1FB;
+  --purple:#7F77DD;--purple-l:#EEEDFE;
+  --red:#E24B4A;--red-l:#FCEBEB;
+  --amber:#EF9F27;--amber-l:#FAEEDA;
+  --bg:#f7f6f3;--surface:#fff;--surface2:#f0efe9;--surface3:#e8e7e0;
+  --text:#1a1a18;--text2:#6b6b63;--text3:#a0a098;
+  --border:rgba(0,0,0,.10);--border2:rgba(0,0,0,.18);
+  --r:14px;--font:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+@media(prefers-color-scheme:dark){
+  :root{
+    --bg:#1a1917;--surface:#252420;--surface2:#2f2e29;--surface3:#3a3930;
+    --text:#f0efe9;--text2:#a0a090;--text3:#666658;
+    --border:rgba(255,255,255,.10);--border2:rgba(255,255,255,.18);
+    --teal-l:#0a3327;--blue-l:#0a1e38;--purple-l:#1a1840;
+    --red-l:#3a1010;--amber-l:#3a2800;
+  }
+}
+body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:100vh}
+
+/* HEADER */
+header{
+  background:var(--surface);border-bottom:.5px solid var(--border2);
+  padding:0 1.25rem;display:flex;align-items:center;
+  justify-content:space-between;height:54px;
+  position:sticky;top:0;z-index:100;
+}
+.logo{font-size:17px;font-weight:700;letter-spacing:-.03em;
+  display:flex;align-items:center;gap:8px}
+.logo span{color:var(--teal)}
+.hdr-right{display:flex;align-items:center;gap:10px}
+.avatar{width:32px;height:32px;border-radius:50%;
+  background:var(--teal-l);border:.5px solid var(--border2);
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;font-weight:700;color:var(--teal);cursor:pointer;overflow:hidden}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.settings-btn{
+  width:32px;height:32px;border-radius:50%;
+  border:.5px solid var(--border2);background:var(--surface);
+  cursor:pointer;display:flex;align-items:center;justify-content:center;
+  font-size:16px;color:var(--text2);
+}
+
+/* MAIN */
+main{max-width:700px;margin:0 auto;padding:1.25rem 1rem 5rem}
+
+/* GREETING */
+.greeting{margin-bottom:1.5rem}
+.greeting-time{font-size:13px;color:var(--text2);margin-bottom:4px}
+.greeting-name{font-size:24px;font-weight:700;letter-spacing:-.02em}
+
+/* TODAY STATS */
+.today-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:1.25rem}
+.today-card{
+  background:var(--surface);border:.5px solid var(--border);
+  border-radius:var(--r);padding:12px 10px;text-align:center;
+}
+.today-icon{font-size:22px;margin-bottom:4px}
+.today-val{font-size:20px;font-weight:700;color:var(--text)}
+.today-lbl{font-size:10px;color:var(--text2);text-transform:uppercase;letter-spacing:.04em;margin-top:2px}
+.goal-ring-wrap{position:relative;display:inline-block}
+.goal-ring{transform:rotate(-90deg)}
+.goal-pct{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  font-size:11px;font-weight:700;color:var(--teal)
+}
+
+/* SECTION HEADERS */
+.sec-hdr{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:.75rem;margin-top:1.5rem;
+}
+.sec-title{font-size:13px;font-weight:700;color:var(--text2);
+  text-transform:uppercase;letter-spacing:.06em}
+.sec-link{font-size:12px;color:var(--teal);font-weight:500;cursor:pointer}
+
+/* LANGUAGE CARDS */
+.lang-card{
+  background:var(--surface);border:.5px solid var(--border);
+  border-radius:16px;padding:1rem 1.1rem;margin-bottom:.75rem;
+  cursor:pointer;transition:all .2s;
+}
+.lang-card:hover{border-color:var(--teal)}
+.lang-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.lang-info{display:flex;align-items:center;gap:10px}
+.lang-flag{font-size:28px;line-height:1}
+.lang-name{font-size:16px;font-weight:700;letter-spacing:-.01em}
+.lang-level{font-size:11px;color:var(--text2);margin-top:2px}
+.lang-study-btn{
+  padding:7px 16px;border-radius:20px;border:none;
+  background:var(--teal);color:#fff;font-size:12px;font-weight:700;
+  cursor:pointer;font-family:var(--font);white-space:nowrap;
+}
+.lang-prog-bar{width:100%;height:6px;background:var(--surface2);border-radius:3px;overflow:hidden;margin-bottom:8px}
+.lang-prog-fill{height:100%;border-radius:3px;transition:width .5s ease}
+.lang-stats{display:flex;gap:16px}
+.lang-stat{font-size:11px;color:var(--text2)}
+.lang-stat strong{color:var(--text);font-weight:600}
+
+/* ADD LANGUAGE */
+.add-lang-btn{
+  width:100%;padding:14px;border-radius:16px;
+  border:1.5px dashed var(--border2);background:transparent;
+  font-size:14px;font-weight:600;cursor:pointer;
+  color:var(--text2);font-family:var(--font);
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  transition:all .2s;margin-bottom:1.25rem;
+}
+.add-lang-btn:hover{border-color:var(--teal);color:var(--teal);background:var(--teal-l)}
+
+/* PILLARS PROGRESS */
+.pillar-row{
+  display:flex;align-items:center;gap:10px;
+  padding:10px 0;border-bottom:.5px solid var(--border);
+}
+.pillar-row:last-child{border-bottom:none}
+.pillar-icon{font-size:18px;width:28px;text-align:center}
+.pillar-info{flex:1}
+.pillar-name{font-size:13px;font-weight:600;margin-bottom:4px}
+.pillar-bar{width:100%;height:4px;background:var(--surface2);border-radius:2px;overflow:hidden}
+.pillar-fill{height:100%;border-radius:2px;background:var(--teal)}
+.pillar-pct{font-size:12px;color:var(--text2);min-width:35px;text-align:right;font-weight:600}
+
+/* WEAK WORDS */
+.weak-grid{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:1rem}
+.weak-pill{
+  padding:5px 12px;border-radius:20px;
+  background:var(--red-l);color:var(--red);
+  font-size:12px;font-weight:500;cursor:pointer;
+  border:.5px solid var(--red-l);
+}
+.weak-pill:hover{border-color:var(--red)}
+.weak-flag{font-size:10px;margin-right:3px}
+
+/* WEEKLY CHART */
+.week-chart{display:flex;gap:6px;align-items:flex-end;height:60px;margin-bottom:.5rem}
+.week-bar-wrap{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px}
+.week-bar{
+  width:100%;border-radius:4px;background:var(--teal);
+  min-height:3px;transition:height .3s;
+}
+.week-bar.empty{background:var(--surface2)}
+.week-bar.today{background:var(--amber)}
+.week-day{font-size:9px;color:var(--text3);text-transform:uppercase}
+.week-legend{display:flex;gap:12px;font-size:10px;color:var(--text3)}
+.legend-dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:3px}
+
+/* STREAK */
+.streak-row{display:flex;gap:6px;margin-bottom:1rem}
+.streak-day{
+  flex:1;height:32px;border-radius:6px;
+  background:var(--surface2);
+  display:flex;align-items:center;justify-content:center;
+  font-size:9px;color:var(--text3);text-transform:uppercase;
+}
+.streak-day.done{background:var(--teal);color:#fff}
+.streak-day.today{background:var(--amber);color:#fff}
+
+/* SETTINGS PANEL */
+.settings-overlay{
+  position:fixed;inset:0;background:rgba(0,0,0,.5);
+  z-index:200;display:none;align-items:flex-end;
+}
+.settings-overlay.show{display:flex}
+.settings-sheet{
+  background:var(--surface);border-radius:24px 24px 0 0;
+  width:100%;max-height:85vh;overflow-y:auto;padding:1.5rem 1.25rem 2rem;
+}
+.sheet-handle{
+  width:40px;height:4px;background:var(--border2);
+  border-radius:2px;margin:0 auto 1.5rem;
+}
+.sheet-title{font-size:18px;font-weight:700;margin-bottom:1.5rem}
+.setting-row{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 0;border-bottom:.5px solid var(--border);
+}
+.setting-row:last-child{border-bottom:none}
+.setting-label{font-size:14px;font-weight:500}
+.setting-desc{font-size:12px;color:var(--text2);margin-top:2px}
+.toggle{
+  width:48px;height:28px;border-radius:14px;
+  background:var(--surface2);border:.5px solid var(--border2);
+  cursor:pointer;position:relative;transition:background .2s;flex-shrink:0;
+}
+.toggle.on{background:var(--teal)}
+.toggle::after{
+  content:'';position:absolute;top:3px;left:3px;
+  width:22px;height:22px;border-radius:50%;
+  background:#fff;transition:transform .2s;
+  box-shadow:0 1px 3px rgba(0,0,0,.2);
+}
+.toggle.on::after{transform:translateX(20px)}
+.select-pill{
+  display:flex;gap:4px;background:var(--surface2);
+  border-radius:20px;padding:3px;
+}
+.select-opt{
+  padding:4px 12px;border-radius:17px;border:none;
+  font-size:11px;font-weight:600;cursor:pointer;
+  background:transparent;color:var(--text2);font-family:var(--font);
+}
+.select-opt.active{background:var(--surface);color:var(--text);
+  box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.goal-select{
+  display:flex;gap:6px;flex-wrap:wrap;
+}
+.goal-opt{
+  padding:6px 14px;border-radius:20px;border:.5px solid var(--border2);
+  background:var(--surface);font-size:12px;font-weight:600;
+  cursor:pointer;color:var(--text2);font-family:var(--font);
+}
+.goal-opt.active{background:var(--teal);color:#fff;border-color:var(--teal)}
+
+/* IMPORT/EXPORT */
+.action-row{display:flex;gap:8px;margin-top:1.5rem}
+.action-btn{
+  flex:1;padding:12px;border-radius:12px;
+  border:.5px solid var(--border2);background:var(--surface);
+  font-size:13px;font-weight:600;cursor:pointer;
+  color:var(--text2);font-family:var(--font);
+  display:flex;align-items:center;justify-content:center;gap:6px;
+}
+.action-btn:hover{color:var(--text);border-color:var(--text2)}
+.danger-btn{color:var(--red)!important}
+.danger-btn:hover{border-color:var(--red)!important;background:var(--red-l)!important}
+
+/* ADD LANGUAGE MODAL */
+.modal-overlay{
+  position:fixed;inset:0;background:rgba(0,0,0,.5);
+  z-index:300;display:none;align-items:center;justify-content:center;
+  padding:1rem;
+}
+.modal-overlay.show{display:flex}
+.modal{
+  background:var(--surface);border-radius:20px;
+  width:100%;max-width:420px;max-height:85vh;overflow-y:auto;
+  padding:1.5rem;
+}
+.modal-title{font-size:18px;font-weight:700;margin-bottom:1rem}
+.search-box{
+  width:100%;padding:10px 14px;border-radius:10px;
+  border:.5px solid var(--border2);background:var(--surface2);
+  font-size:14px;font-family:var(--font);color:var(--text);
+  margin-bottom:1rem;
+}
+.search-box:focus{outline:none;border-color:var(--teal)}
+.lang-option{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:12px 0;border-bottom:.5px solid var(--border);
+}
+.lang-option:last-child{border-bottom:none}
+.lang-opt-info{display:flex;align-items:center;gap:10px}
+.lang-opt-flag{font-size:24px}
+.lang-opt-name{font-size:14px;font-weight:600}
+.lang-opt-sub{font-size:11px;color:var(--text2)}
+.add-btn{
+  padding:6px 16px;border-radius:20px;border:none;
+  background:var(--teal);color:#fff;font-size:12px;font-weight:700;
+  cursor:pointer;font-family:var(--font);
+}
+.added-badge{
+  padding:5px 12px;border-radius:20px;
+  background:var(--teal-l);color:var(--teal);
+  font-size:12px;font-weight:700;
+}
+.modal-close{
+  width:100%;padding:12px;border-radius:12px;border:.5px solid var(--border2);
+  background:var(--surface);font-size:14px;font-weight:600;
+  cursor:pointer;color:var(--text2);font-family:var(--font);margin-top:1rem;
+}
+
+/* TOAST */
+.toast{
+  position:fixed;bottom:20px;left:50%;transform:translateX(-50%);
+  background:var(--text);color:var(--bg);padding:9px 20px;
+  border-radius:20px;font-size:13px;font-weight:500;
+  opacity:0;transition:opacity .25s;pointer-events:none;
+  white-space:nowrap;z-index:400
+}
+.toast.show{opacity:1}
+
+/* SIGN OUT */
+.signout-btn{
+  font-size:12px;color:var(--text2);background:none;
+  border:none;cursor:pointer;font-family:var(--font);
+  padding:4px 8px;border-radius:6px;
+}
+.signout-btn:hover{color:var(--red)}
+
+/* EMPTY STATE */
+.empty-state{
+  text-align:center;padding:3rem 1rem;color:var(--text2)
+}
+.empty-icon{font-size:48px;margin-bottom:1rem}
+.empty-title{font-size:16px;font-weight:600;margin-bottom:.5rem;color:var(--text)}
+.empty-sub{font-size:13px;line-height:1.6}
+
+/* ESTIMATED TIME */
+.eta-card{
+  background:var(--purple-l);border-radius:12px;
+  padding:12px 14px;margin-bottom:1.25rem;
+  display:flex;align-items:center;gap:12px;
+}
+.eta-icon{font-size:24px}
+.eta-text{font-size:13px;color:var(--purple);font-weight:500;line-height:1.5}
+.eta-text strong{font-size:15px;display:block}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🌍 SWA <span>Learn</span></div>
+  <div class="hdr-right">
+    <button class="settings-btn" onclick="openSettings()">⚙️</button>
+    <div class="avatar" id="avatar" onclick="openSettings()">?</div>
+  </div>
+</header>
+
+<main>
+
+  <!-- GREETING -->
+  <div class="greeting">
+    <div class="greeting-time" id="greeting-time">Good morning</div>
+    <div class="greeting-name" id="greeting-name">Welcome back! 👋</div>
+  </div>
+
+  <!-- TODAY STATS -->
+  <div class="today-grid">
+    <div class="today-card">
+      <div class="today-icon">🔥</div>
+      <div class="today-val" id="streak-val">0</div>
+      <div class="today-lbl">Day Streak</div>
+    </div>
+    <div class="today-card">
+      <div class="today-icon">⏱️</div>
+      <div class="today-val" id="today-time">0m</div>
+      <div class="today-lbl">Today</div>
+    </div>
+    <div class="today-card">
+      <div class="today-icon">⭐</div>
+      <div class="today-val" id="total-words">0</div>
+      <div class="today-lbl">Mastered</div>
+    </div>
+  </div>
+
+  <!-- STREAK DAYS -->
+  <div class="streak-row" id="streak-row"></div>
+
+  <!-- MY LANGUAGES -->
+  <div class="sec-hdr">
+    <div class="sec-title">My Languages</div>
+    <div class="sec-link" onclick="openAddLang()">+ Add</div>
+  </div>
+
+  <div id="lang-list">
+    <div class="empty-state" id="lang-empty" style="display:none">
+      <div class="empty-icon">🌍</div>
+      <div class="empty-title">No languages yet</div>
+      <div class="empty-sub">Add your first language to start learning</div>
+    </div>
+  </div>
+
+  <button class="add-lang-btn" onclick="openAddLang()">
+    + Add New Language
+  </button>
+
+  <!-- PROGRESS BY PILLAR -->
+  <div id="pillar-section" style="display:none">
+    <div class="sec-hdr">
+      <div class="sec-title" id="pillar-lang-name">Progress</div>
+      <div class="sec-link" id="pillar-lang-switch" onclick="cyclePillarLang()">Switch ↓</div>
+    </div>
+    <div class="today-card" style="border-radius:16px;padding:1rem">
+      <div id="pillar-list"></div>
+    </div>
+  </div>
+
+  <!-- ESTIMATED TIME -->
+  <div class="eta-card" id="eta-card" style="display:none;margin-top:1.25rem">
+    <div class="eta-icon">🎯</div>
+    <div class="eta-text">
+      <strong id="eta-val">~0 hours</strong>
+      estimated to reach your next level
+    </div>
+  </div>
+
+  <!-- WEAK WORDS -->
+  <div id="weak-section" style="display:none">
+    <div class="sec-hdr">
+      <div class="sec-title">Needs Review</div>
+      <div class="sec-link" onclick="studyWeak()">Study these →</div>
+    </div>
+    <div class="weak-grid" id="weak-grid"></div>
+  </div>
+
+  <!-- WEEKLY ACTIVITY -->
+  <div class="sec-hdr" style="margin-top:1.5rem">
+    <div class="sec-title">Weekly Activity</div>
+    <div class="sec-link" id="week-total">0 min this week</div>
+  </div>
+  <div class="week-chart" id="week-chart"></div>
+  <div class="week-legend">
+    <span><span class="legend-dot" style="background:var(--teal)"></span>Study time</span>
+    <span><span class="legend-dot" style="background:var(--amber)"></span>Today</span>
+  </div>
+
+  <!-- IMPORT/EXPORT -->
+  <div class="sec-hdr" style="margin-top:1.5rem">
+    <div class="sec-title">Data</div>
+  </div>
+  <div class="action-row">
+    <button class="action-btn" onclick="exportData()">📤 Export</button>
+    <button class="action-btn" onclick="importData()">📥 Import</button>
+    <button class="action-btn" onclick="openStudy()">📚 Study</button>
+  </div>
+  <input type="file" id="import-file" accept=".json" style="display:none" onchange="handleImport(event)">
+
+</main>
+
+<!-- SETTINGS SHEET -->
+<div class="settings-overlay" id="settings-overlay" onclick="closeSettings(event)">
+  <div class="settings-sheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-title">Settings</div>
+
+    <div class="setting-row">
+      <div>
+        <div class="setting-label">Quiz Mode</div>
+        <div class="setting-desc">How questions are asked</div>
+      </div>
+      <div class="select-pill">
+        <button class="select-opt active" id="qm-mc" onclick="setQuizMode('mc')">MC</button>
+        <button class="select-opt" id="qm-type" onclick="setQuizMode('type')">Type</button>
+        <button class="select-opt" id="qm-both" onclick="setQuizMode('both')">Both</button>
+      </div>
+    </div>
+
+    <div class="setting-row">
+      <div>
+        <div class="setting-label">Daily Goal</div>
+        <div class="setting-desc">Minutes per day</div>
+      </div>
+      <div class="goal-select">
+        <button class="goal-opt" id="goal-10" onclick="setGoal(10)">10</button>
+        <button class="goal-opt active" id="goal-20" onclick="setGoal(20)">20</button>
+        <button class="goal-opt" id="goal-30" onclick="setGoal(30)">30</button>
+        <button class="goal-opt" id="goal-60" onclick="setGoal(60)">60</button>
+      </div>
+    </div>
+
+    <div class="setting-row">
+      <div>
+        <div class="setting-label">Show Advanced (B2+)</div>
+        <div class="setting-desc">Include advanced vocabulary</div>
+      </div>
+      <div class="toggle" id="toggle-b2" onclick="toggleSetting('showB2')"></div>
+    </div>
+
+    <div class="setting-row">
+      <div>
+        <div class="setting-label">Sound Effects</div>
+        <div class="setting-desc">Audio feedback on answers</div>
+      </div>
+      <div class="toggle on" id="toggle-sound" onclick="toggleSetting('sounds')"></div>
+    </div>
+
+    <div class="setting-row">
+      <div>
+        <div class="setting-label">Spaced Repetition</div>
+        <div class="setting-desc">Smart review scheduling</div>
+      </div>
+      <div class="toggle on" id="toggle-srs" onclick="toggleSetting('srs')"></div>
+    </div>
+
+    <div style="margin-top:1.5rem;padding-top:1rem;border-top:.5px solid var(--border)">
+      <div style="font-size:12px;color:var(--text2);margin-bottom:.75rem" id="user-email"></div>
+      <button class="signout-btn" onclick="signOut()">Sign out</button>
+    </div>
+
+    <div style="margin-top:1rem">
+      <button class="action-btn danger-btn" onclick="confirmReset()"
+        style="width:100%;color:var(--red)">
+        🗑️ Reset All Progress
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ADD LANGUAGE MODAL -->
+<div class="modal-overlay" id="lang-modal" onclick="closeLangModal(event)">
+  <div class="modal">
+    <div class="modal-title">Add a Language</div>
+    <input class="search-box" placeholder="Search languages..." id="lang-search"
+      oninput="filterLangs(this.value)">
+    <div id="lang-options"></div>
+    <button class="modal-close" onclick="closeLangModal()">Close</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getAuth, signOut as fbSignOut, onAuthStateChanged }
+  from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+import { getFirestore, doc, getDoc, setDoc, updateDoc, serverTimestamp }
+  from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCpW2epwNkTiZjZ1AJPVWY2dEHsJLqdXYU",
+  authDomain: "swa-learn-6625a.firebaseapp.com",
+  projectId: "swa-learn-6625a",
+  storageBucket: "swa-learn-6625a.firebasestorage.app",
+  messagingSenderId: "755955864193",
+  appId: "1:755955864193:web:05bbcd9c3a8daa130c7380"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+// ── AVAILABLE LANGUAGES (expandable)
+const AVAILABLE_LANGS = [
+  {code:"de",name:"Deutsch",nameEn:"German",flag:"🇩🇪",family:"Germanic",
+   levels:["A1","A2","B1","B2"],color:"#1D9E75",file:"de.json",
+   about:"Spoken by 100M+ people. Official in Germany, Austria, Switzerland."},
+  {code:"fr",name:"Français",nameEn:"French",flag:"🇫🇷",family:"Romance",
+   levels:["A1","A2","B1","B2"],color:"#378ADD",file:"fr.json",
+   about:"Spoken by 280M+ people across 5 continents."},
+  {code:"es",name:"Español",nameEn:"Spanish",flag:"🇪🇸",family:"Romance",
+   levels:["A1","A2","B1","B2"],color:"#EF9F27",file:"es.json",
+   about:"2nd most spoken language in the world. 500M+ speakers."},
+  {code:"it",name:"Italiano",nameEn:"Italian",flag:"🇮🇹",family:"Romance",
+   levels:["A1","A2","B1"],color:"#1D9E75",file:"it.json",
+   about:"Language of art, music and food. 65M+ speakers."},
+  {code:"ja",name:"日本語",nameEn:"Japanese",flag:"🇯🇵",family:"Japonic",
+   levels:["N5","N4","N3"],color:"#E24B4A",file:"ja.json",
+   about:"Spoken by 125M+ people. Three writing systems!"},
+  {code:"ar",name:"العربية",nameEn:"Arabic",flag:"🇸🇦",family:"Semitic",
+   levels:["A1","A2","B1"],color:"#639922",file:"ar.json",
+   about:"5th most spoken language. Right-to-left script."},
+  {code:"pt",name:"Português",nameEn:"Portuguese",flag:"🇵🇹",family:"Romance",
+   levels:["A1","A2","B1"],color:"#1D9E75",file:"pt.json",
+   about:"Spoken in Brazil, Portugal and Africa. 250M+ speakers."},
+  {code:"ru",name:"Русский",nameEn:"Russian",flag:"🇷🇺",family:"Slavic",
+   levels:["A1","A2","B1"],color:"#E24B4A",file:"ru.json",
+   about:"Most spoken Slavic language. Cyrillic script."},
+  {code:"zh",name:"中文",nameEn:"Mandarin",flag:"🇨🇳",family:"Sino-Tibetan",
+   levels:["HSK1","HSK2","HSK3"],color:"#D85A30",file:"zh.json",
+   about:"Most spoken language in the world. 1B+ speakers."},
+  {code:"hi",name:"हिंदी",nameEn:"Hindi",flag:"🇮🇳",family:"Indo-Aryan",
+   levels:["A1","A2","B1"],color:"#EF9F27",file:"hi.json",
+   about:"3rd most spoken language. Devanagari script."},
+  {code:"sa",name:"संस्कृतम्",nameEn:"Sanskrit",flag:"🇮🇳",family:"Indo-Aryan",
+   levels:["Intro","Basic","Advanced"],color:"#7F77DD",file:"sa.json",
+   about:"Classical language of India. Root of many modern languages."},
+  {code:"ko",name:"한국어",nameEn:"Korean",flag:"🇰🇷",family:"Koreanic",
+   levels:["TOPIK1","TOPIK2","TOPIK3"],color:"#378ADD",file:"ko.json",
+   about:"Spoken by 77M+ people. Hangul script invented in 1443."},
+];
+
+// ── STATE
+let currentUser = null;
+let userData = null;
+let settings = {
+  quizMode: "both",
+  dailyGoal: 20,
+  showB2: false,
+  sounds: true,
+  srs: true
+};
+let pillarLangIdx = 0;
+
+// ── AUTH
+onAuthStateChanged(auth, async user => {
+  if(!user){
+    window.location.href = "login.html";
+    return;
+  }
+  currentUser = user;
+  await loadUserData();
+  renderDashboard();
+  startTimeTracker();
+});
+
+// ── LOAD USER DATA
+async function loadUserData(){
+  const ref = doc(db, "users", currentUser.uid);
+  const snap = await getDoc(ref);
+  if(snap.exists()){
+    userData = snap.data();
+    settings = {...settings, ...userData.settings};
+  } else {
+    // New user — create initial document
+    userData = {
+      profile: {
+        name: currentUser.displayName || "Learner",
+        email: currentUser.email || "",
+        created: new Date().toISOString(),
+        photoURL: currentUser.photoURL || ""
+      },
+      languages: {},
+      progress: {},
+      settings: settings,
+      timeLog: {}
+    };
+    await setDoc(ref, userData);
+  }
+}
+
+// ── SAVE USER DATA
+async function saveUserData(){
+  if(!currentUser) return;
+  const ref = doc(db, "users", currentUser.uid);
+  await setDoc(ref, userData, {merge: true});
+}
+
+// ── RENDER DASHBOARD
+function renderDashboard(){
+  // Avatar
+  const av = document.getElementById("avatar");
+  if(userData.profile.photoURL){
+    av.innerHTML = `<img src="${userData.profile.photoURL}" alt="avatar">`;
+  } else {
+    av.textContent = (userData.profile.name||"L")[0].toUpperCase();
+  }
+  document.getElementById("user-email").textContent =
+    currentUser.email || "Anonymous user";
+
+  // Greeting
+  const hr = new Date().getHours();
+  const greet = hr<12?"Good morning ☀️":hr<17?"Good afternoon 🌤️":"Good evening 🌙";
+  document.getElementById("greeting-time").textContent = greet;
+  const name = (userData.profile.name||"Learner").split(" ")[0];
+  document.getElementById("greeting-name").textContent = `Welcome back, ${name}! 👋`;
+
+  // Stats
+  renderStats();
+  renderStreakDays();
+  renderLanguages();
+  renderWeekChart();
+  renderSettings();
+}
+
+function renderStats(){
+  // Streak
+  const streak = calcStreak();
+  document.getElementById("streak-val").textContent = streak;
+
+  // Today time
+  const today = todayKey();
+  const todayMins = Math.round((userData.timeLog?.[today] || 0) / 60);
+  document.getElementById("today-time").textContent = todayMins + "m";
+
+  // Total mastered across all languages
+  let mastered = 0;
+  Object.values(userData.progress||{}).forEach(lp => {
+    mastered += (lp.vocab?.mastered||[]).length;
+    mastered += (lp.verbs?.mastered||[]).length;
+    mastered += (lp.chunks?.mastered||[]).length;
+  });
+  document.getElementById("total-words").textContent = mastered;
+}
+
+function renderStreakDays(){
+  const row = document.getElementById("streak-row");
+  const days = ["Mo","Tu","We","Th","Fr","Sa","Su"];
+  const today = new Date().getDay();
+  const todayIdx = today === 0 ? 6 : today - 1;
+  row.innerHTML = days.map((d,i) => {
+    const date = getDateForWeekday(i);
+    const hasStudy = userData.timeLog?.[date] > 0;
+    const cls = i === todayIdx ? "today" : hasStudy ? "done" : "";
+    return `<div class="streak-day ${cls}">${d}</div>`;
+  }).join("");
+}
+
+function renderLanguages(){
+  const list = document.getElementById("lang-list");
+  const langs = userData.languages || {};
+  const keys = Object.keys(langs).filter(k => langs[k].active);
+
+  document.getElementById("lang-empty").style.display =
+    keys.length === 0 ? "block" : "none";
+
+  // Remove existing lang cards
+  list.querySelectorAll(".lang-card").forEach(el => el.remove());
+
+  keys.forEach(code => {
+    const lang = langs[code];
+    const meta = AVAILABLE_LANGS.find(l => l.code === code) || {};
+    const progress = userData.progress?.[code] || {};
+    const totalMastered = (progress.vocab?.mastered||[]).length +
+      (progress.verbs?.mastered||[]).length +
+      (progress.chunks?.mastered||[]).length;
+    const totalSeen = Object.keys(progress.vocab?.scores||{}).length;
+    const totalTime = Object.values(progress.timeSpent?.byDate||{})
+      .reduce((a,b)=>a+b,0);
+    const timeMins = Math.round(totalTime/60);
+    const pct = lang.progressPct || 0;
+
+    const card = document.createElement("div");
+    card.className = "lang-card";
+    card.innerHTML = `
+      <div class="lang-card-top">
+        <div class="lang-info">
+          <div class="lang-flag">${lang.flag}</div>
+          <div>
+            <div class="lang-name">${lang.name}</div>
+            <div class="lang-level">${lang.currentLevel || meta.levels?.[0] || "A1"} · ${meta.nameEn||""}</div>
+          </div>
+        </div>
+        <button class="lang-study-btn" onclick="studyLang('${code}')">Study →</button>
+      </div>
+      <div class="lang-prog-bar">
+        <div class="lang-prog-fill" style="width:${pct}%;background:${lang.color||"#1D9E75"}"></div>
+      </div>
+      <div class="lang-stats">
+        <div class="lang-stat"><strong>${pct}%</strong> complete</div>
+        <div class="lang-stat"><strong>${totalMastered}</strong> mastered</div>
+        <div class="lang-stat"><strong>${timeMins}m</strong> total</div>
+      </div>
+    `;
+    list.appendChild(card);
+  });
+
+  // Pillars
+  renderPillars(keys);
+
+  // Weak words
+  renderWeakWords(keys);
+
+  // ETA
+  renderETA(keys);
+}
+
+function renderPillars(langKeys){
+  const sec = document.getElementById("pillar-section");
+  if(langKeys.length === 0){ sec.style.display = "none"; return; }
+  sec.style.display = "block";
+
+  const code = langKeys[pillarLangIdx % langKeys.length];
+  const lang = userData.languages[code];
+  const meta = AVAILABLE_LANGS.find(l => l.code === code) || {};
+  document.getElementById("pillar-lang-name").textContent =
+    `${lang.flag} ${meta.nameEn || lang.name} Progress`;
+
+  const progress = userData.progress?.[code] || {};
+  const pillars = [
+    {icon:"📚",name:"Vocabulary",key:"vocab",total:200},
+    {icon:"⚡",name:"High Frequency",key:"freq",total:500},
+    {icon:"🧩",name:"Chunks & Phrases",key:"chunks",total:150},
+    {icon:"🏃",name:"Verbs",key:"verbs",total:60},
+    {icon:"🔗",name:"Connectors",key:"fillers",total:100},
+    {icon:"💬",name:"Conversations",key:"conv",total:20},
+  ];
+
+  const list = document.getElementById("pillar-list");
+  list.innerHTML = pillars.map(p => {
+    const seen = Object.keys(progress[p.key]?.scores||{}).length;
+    const pct = Math.min(100, Math.round(seen/p.total*100));
+    return `
+      <div class="pillar-row">
+        <div class="pillar-icon">${p.icon}</div>
+        <div class="pillar-info">
+          <div class="pillar-name">${p.name}</div>
+          <div class="pillar-bar">
+            <div class="pillar-fill" style="width:${pct}%;background:${lang.color||"#1D9E75"}"></div>
+          </div>
+        </div>
+        <div class="pillar-pct">${pct}%</div>
+      </div>
+    `;
+  }).join("");
+}
+
+function renderWeakWords(langKeys){
+  const sec = document.getElementById("weak-section");
+  const grid = document.getElementById("weak-grid");
+  let allWeak = [];
+
+  langKeys.forEach(code => {
+    const lang = userData.languages[code];
+    const struggling = userData.progress?.[code]?.vocab?.struggling || [];
+    struggling.slice(0,5).forEach(w => {
+      allWeak.push({word:w, flag:lang.flag, code});
+    });
+  });
+
+  if(allWeak.length === 0){ sec.style.display = "none"; return; }
+  sec.style.display = "block";
+  grid.innerHTML = allWeak.map(w =>
+    `<div class="weak-pill" onclick="studyLang('${w.code}')">
+      <span class="weak-flag">${w.flag}</span>${w.word}
+    </div>`
+  ).join("");
+}
+
+function renderETA(langKeys){
+  const card = document.getElementById("eta-card");
+  if(langKeys.length === 0){ card.style.display = "none"; return; }
+  card.style.display = "flex";
+  // Simple estimate: average 2 min per new word, ~1000 words to next level
+  const totalProgress = langKeys.reduce((a,code) => {
+    return a + (userData.languages[code]?.progressPct || 0);
+  }, 0) / langKeys.length;
+  const remaining = Math.round((100 - totalProgress) * 0.5);
+  document.getElementById("eta-val").textContent = `~${remaining} hours`;
+}
+
+function renderWeekChart(){
+  const chart = document.getElementById("week-chart");
+  const today = new Date().getDay();
+  const todayIdx = today === 0 ? 6 : today - 1;
+  const days = ["Mo","Tu","We","Th","Fr","Sa","Su"];
+
+  let weekTotal = 0;
+  const bars = days.map((d,i) => {
+    const date = getDateForWeekday(i);
+    const secs = userData.timeLog?.[date] || 0;
+    weekTotal += secs;
+    return {day:d, secs, isToday: i===todayIdx};
+  });
+
+  const maxSecs = Math.max(...bars.map(b=>b.secs), 60);
+  chart.innerHTML = bars.map(b => {
+    const h = Math.max(3, Math.round(b.secs/maxSecs*52));
+    const cls = b.isToday ? "today" : b.secs > 0 ? "" : "empty";
+    return `
+      <div class="week-bar-wrap">
+        <div class="week-bar ${cls}" style="height:${h}px"></div>
+        <div class="week-day">${b.day}</div>
+      </div>
+    `;
+  }).join("");
+
+  document.getElementById("week-total").textContent =
+    Math.round(weekTotal/60) + " min this week";
+}
+
+function renderSettings(){
+  ["mc","type","both"].forEach(m => {
+    document.getElementById("qm-"+m).classList.toggle("active", settings.quizMode===m);
+  });
+  [10,20,30,60].forEach(g => {
+    document.getElementById("goal-"+g).classList.toggle("active", settings.dailyGoal===g);
+  });
+  document.getElementById("toggle-b2").classList.toggle("on", settings.showB2);
+  document.getElementById("toggle-sound").classList.toggle("on", settings.sounds);
+  document.getElementById("toggle-srs").classList.toggle("on", settings.srs);
+}
+
+// ── ADD LANGUAGE
+function renderLangOptions(filter=""){
+  const container = document.getElementById("lang-options");
+  const myLangs = Object.keys(userData.languages||{});
+  const filtered = AVAILABLE_LANGS.filter(l =>
+    !filter ||
+    l.nameEn.toLowerCase().includes(filter.toLowerCase()) ||
+    l.name.toLowerCase().includes(filter.toLowerCase())
+  );
+  container.innerHTML = filtered.map(l => {
+    const added = myLangs.includes(l.code);
+    return `
+      <div class="lang-option">
+        <div class="lang-opt-info">
+          <div class="lang-opt-flag">${l.flag}</div>
+          <div>
+            <div class="lang-opt-name">${l.nameEn} — ${l.name}</div>
+            <div class="lang-opt-sub">${l.about}</div>
+          </div>
+        </div>
+        ${added
+          ? `<div class="added-badge">✓ Added</div>`
+          : `<button class="add-btn" onclick="addLanguage('${l.code}')">Add</button>`
+        }
+      </div>
+    `;
+  }).join("");
+}
+
+window.filterLangs = (v) => renderLangOptions(v);
+
+window.addLanguage = async (code) => {
+  const meta = AVAILABLE_LANGS.find(l => l.code === code);
+  if(!meta) return;
+  if(!userData.languages) userData.languages = {};
+  if(!userData.progress) userData.progress = {};
+  userData.languages[code] = {
+    added: new Date().toISOString(),
+    active: true,
+    currentLevel: meta.levels[0],
+    flag: meta.flag,
+    name: meta.name,
+    color: meta.color,
+    progressPct: 0
+  };
+  userData.progress[code] = {
+    vocab:{scores:{},mastered:[],struggling:[]},
+    verbs:{scores:{},mastered:[],struggling:[]},
+    chunks:{scores:{},mastered:[],struggling:[]},
+    freq:{scores:{},mastered:[],struggling:[]},
+    fillers:{scores:{},mastered:[],struggling:[]},
+    timeSpent:{total:0,byDate:{}}
+  };
+  await saveUserData();
+  renderLangOptions(document.getElementById("lang-search").value);
+  renderLanguages();
+  showToast(`${meta.flag} ${meta.nameEn} added!`);
+};
+
+// ── TIME TRACKER
+let sessionStart = Date.now();
+let trackInterval;
+
+function startTimeTracker(){
+  trackInterval = setInterval(async () => {
+    const elapsed = Math.round((Date.now() - sessionStart) / 1000);
+    const today = todayKey();
+    if(!userData.timeLog) userData.timeLog = {};
+    userData.timeLog[today] = (userData.timeLog[today]||0) + 30; // add 30 secs
+    // Update active language time too
+    const langs = Object.keys(userData.languages||{}).filter(k=>userData.languages[k].active);
+    if(langs.length > 0){
+      const activeCode = langs[0];
+      if(!userData.progress[activeCode].timeSpent) userData.progress[activeCode].timeSpent = {total:0,byDate:{}};
+      userData.progress[activeCode].timeSpent.total += 30;
+      userData.progress[activeCode].timeSpent.byDate[today] =
+        (userData.progress[activeCode].timeSpent.byDate[today]||0) + 30;
+    }
+    await saveUserData();
+    renderStats();
+    renderWeekChart();
+  }, 30000); // every 30 seconds
+}
+
+// ── SETTINGS ACTIONS
+window.setQuizMode = (m) => { settings.quizMode=m; userData.settings=settings; saveUserData(); renderSettings(); };
+window.setGoal = (g) => { settings.dailyGoal=g; userData.settings=settings; saveUserData(); renderSettings(); showToast(`Daily goal: ${g} minutes`); };
+window.toggleSetting = (key) => {
+  settings[key] = !settings[key];
+  userData.settings = settings;
+  saveUserData();
+  renderSettings();
+};
+
+window.signOut = async () => {
+  if(trackInterval) clearInterval(trackInterval);
+  await fbSignOut(auth);
+  window.location.href = "login.html";
+};
+
+window.confirmReset = () => {
+  if(confirm("Reset ALL progress? This cannot be undone.")){
+    userData.progress = {};
+    userData.timeLog = {};
+    Object.keys(userData.languages||{}).forEach(code => {
+      if(userData.languages[code]) userData.languages[code].progressPct = 0;
+    });
+    saveUserData();
+    renderDashboard();
+    showToast("Progress reset.");
+    closeSettings();
+  }
+};
+
+// ── EXPORT / IMPORT
+window.exportData = () => {
+  const data = JSON.stringify(userData, null, 2);
+  const blob = new Blob([data], {type:"application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `swa-learn-backup-${todayKey()}.json`;
+  a.click();
+  showToast("Progress exported!");
+};
+
+window.importData = () => {
+  document.getElementById("import-file").click();
+};
+
+window.handleImport = async (e) => {
+  const file = e.target.files[0];
+  if(!file) return;
+  try {
+    const text = await file.text();
+    const imported = JSON.parse(text);
+    if(confirm("This will merge imported data with your current progress. Continue?")){
+      // Merge languages
+      if(imported.languages){
+        userData.languages = {...userData.languages, ...imported.languages};
+      }
+      // Merge progress
+      if(imported.progress){
+        Object.keys(imported.progress).forEach(code => {
+          if(!userData.progress[code]) userData.progress[code] = imported.progress[code];
+          else {
+            // Merge scores
+            Object.keys(imported.progress[code]).forEach(pillar => {
+              if(!userData.progress[code][pillar]) userData.progress[code][pillar] = imported.progress[code][pillar];
+            });
+          }
+        });
+      }
+      await saveUserData();
+      renderDashboard();
+      showToast("Progress imported!");
+    }
+  } catch(err) {
+    showToast("Import failed — invalid file");
+  }
+  e.target.value = "";
+};
+
+// ── NAVIGATION
+window.studyLang = (code) => {
+  localStorage.setItem("swa-active-lang", code);
+  window.location.href = "index.html";
+};
+window.openStudy = () => {
+  window.location.href = "index.html";
+};
+window.studyWeak = () => {
+  localStorage.setItem("swa-study-weak", "true");
+  window.location.href = "index.html";
+};
+window.cyclePillarLang = () => {
+  const keys = Object.keys(userData.languages||{}).filter(k=>userData.languages[k].active);
+  pillarLangIdx = (pillarLangIdx+1) % Math.max(1,keys.length);
+  renderPillars(keys);
+};
+
+// ── MODALS
+window.openSettings = () => document.getElementById("settings-overlay").classList.add("show");
+window.closeSettings = (e) => {
+  if(!e || e.target===document.getElementById("settings-overlay"))
+    document.getElementById("settings-overlay").classList.remove("show");
+};
+window.openAddLang = () => {
+  renderLangOptions();
+  document.getElementById("lang-search").value = "";
+  document.getElementById("lang-modal").classList.add("show");
+};
+window.closeLangModal = (e) => {
+  if(!e || e.target===document.getElementById("lang-modal"))
+    document.getElementById("lang-modal").classList.remove("show");
+};
+
+// ── HELPERS
+function todayKey(){
+  return new Date().toISOString().split("T")[0];
+}
+function getDateForWeekday(weekdayIdx){
+  const now = new Date();
+  const day = now.getDay();
+  const todayIdx = day === 0 ? 6 : day - 1;
+  const diff = weekdayIdx - todayIdx;
+  const d = new Date(now);
+  d.setDate(d.getDate() + diff);
+  return d.toISOString().split("T")[0];
+}
+function calcStreak(){
+  const log = userData.timeLog || {};
+  let streak = 0;
+  const d = new Date();
+  for(let i=0; i<365; i++){
+    const key = d.toISOString().split("T")[0];
+    if(log[key] > 0) streak++;
+    else if(i > 0) break;
+    d.setDate(d.getDate()-1);
+  }
+  return streak;
+}
+
+window.showToast = (msg) => {
+  const t = document.getElementById("toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  setTimeout(()=>t.classList.remove("show"), 2000);
+};
+</script>
+</body>
+</html>

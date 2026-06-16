@@ -1,0 +1,38 @@
+{
+  "name": "SWA Learn",
+  "short_name": "SWA Learn",
+  "description": "Your personal language learning academy",
+  "start_url": "/swa-learn/login.html",
+  "display": "standalone",
+  "background_color": "#f7f6f3",
+  "theme_color": "#1D9E75",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "lifestyle"],
+  "lang": "en",
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "url": "/swa-learn/dashboard.html",
+      "description": "View your progress"
+    },
+    {
+      "name": "Study",
+      "url": "/swa-learn/index.html",
+      "description": "Start studying"
+    }
+  ]
+}
