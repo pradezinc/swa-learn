@@ -1140,6 +1140,1530 @@
       "ph": "[ˈkliːmavandl̩]",
       "ex": "Der Klimawandel ist eine Herausforderung.",
       "note": "Klima=climate + Wandel=change. Major topic in Germany!"
+    },
+    {
+      "lvl": "A1",
+      "cat": "🍽️ Essen",
+      "emoji": "🍌",
+      "de": "die Banane",
+      "en": "banana",
+      "art": "die (f)",
+      "plural": "die Bananen",
+      "ph": "[baˈnaːnə]",
+      "ex": "Die Banane ist gelb und süß.",
+      "note": "Foreign word ending in -e, regularly feminine. Plural just adds -n."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🍽️ Essen",
+      "emoji": "🍊",
+      "de": "die Orange",
+      "en": "orange",
+      "art": "die (f)",
+      "plural": "die Orangen",
+      "ph": "[oˈʁɑ̃ʒə]",
+      "ex": "Ich trinke Orangensaft zum Frühstück.",
+      "note": "French-style pronunciation. 'Orangensaft' = orange juice (compound word)."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🍽️ Essen",
+      "emoji": "🍇",
+      "de": "die Traube",
+      "en": "grape",
+      "art": "die (f)",
+      "plural": "die Trauben",
+      "ph": "[ˈtʁaʊ̯bə]",
+      "ex": "Ich esse gerne Trauben.",
+      "note": "Usually used in plural (die Trauben) since grapes come in bunches."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🍽️ Essen",
+      "emoji": "🍓",
+      "de": "die Erdbeere",
+      "en": "strawberry",
+      "art": "die (f)",
+      "plural": "die Erdbeeren",
+      "ph": "[ˈeːɐ̯tbeːʁə]",
+      "ex": "Erdbeeren schmecken im Sommer am besten.",
+      "note": "Erd(e)=earth + Beere=berry. Compound word, very literal!"
+    },
+    {
+      "lvl": "A1",
+      "cat": "🍽️ Essen",
+      "emoji": "🍋",
+      "de": "die Zitrone",
+      "en": "lemon",
+      "art": "die (f)",
+      "plural": "die Zitronen",
+      "ph": "[tsiˈtʁoːnə]",
+      "ex": "Der Tee mit Zitrone ist lecker.",
+      "note": "'lecker' = tasty/delicious. Very common everyday word."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🍽️ Essen",
+      "emoji": "🍚",
+      "de": "der Reis",
+      "en": "rice",
+      "art": "der (m)",
+      "plural": "—",
+      "ph": "[ʁaɪ̯s]",
+      "ex": "Wir essen Reis mit Gemüse.",
+      "note": "Uncountable like in English. 'Gemüse' = vegetables (also uncountable)."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🍽️ Essen",
+      "emoji": "🍝",
+      "de": "die Nudel",
+      "en": "noodle/pasta",
+      "art": "die (f)",
+      "plural": "die Nudeln",
+      "ph": "[ˈnuːdl̩]",
+      "ex": "Ich koche Nudeln mit Tomatensauce.",
+      "note": "Always used in plural for a dish: 'Nudeln' even for one portion."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🍽️ Essen",
+      "emoji": "🥩",
+      "de": "das Fleisch",
+      "en": "meat",
+      "art": "das (n)",
+      "plural": "—",
+      "ph": "[flaɪ̯ʃ]",
+      "ex": "Ich esse selten Fleisch.",
+      "note": "Uncountable. 'selten' = rarely. Many Germans say 'Fleischlos' for meatless."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🍽️ Essen",
+      "emoji": "🧅",
+      "de": "die Zwiebel",
+      "en": "onion",
+      "art": "die (f)",
+      "plural": "die Zwiebeln",
+      "ph": "[ˈtsviːbl̩]",
+      "ex": "Die Suppe braucht mehr Zwiebeln.",
+      "note": "'die Suppe' = soup. 'braucht' = needs (3rd person singular)."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🍽️ Essen",
+      "emoji": "🧄",
+      "de": "der Knoblauch",
+      "en": "garlic",
+      "art": "der (m)",
+      "plural": "—",
+      "ph": "[ˈknoːplaʊ̯x]",
+      "ex": "Ich liebe Knoblauch im Essen.",
+      "note": "Knob(lauch) — historically related to 'cloves'. Uncountable noun."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🐾 Tiere",
+      "emoji": "🐭",
+      "de": "die Maus",
+      "en": "mouse",
+      "art": "die (f)",
+      "plural": "die Mäuse",
+      "ph": "[maʊ̯s]",
+      "ex": "Die Katze jagt die Maus.",
+      "note": "Umlaut plural: Maus → Mäuse. Same word used for computer mouse!"
+    },
+    {
+      "lvl": "A1",
+      "cat": "🐾 Tiere",
+      "emoji": "🐰",
+      "de": "das Kaninchen",
+      "en": "rabbit",
+      "art": "das (n)",
+      "plural": "die Kaninchen",
+      "ph": "[kaˈniːnçən]",
+      "ex": "Das Kaninchen hat lange Ohren.",
+      "note": "Diminutive -chen ending makes nouns neuter. Same form in plural."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🐾 Tiere",
+      "emoji": "🐸",
+      "de": "der Frosch",
+      "en": "frog",
+      "art": "der (m)",
+      "plural": "die Frösche",
+      "ph": "[fʁɔʃ]",
+      "ex": "Der Frosch springt ins Wasser.",
+      "note": "'springen' = to jump. Uses 'sein' in perfect tense (movement verb)."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🐾 Tiere",
+      "emoji": "🐷",
+      "de": "das Schwein",
+      "en": "pig",
+      "art": "das (n)",
+      "plural": "die Schweine",
+      "ph": "[ʃvaɪ̯n]",
+      "ex": "Das Schwein lebt auf dem Bauernhof.",
+      "note": "'Bauernhof' = farm. 'Schweinefleisch' = pork (compound word)."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🐾 Tiere",
+      "emoji": "🐔",
+      "de": "das Hähnchen",
+      "en": "chicken",
+      "art": "das (n)",
+      "plural": "die Hähnchen",
+      "ph": "[ˈhɛːnçən]",
+      "ex": "Wir essen Hähnchen zum Mittagessen.",
+      "note": "Refers to chicken as food. The live animal is 'das Huhn'."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🐾 Tiere",
+      "emoji": "🦆",
+      "de": "die Ente",
+      "en": "duck",
+      "art": "die (f)",
+      "plural": "die Enten",
+      "ph": "[ˈɛntə]",
+      "ex": "Die Ente schwimmt auf dem See.",
+      "note": "'der See' = lake (masculine) vs 'die See' = sea (feminine). Same spelling!"
+    },
+    {
+      "lvl": "A1",
+      "cat": "👨‍👩‍👧 Familie",
+      "emoji": "👶",
+      "de": "das Baby",
+      "en": "baby",
+      "art": "das (n)",
+      "plural": "die Babys",
+      "ph": "[ˈbeːbi]",
+      "ex": "Das Baby schläft den ganzen Tag.",
+      "note": "English loanword. Plural simply adds -s, unlike most German nouns."
+    },
+    {
+      "lvl": "A1",
+      "cat": "👨‍👩‍👧 Familie",
+      "emoji": "👫",
+      "de": "die Eltern",
+      "en": "parents",
+      "art": "die (Pl.)",
+      "plural": "—",
+      "ph": "[ˈɛltɐn]",
+      "ex": "Meine Eltern wohnen in Berlin.",
+      "note": "Always plural — there's no German singular for 'one parent' as a single word."
+    },
+    {
+      "lvl": "A1",
+      "cat": "👨‍👩‍👧 Familie",
+      "emoji": "👨‍👩‍👧‍👦",
+      "de": "die Familie",
+      "en": "family",
+      "art": "die (f)",
+      "plural": "die Familien",
+      "ph": "[faˈmiːliə]",
+      "ex": "Meine Familie ist sehr groß.",
+      "note": "Looks similar to English — easy cognate to remember!"
+    },
+    {
+      "lvl": "A1",
+      "cat": "👨‍👩‍👧 Familie",
+      "emoji": "👦",
+      "de": "der Sohn",
+      "en": "son",
+      "art": "der (m)",
+      "plural": "die Söhne",
+      "ph": "[zoːn]",
+      "ex": "Ihr Sohn geht in die Schule.",
+      "note": "Umlaut plural: Sohn → Söhne. 'Ihr' = her (possessive)."
+    },
+    {
+      "lvl": "A1",
+      "cat": "👨‍👩‍👧 Familie",
+      "emoji": "👧",
+      "de": "die Tochter",
+      "en": "daughter",
+      "art": "die (f)",
+      "plural": "die Töchter",
+      "ph": "[ˈtɔxtɐ]",
+      "ex": "Seine Tochter ist drei Jahre alt.",
+      "note": "Umlaut plural: Tochter → Töchter. 'Seine' = his (possessive)."
+    },
+    {
+      "lvl": "A1",
+      "cat": "👨‍👩‍👧 Familie",
+      "emoji": "💑",
+      "de": "der Mann",
+      "en": "husband/man",
+      "art": "der (m)",
+      "plural": "die Männer",
+      "ph": "[man]",
+      "ex": "Mein Mann arbeitet in München.",
+      "note": "Means both 'man' and 'husband' depending on context — very common."
+    },
+    {
+      "lvl": "A1",
+      "cat": "👨‍👩‍👧 Familie",
+      "emoji": "💍",
+      "de": "die Frau",
+      "en": "wife/woman",
+      "art": "die (f)",
+      "plural": "die Frauen",
+      "ph": "[fʁaʊ̯]",
+      "ex": "Seine Frau kommt aus Spanien.",
+      "note": "Means both 'woman' and 'wife'. Also the polite title 'Frau Schmidt' = Mrs. Schmidt."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🎨 Farben",
+      "emoji": "🟠",
+      "de": "orange",
+      "en": "orange (color)",
+      "art": "Adjektiv",
+      "plural": "—",
+      "ph": "[oˈʁɑ̃ʃ]",
+      "ex": "Die Blätter sind im Herbst orange.",
+      "note": "Unlike most German adjectives, 'orange' and 'rosa' don't change their ending!"
+    },
+    {
+      "lvl": "A1",
+      "cat": "🎨 Farben",
+      "emoji": "🟣",
+      "de": "violett",
+      "en": "purple",
+      "art": "Adjektiv",
+      "plural": "—",
+      "ph": "[vioˈlɛt]",
+      "ex": "Die Blume ist violett.",
+      "note": "Also commonly said as 'lila' in everyday speech — both are correct."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🎨 Farben",
+      "emoji": "🟤",
+      "de": "braun",
+      "en": "brown",
+      "art": "Adjektiv",
+      "plural": "—",
+      "ph": "[bʁaʊ̯n]",
+      "ex": "Meine Augen sind braun.",
+      "note": "Regular adjective — takes normal endings: 'ein braunes Haus'."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🎨 Farben",
+      "emoji": "🩷",
+      "de": "rosa",
+      "en": "pink",
+      "art": "Adjektiv",
+      "plural": "—",
+      "ph": "[ˈʁoːza]",
+      "ex": "Das Kleid ist rosa.",
+      "note": "Like 'orange', 'rosa' never changes its ending — always stays 'rosa'."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🏠 Zuhause",
+      "emoji": "🪑",
+      "de": "der Stuhl",
+      "en": "chair",
+      "art": "der (m)",
+      "plural": "die Stühle",
+      "ph": "[ʃtuːl]",
+      "ex": "Der Stuhl steht am Tisch.",
+      "note": "Umlaut plural: Stuhl → Stühle. 'am Tisch' = an dem Tisch (contraction)."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🏠 Zuhause",
+      "emoji": "🛋️",
+      "de": "das Sofa",
+      "en": "sofa",
+      "art": "das (n)",
+      "plural": "die Sofas",
+      "ph": "[ˈzoːfa]",
+      "ex": "Ich sitze gern auf dem Sofa.",
+      "note": "International loanword, easy to remember. Plural just adds -s."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🏠 Zuhause",
+      "emoji": "🚿",
+      "de": "die Dusche",
+      "en": "shower",
+      "art": "die (f)",
+      "plural": "die Duschen",
+      "ph": "[ˈduːʃə]",
+      "ex": "Ich nehme jeden Morgen eine Dusche.",
+      "note": "'eine Dusche nehmen' = to take a shower (literally 'take a shower')."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🏠 Zuhause",
+      "emoji": "🚽",
+      "de": "die Toilette",
+      "en": "toilet",
+      "art": "die (f)",
+      "plural": "die Toiletten",
+      "ph": "[toaˈlɛtə]",
+      "ex": "Wo ist die Toilette, bitte?",
+      "note": "Essential travel phrase! French loanword, widely used and polite."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🏠 Zuhause",
+      "emoji": "🧺",
+      "de": "der Schrank",
+      "en": "cupboard/wardrobe",
+      "art": "der (m)",
+      "plural": "die Schränke",
+      "ph": "[ʃʁaŋk]",
+      "ex": "Meine Kleider sind im Schrank.",
+      "note": "Umlaut plural: Schrank → Schränke. 'Kleiderschrank' = wardrobe specifically."
+    },
+    {
+      "lvl": "A1",
+      "cat": "📚 Schule",
+      "emoji": "📝",
+      "de": "der Stift",
+      "en": "pen",
+      "art": "der (m)",
+      "plural": "die Stifte",
+      "ph": "[ʃtɪft]",
+      "ex": "Hast du einen Stift für mich?",
+      "note": "General word for pen/pencil. 'Kugelschreiber' = ballpoint pen specifically."
+    },
+    {
+      "lvl": "A1",
+      "cat": "📚 Schule",
+      "emoji": "📓",
+      "de": "das Heft",
+      "en": "notebook",
+      "art": "das (n)",
+      "plural": "die Hefte",
+      "ph": "[hɛft]",
+      "ex": "Ich schreibe alles in mein Heft.",
+      "note": "Specifically a school exercise book, different from 'das Buch' (book)."
+    },
+    {
+      "lvl": "A1",
+      "cat": "📚 Schule",
+      "emoji": "🧑‍🏫",
+      "de": "der Lehrer",
+      "en": "teacher (m)",
+      "art": "der (m)",
+      "plural": "die Lehrer",
+      "ph": "[ˈleːʁɐ]",
+      "ex": "Mein Lehrer erklärt sehr gut.",
+      "note": "Female: 'die Lehrerin'. The -in suffix for female professions is very common."
+    },
+    {
+      "lvl": "A1",
+      "cat": "📚 Schule",
+      "emoji": "🧑‍🎓",
+      "de": "der Schüler",
+      "en": "pupil/student (m)",
+      "art": "der (m)",
+      "plural": "die Schüler",
+      "ph": "[ˈʃyːlɐ]",
+      "ex": "Die Schüler lernen Englisch.",
+      "note": "'Schüler' = school student. 'Student' is specifically for university."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🌤️ Natur",
+      "emoji": "🌙",
+      "de": "der Mond",
+      "en": "moon",
+      "art": "der (m)",
+      "plural": "die Monde",
+      "ph": "[moːnt]",
+      "ex": "Der Mond ist heute Nacht voll.",
+      "note": "'voll' = full. 'Vollmond' = full moon (compound word)."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🌤️ Natur",
+      "emoji": "⭐",
+      "de": "der Stern",
+      "en": "star",
+      "art": "der (m)",
+      "plural": "die Sterne",
+      "ph": "[ʃtɛʁn]",
+      "ex": "Die Sterne leuchten in der Nacht.",
+      "note": "'leuchten' = to shine/glow. Mercedes-Benz logo is called 'der Stern' too!"
+    },
+    {
+      "lvl": "A1",
+      "cat": "🌤️ Natur",
+      "emoji": "🏔️",
+      "de": "der Berg",
+      "en": "mountain",
+      "art": "der (m)",
+      "plural": "die Berge",
+      "ph": "[bɛʁk]",
+      "ex": "Wir wandern auf den Berg.",
+      "note": "'wandern' = to hike. Germans love hiking — very cultural activity!"
+    },
+    {
+      "lvl": "A1",
+      "cat": "🌤️ Natur",
+      "emoji": "🌊",
+      "de": "das Meer",
+      "en": "sea",
+      "art": "das (n)",
+      "plural": "die Meere",
+      "ph": "[meːɐ̯]",
+      "ex": "Ich fahre im Sommer ans Meer.",
+      "note": "'ans' = an das (to the). 'Mittelmeer' = Mediterranean Sea (literally 'middle sea')."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🌤️ Natur",
+      "emoji": "🌸",
+      "de": "die Blume",
+      "en": "flower",
+      "art": "die (f)",
+      "plural": "die Blumen",
+      "ph": "[ˈbluːmə]",
+      "ex": "Ich kaufe Blumen für meine Mutter.",
+      "note": "'Blumenladen' = flower shop. Giving flowers is a common gesture in Germany."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🧍 Körper",
+      "emoji": "👃",
+      "de": "die Nase",
+      "en": "nose",
+      "art": "die (f)",
+      "plural": "die Nasen",
+      "ph": "[ˈnaːzə]",
+      "ex": "Meine Nase ist kalt.",
+      "note": "'Ich habe die Nase voll' = idiom meaning 'I'm fed up' (literally 'nose full')!"
+    },
+    {
+      "lvl": "A1",
+      "cat": "🧍 Körper",
+      "emoji": "👄",
+      "de": "der Mund",
+      "en": "mouth",
+      "art": "der (m)",
+      "plural": "die Münder",
+      "ph": "[mʊnt]",
+      "ex": "Öffne deinen Mund, bitte.",
+      "note": "'Öffne' = open (imperative). Used by doctors and dentists commonly."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🧍 Körper",
+      "emoji": "🦵",
+      "de": "das Bein",
+      "en": "leg",
+      "art": "das (n)",
+      "plural": "die Beine",
+      "ph": "[baɪ̯n]",
+      "ex": "Mein Bein tut weh.",
+      "note": "'tut weh' = hurts. 'weh tun' is a separable verb meaning 'to hurt'."
+    },
+    {
+      "lvl": "A1",
+      "cat": "🧍 Körper",
+      "emoji": "🦶",
+      "de": "der Fuß",
+      "en": "foot",
+      "art": "der (m)",
+      "plural": "die Füße",
+      "ph": "[fuːs]",
+      "ex": "Ich gehe zu Fuß zur Arbeit.",
+      "note": "'zu Fuß' = on foot (idiomatic phrase). Umlaut plural: Fuß → Füße."
+    },
+    {
+      "lvl": "A1",
+      "cat": "⏰ Zeit",
+      "emoji": "🕐",
+      "de": "die Uhr",
+      "en": "clock/watch/o'clock",
+      "art": "die (f)",
+      "plural": "die Uhren",
+      "ph": "[uːɐ̯]",
+      "ex": "Es ist drei Uhr.",
+      "note": "Used for telling time: 'drei Uhr' = three o'clock. Also means the physical clock."
+    },
+    {
+      "lvl": "A1",
+      "cat": "⏰ Zeit",
+      "emoji": "📅",
+      "de": "der Tag",
+      "en": "day",
+      "art": "der (m)",
+      "plural": "die Tage",
+      "ph": "[taːk]",
+      "ex": "Heute ist ein schöner Tag.",
+      "note": "'Guten Tag!' = Good day! Common greeting any time before evening."
+    },
+    {
+      "lvl": "A1",
+      "cat": "⏰ Zeit",
+      "emoji": "🌃",
+      "de": "die Nacht",
+      "en": "night",
+      "art": "die (f)",
+      "plural": "die Nächte",
+      "ph": "[naxt]",
+      "ex": "Gute Nacht!",
+      "note": "'Gute Nacht!' = Good night! Said when going to sleep, not as a greeting."
+    },
+    {
+      "lvl": "A1",
+      "cat": "⏰ Zeit",
+      "emoji": "📆",
+      "de": "die Woche",
+      "en": "week",
+      "art": "die (f)",
+      "plural": "die Wochen",
+      "ph": "[ˈvɔxə]",
+      "ex": "Nächste Woche fahre ich nach Berlin.",
+      "note": "'Nächste Woche' = next week. 'Wochenende' = weekend (week+end)."
+    },
+    {
+      "lvl": "A1",
+      "cat": "⏰ Zeit",
+      "emoji": "🗓️",
+      "de": "der Monat",
+      "en": "month",
+      "art": "der (m)",
+      "plural": "die Monate",
+      "ph": "[ˈmoːnat]",
+      "ex": "Im nächsten Monat habe ich Urlaub.",
+      "note": "'Urlaub' = vacation/holiday. Related to 'der Mond' (moon) historically."
+    },
+    {
+      "lvl": "A1",
+      "cat": "⏰ Zeit",
+      "emoji": "🎉",
+      "de": "das Jahr",
+      "en": "year",
+      "art": "das (n)",
+      "plural": "die Jahre",
+      "ph": "[jaːɐ̯]",
+      "ex": "Ich lerne seit einem Jahr Deutsch.",
+      "note": "'seit' = since/for (with time). 'seit einem Jahr' = for one year (ongoing)."
+    },
+    {
+      "lvl": "A2",
+      "cat": "👗 Kleidung",
+      "emoji": "🧦",
+      "de": "die Socke",
+      "en": "sock",
+      "art": "die (f)",
+      "plural": "die Socken",
+      "ph": "[ˈzɔkə]",
+      "ex": "Meine Socken sind im Schrank.",
+      "note": "Always think plural — you rarely talk about just one sock!"
+    },
+    {
+      "lvl": "A2",
+      "cat": "👗 Kleidung",
+      "emoji": "🧢",
+      "de": "die Mütze",
+      "en": "cap/beanie",
+      "art": "die (f)",
+      "plural": "die Mützen",
+      "ph": "[ˈmʏtsə]",
+      "ex": "Im Winter trage ich eine Mütze.",
+      "note": "For a soft hat/beanie. 'der Hut' is for a more structured hat."
+    },
+    {
+      "lvl": "A2",
+      "cat": "👗 Kleidung",
+      "emoji": "👜",
+      "de": "die Tasche",
+      "en": "bag",
+      "art": "die (f)",
+      "plural": "die Taschen",
+      "ph": "[ˈtaʃə]",
+      "ex": "Ich habe meinen Schlüssel in der Tasche.",
+      "note": "Also means 'pocket'! Context determines bag vs. pocket."
+    },
+    {
+      "lvl": "A2",
+      "cat": "👗 Kleidung",
+      "emoji": "🕶️",
+      "de": "die Sonnenbrille",
+      "en": "sunglasses",
+      "art": "die (f)",
+      "plural": "die Sonnenbrillen",
+      "ph": "[ˈzɔnənbʁɪlə]",
+      "ex": "Im Sommer trage ich eine Sonnenbrille.",
+      "note": "Sonne=sun + Brille=glasses. Compound word, always singular form used (die Brille)."
+    },
+    {
+      "lvl": "A2",
+      "cat": "🏙️ Stadt",
+      "emoji": "🏦",
+      "de": "die Bank",
+      "en": "bank",
+      "art": "die (f)",
+      "plural": "die Banken",
+      "ph": "[baŋk]",
+      "ex": "Ich gehe zur Bank, um Geld abzuheben.",
+      "note": "Also means 'bench' (die Bank, plural die Bänke)! Context matters."
+    },
+    {
+      "lvl": "A2",
+      "cat": "🏙️ Stadt",
+      "emoji": "📮",
+      "de": "die Post",
+      "en": "post office/mail",
+      "art": "die (f)",
+      "plural": "—",
+      "ph": "[pɔst]",
+      "ex": "Ich gehe zur Post, um ein Paket zu schicken.",
+      "note": "'Paket' = package. 'schicken' = to send. Uncountable noun."
+    },
+    {
+      "lvl": "A2",
+      "cat": "🏙️ Stadt",
+      "emoji": "🏪",
+      "de": "der Supermarkt",
+      "en": "supermarket",
+      "art": "der (m)",
+      "plural": "die Supermärkte",
+      "ph": "[ˈzuːpɐmaʁkt]",
+      "ex": "Ich kaufe Lebensmittel im Supermarkt.",
+      "note": "Super+Markt. 'Lebensmittel' = groceries (literally 'means of life')."
+    },
+    {
+      "lvl": "A2",
+      "cat": "🏙️ Stadt",
+      "emoji": "🎬",
+      "de": "das Kino",
+      "en": "cinema",
+      "art": "das (n)",
+      "plural": "die Kinos",
+      "ph": "[ˈkiːno]",
+      "ex": "Wir gehen heute Abend ins Kino.",
+      "note": "'ins' = in das. 'heute Abend' = this evening. Common weekend activity."
+    },
+    {
+      "lvl": "A2",
+      "cat": "🏙️ Stadt",
+      "emoji": "⛪",
+      "de": "die Kirche",
+      "en": "church",
+      "art": "die (f)",
+      "plural": "die Kirchen",
+      "ph": "[ˈkɪʁçə]",
+      "ex": "Die Kirche ist sehr alt.",
+      "note": "Most German towns have a historic church as a landmark for directions."
+    },
+    {
+      "lvl": "A2",
+      "cat": "🏙️ Stadt",
+      "emoji": "🅿️",
+      "de": "der Parkplatz",
+      "en": "parking lot",
+      "art": "der (m)",
+      "plural": "die Parkplätze",
+      "ph": "[ˈpaʁkplats]",
+      "ex": "Der Parkplatz ist voll.",
+      "note": "Park+Platz (place/space). 'voll' = full, very common adjective."
+    },
+    {
+      "lvl": "A2",
+      "cat": "💼 Berufe",
+      "emoji": "👩‍🏫",
+      "de": "die Lehrerin",
+      "en": "teacher (f)",
+      "art": "die (f)",
+      "plural": "die Lehrerinnen",
+      "ph": "[ˈleːʁəʁɪn]",
+      "ex": "Die Lehrerin ist sehr geduldig.",
+      "note": "Female form of 'der Lehrer'. 'geduldig' = patient."
+    },
+    {
+      "lvl": "A2",
+      "cat": "💼 Berufe",
+      "emoji": "👨‍💻",
+      "de": "der Ingenieur",
+      "en": "engineer (m)",
+      "art": "der (m)",
+      "plural": "die Ingenieure",
+      "ph": "[ɪnʃeˈnjøːɐ̯]",
+      "ex": "Mein Bruder ist Ingenieur.",
+      "note": "French loanword. Note: no article needed for professions after 'sein'!"
+    },
+    {
+      "lvl": "A2",
+      "cat": "💼 Berufe",
+      "emoji": "👩‍⚖️",
+      "de": "der Anwalt",
+      "en": "lawyer (m)",
+      "art": "der (m)",
+      "plural": "die Anwälte",
+      "ph": "[ˈanvalt]",
+      "ex": "Der Anwalt vertritt seinen Mandanten.",
+      "note": "Female: 'die Anwältin'. 'vertreten' = to represent."
+    },
+    {
+      "lvl": "A2",
+      "cat": "💼 Berufe",
+      "emoji": "👨‍🌾",
+      "de": "der Bauer",
+      "en": "farmer (m)",
+      "art": "der (m)",
+      "plural": "die Bauern",
+      "ph": "[ˈbaʊ̯ɐ]",
+      "ex": "Der Bauer arbeitet auf dem Feld.",
+      "note": "'das Feld' = field. Female: 'die Bäuerin'."
+    },
+    {
+      "lvl": "A2",
+      "cat": "💼 Berufe",
+      "emoji": "✂️",
+      "de": "der Friseur",
+      "en": "hairdresser (m)",
+      "art": "der (m)",
+      "plural": "die Friseure",
+      "ph": "[fʁiˈzøːɐ̯]",
+      "ex": "Ich gehe morgen zum Friseur.",
+      "note": "French-derived word. Female: 'die Friseurin'."
+    },
+    {
+      "lvl": "A2",
+      "cat": "🎯 Freizeit",
+      "emoji": "📷",
+      "de": "fotografieren",
+      "en": "to photograph",
+      "art": "Verb",
+      "plural": "—",
+      "ph": "[fotoɡʁaˈfiːʁən]",
+      "ex": "Ich fotografiere gerne die Berge.",
+      "note": "Long word but regular conjugation! Comes from 'das Foto' (photo)."
+    },
+    {
+      "lvl": "A2",
+      "cat": "🎯 Freizeit",
+      "emoji": "🎸",
+      "de": "die Gitarre",
+      "en": "guitar",
+      "art": "die (f)",
+      "plural": "die Gitarren",
+      "ph": "[ɡiˈtaʁə]",
+      "ex": "Er spielt seit drei Jahren Gitarre.",
+      "note": "'spielen' + instrument, no article needed: 'Gitarre spielen'."
+    },
+    {
+      "lvl": "A2",
+      "cat": "🎯 Freizeit",
+      "emoji": "🎨",
+      "de": "malen",
+      "en": "to paint",
+      "art": "Verb",
+      "plural": "—",
+      "ph": "[ˈmaːlən]",
+      "ex": "Meine Tochter malt sehr gern.",
+      "note": "For painting pictures. Different from 'streichen' (to paint walls)."
+    },
+    {
+      "lvl": "A2",
+      "cat": "🎯 Freizeit",
+      "emoji": "🚴",
+      "de": "das Fahrrad",
+      "en": "bicycle",
+      "art": "das (n)",
+      "plural": "die Fahrräder",
+      "ph": "[ˈfaːɐ̯ʁaːt]",
+      "ex": "Ich fahre jeden Tag mit dem Fahrrad.",
+      "note": "Fahr(en)+Rad. Germany has excellent cycling infrastructure!"
+    },
+    {
+      "lvl": "A2",
+      "cat": "🎯 Freizeit",
+      "emoji": "🎮",
+      "de": "das Videospiel",
+      "en": "video game",
+      "art": "das (n)",
+      "plural": "die Videospiele",
+      "ph": "[ˈviːdeoʃpiːl]",
+      "ex": "Mein Bruder spielt gern Videospiele.",
+      "note": "Video+Spiel (game). English loanword combined with German noun."
+    },
+    {
+      "lvl": "A2",
+      "cat": "🛍️ Einkaufen",
+      "emoji": "💳",
+      "de": "die Kreditkarte",
+      "en": "credit card",
+      "art": "die (f)",
+      "plural": "die Kreditkarten",
+      "ph": "[kʁeˈdiːtkaʁtə]",
+      "ex": "Kann ich mit Kreditkarte zahlen?",
+      "note": "Kredit+Karte. 'zahlen' = to pay. Cash is still very common in Germany!"
+    },
+    {
+      "lvl": "A2",
+      "cat": "🛍️ Einkaufen",
+      "emoji": "🛒",
+      "de": "der Einkaufswagen",
+      "en": "shopping cart",
+      "art": "der (m)",
+      "plural": "die Einkaufswagen",
+      "ph": "[ˈaɪ̯nkaʊ̯fsvaːɡn̩]",
+      "ex": "Der Einkaufswagen ist sehr voll.",
+      "note": "Einkauf(s)+Wagen (cart/car). Often needs a coin deposit to unlock!"
+    },
+    {
+      "lvl": "A2",
+      "cat": "🛍️ Einkaufen",
+      "emoji": "🏷️",
+      "de": "der Rabatt",
+      "en": "discount",
+      "art": "der (m)",
+      "plural": "die Rabatte",
+      "ph": "[ʁaˈbat]",
+      "ex": "Es gibt 20% Rabatt auf alles.",
+      "note": "'Es gibt' = there is/are. Very useful shopping phrase."
+    },
+    {
+      "lvl": "A2",
+      "cat": "🛍️ Einkaufen",
+      "emoji": "🧾",
+      "de": "die Quittung",
+      "en": "receipt",
+      "art": "die (f)",
+      "plural": "die Quittungen",
+      "ph": "[ˈkvɪtʊŋ]",
+      "ex": "Brauchen Sie eine Quittung?",
+      "note": "'-ung' ending = always feminine. Cashiers often ask this."
+    },
+    {
+      "lvl": "A2",
+      "cat": "🍴 Restaurant",
+      "emoji": "🍷",
+      "de": "der Wein",
+      "en": "wine",
+      "art": "der (m)",
+      "plural": "die Weine",
+      "ph": "[vaɪ̯n]",
+      "ex": "Ein Glas Rotwein, bitte.",
+      "note": "'Rotwein' = red wine, 'Weißwein' = white wine. Germany has excellent wine regions!"
+    },
+    {
+      "lvl": "A2",
+      "cat": "🍴 Restaurant",
+      "emoji": "🥗",
+      "de": "der Salat",
+      "en": "salad",
+      "art": "der (m)",
+      "plural": "die Salate",
+      "ph": "[zaˈlaːt]",
+      "ex": "Ich nehme einen Salat als Vorspeise.",
+      "note": "'Vorspeise' = appetizer/starter. 'Hauptspeise' = main course."
+    },
+    {
+      "lvl": "A2",
+      "cat": "🍴 Restaurant",
+      "emoji": "🍦",
+      "de": "das Eis",
+      "en": "ice cream/ice",
+      "art": "das (n)",
+      "plural": "—",
+      "ph": "[aɪ̯s]",
+      "ex": "Im Sommer esse ich gerne Eis.",
+      "note": "Same word for 'ice' and 'ice cream' — context clarifies which!"
+    },
+    {
+      "lvl": "A2",
+      "cat": "🍴 Restaurant",
+      "emoji": "🥄",
+      "de": "der Löffel",
+      "en": "spoon",
+      "art": "der (m)",
+      "plural": "die Löffel",
+      "ph": "[ˈlœfl̩]",
+      "ex": "Ich brauche einen Löffel für die Suppe.",
+      "note": "Same form in singular and plural. 'die Gabel' = fork, 'das Messer' = knife."
+    },
+    {
+      "lvl": "A2",
+      "cat": "🤝 Beziehungen",
+      "emoji": "😊",
+      "de": "der Freund",
+      "en": "friend/boyfriend (m)",
+      "art": "der (m)",
+      "plural": "die Freunde",
+      "ph": "[fʁɔɪ̯nt]",
+      "ex": "Er ist mein bester Freund.",
+      "note": "Can mean 'friend' OR 'boyfriend' — context and tone clarify which!"
+    },
+    {
+      "lvl": "A2",
+      "cat": "🤝 Beziehungen",
+      "emoji": "💕",
+      "de": "die Freundin",
+      "en": "friend/girlfriend (f)",
+      "art": "die (f)",
+      "plural": "die Freundinnen",
+      "ph": "[ˈfʁɔɪ̯ndɪn]",
+      "ex": "Meine Freundin wohnt in Hamburg.",
+      "note": "Same ambiguity as 'Freund' — friend or girlfriend depending on context."
+    },
+    {
+      "lvl": "A2",
+      "cat": "🤝 Beziehungen",
+      "emoji": "💌",
+      "de": "lieben",
+      "en": "to love",
+      "art": "Verb",
+      "plural": "—",
+      "ph": "[ˈliːbən]",
+      "ex": "Ich liebe meine Familie.",
+      "note": "Strong word for romantic/deep love. 'mögen' is used for liking things casually."
+    },
+    {
+      "lvl": "A2",
+      "cat": "🤝 Beziehungen",
+      "emoji": "🤗",
+      "de": "die Beziehung",
+      "en": "relationship",
+      "art": "die (f)",
+      "plural": "die Beziehungen",
+      "ph": "[bəˈtsiːʊŋ]",
+      "ex": "Sie haben eine gute Beziehung.",
+      "note": "'-ung' ending = feminine. Also used for international/business relations."
+    },
+    {
+      "lvl": "A2",
+      "cat": "🏃 Gesundheit",
+      "emoji": "💪",
+      "de": "gesund",
+      "en": "healthy",
+      "art": "Adjektiv",
+      "plural": "—",
+      "ph": "[ɡəˈzʊnt]",
+      "ex": "Obst und Gemüse sind gesund.",
+      "note": "Opposite: 'krank' = sick. 'Gesundheit!' is also said after a sneeze!"
+    },
+    {
+      "lvl": "A2",
+      "cat": "🏃 Gesundheit",
+      "emoji": "🤒",
+      "de": "krank",
+      "en": "sick",
+      "art": "Adjektiv",
+      "plural": "—",
+      "ph": "[kʁaŋk]",
+      "ex": "Ich bin heute krank.",
+      "note": "'krankschreiben' = to sign off sick from work (common compound verb)."
+    },
+    {
+      "lvl": "A2",
+      "cat": "🏃 Gesundheit",
+      "emoji": "💉",
+      "de": "die Impfung",
+      "en": "vaccination",
+      "art": "die (f)",
+      "plural": "die Impfungen",
+      "ph": "[ˈɪmpfʊŋ]",
+      "ex": "Die Impfung tut nicht weh.",
+      "note": "'-ung' ending = feminine. 'tut nicht weh' = doesn't hurt."
+    },
+    {
+      "lvl": "B1",
+      "cat": "💭 Konzepte",
+      "emoji": "🔄",
+      "de": "die Veränderung",
+      "en": "change",
+      "art": "die (f)",
+      "plural": "die Veränderungen",
+      "ph": "[fɛɐ̯ˈʔɛndəʁʊŋ]",
+      "ex": "Das Leben besteht aus Veränderungen.",
+      "note": "'-ung' = feminine. 'bestehen aus' = to consist of (common B1 verb)."
+    },
+    {
+      "lvl": "B1",
+      "cat": "💭 Konzepte",
+      "emoji": "⚡",
+      "de": "die Energie",
+      "en": "energy",
+      "art": "die (f)",
+      "plural": "die Energien",
+      "ph": "[enɛɐ̯ˈɡiː]",
+      "ex": "Erneuerbare Energie ist wichtig.",
+      "note": "'erneuerbar' = renewable. Major topic in German politics/society."
+    },
+    {
+      "lvl": "B1",
+      "cat": "💭 Konzepte",
+      "emoji": "🎲",
+      "de": "die Möglichkeit",
+      "en": "possibility",
+      "art": "die (f)",
+      "plural": "die Möglichkeiten",
+      "ph": "[ˈmøːklɪçkaɪ̯t]",
+      "ex": "Es gibt viele Möglichkeiten.",
+      "note": "From 'möglich' (possible) + -keit suffix. Always feminine."
+    },
+    {
+      "lvl": "B1",
+      "cat": "💭 Konzepte",
+      "emoji": "🧩",
+      "de": "der Unterschied",
+      "en": "difference",
+      "art": "der (m)",
+      "plural": "die Unterschiede",
+      "ph": "[ˈʊntɐʃiːt]",
+      "ex": "Was ist der Unterschied zwischen den beiden?",
+      "note": "'zwischen' = between. 'unterscheiden' = to differentiate (related verb)."
+    },
+    {
+      "lvl": "B1",
+      "cat": "💭 Konzepte",
+      "emoji": "🔍",
+      "de": "die Erfahrung",
+      "en": "experience",
+      "art": "die (f)",
+      "plural": "die Erfahrungen",
+      "ph": "[ɛɐ̯ˈfaːʁʊŋ]",
+      "ex": "Ich habe viel Erfahrung in diesem Bereich.",
+      "note": "'der Bereich' = field/area. Common in job interviews and CVs."
+    },
+    {
+      "lvl": "B1",
+      "cat": "💼 Arbeit",
+      "emoji": "📈",
+      "de": "die Karriere",
+      "en": "career",
+      "art": "die (f)",
+      "plural": "die Karrieren",
+      "ph": "[kaˈʁjeːʁə]",
+      "ex": "Sie macht eine erfolgreiche Karriere.",
+      "note": "'erfolgreich' = successful. French loanword, easy to recognize."
+    },
+    {
+      "lvl": "B1",
+      "cat": "💼 Arbeit",
+      "emoji": "🤝",
+      "de": "die Zusammenarbeit",
+      "en": "cooperation",
+      "art": "die (f)",
+      "plural": "—",
+      "ph": "[tsuˈzamənaʁbaɪ̯t]",
+      "ex": "Die Zusammenarbeit war erfolgreich.",
+      "note": "zusammen=together + Arbeit=work. Long but logical compound word!"
+    },
+    {
+      "lvl": "B1",
+      "cat": "💼 Arbeit",
+      "emoji": "📅",
+      "de": "der Termin",
+      "en": "appointment",
+      "art": "der (m)",
+      "plural": "die Termine",
+      "ph": "[tɛɐ̯ˈmiːn]",
+      "ex": "Ich habe morgen einen Termin.",
+      "note": "Essential business word — also used for doctor's appointments!"
+    },
+    {
+      "lvl": "B1",
+      "cat": "💼 Arbeit",
+      "emoji": "💡",
+      "de": "die Lösung",
+      "en": "solution",
+      "art": "die (f)",
+      "plural": "die Lösungen",
+      "ph": "[ˈløːzʊŋ]",
+      "ex": "Wir brauchen eine schnelle Lösung.",
+      "note": "From 'lösen' (to solve). '-ung' ending = feminine, as always."
+    },
+    {
+      "lvl": "B1",
+      "cat": "💼 Arbeit",
+      "emoji": "🎯",
+      "de": "die Aufgabe",
+      "en": "task",
+      "art": "die (f)",
+      "plural": "die Aufgaben",
+      "ph": "[ˈaʊ̯fɡaːbə]",
+      "ex": "Meine Aufgabe ist es, das Projekt zu leiten.",
+      "note": "'leiten' = to lead/manage. Also means 'homework' in school context!"
+    },
+    {
+      "lvl": "B1",
+      "cat": "🏥 Gesundheit",
+      "emoji": "🧘",
+      "de": "sich entspannen",
+      "en": "to relax",
+      "art": "Verb (reflexiv)",
+      "plural": "—",
+      "ph": "[zɪç ɛntˈʃpanən]",
+      "ex": "Ich entspanne mich am Wochenende.",
+      "note": "Reflexive verb — needs 'sich/mich/dich' etc. 'Ich entspanne MICH'."
+    },
+    {
+      "lvl": "B1",
+      "cat": "🏥 Gesundheit",
+      "emoji": "😰",
+      "de": "der Stress",
+      "en": "stress",
+      "art": "der (m)",
+      "plural": "—",
+      "ph": "[ʃtʁɛs]",
+      "ex": "Ich habe viel Stress bei der Arbeit.",
+      "note": "English loanword, used identically to English. Uncountable."
+    },
+    {
+      "lvl": "B1",
+      "cat": "🏥 Gesundheit",
+      "emoji": "🥗",
+      "de": "die Ernährung",
+      "en": "nutrition/diet",
+      "art": "die (f)",
+      "plural": "—",
+      "ph": "[ɛɐ̯ˈnɛːʁʊŋ]",
+      "ex": "Gesunde Ernährung ist wichtig.",
+      "note": "'-ung' ending. Refers to overall diet/nutrition, not a weight-loss diet."
+    },
+    {
+      "lvl": "B1",
+      "cat": "✈️ Reisen",
+      "emoji": "🗺️",
+      "de": "die Reise",
+      "en": "trip/journey",
+      "art": "die (f)",
+      "plural": "die Reisen",
+      "ph": "[ˈʁaɪ̯zə]",
+      "ex": "Die Reise nach Italien war wunderschön.",
+      "note": "'Gute Reise!' = Have a good trip! Common farewell phrase."
+    },
+    {
+      "lvl": "B1",
+      "cat": "✈️ Reisen",
+      "emoji": "🏨",
+      "de": "die Unterkunft",
+      "en": "accommodation",
+      "art": "die (f)",
+      "plural": "die Unterkünfte",
+      "ph": "[ˈʊntɐkʊnft]",
+      "ex": "Wir haben eine günstige Unterkunft gefunden.",
+      "note": "'günstig' = affordable/good value. Umlaut plural: Unterkunft → Unterkünfte."
+    },
+    {
+      "lvl": "B1",
+      "cat": "✈️ Reisen",
+      "emoji": "🛄",
+      "de": "die Verspätung",
+      "en": "delay",
+      "art": "die (f)",
+      "plural": "die Verspätungen",
+      "ph": "[fɛɐ̯ˈʃpɛːtʊŋ]",
+      "ex": "Der Zug hat 20 Minuten Verspätung.",
+      "note": "Sadly necessary vocabulary — even punctual Germany has train delays!"
+    },
+    {
+      "lvl": "B1",
+      "cat": "💻 Technologie",
+      "emoji": "☁️",
+      "de": "die Cloud",
+      "en": "cloud (computing)",
+      "art": "die (f)",
+      "plural": "die Clouds",
+      "ph": "[klaʊ̯t]",
+      "ex": "Ich speichere meine Fotos in der Cloud.",
+      "note": "English loanword used directly. 'speichern' = to save/store."
+    },
+    {
+      "lvl": "B1",
+      "cat": "💻 Technologie",
+      "emoji": "🔋",
+      "de": "der Akku",
+      "en": "battery",
+      "art": "der (m)",
+      "plural": "die Akkus",
+      "ph": "[ˈaku]",
+      "ex": "Mein Akku ist fast leer.",
+      "note": "Short for 'Akkumulator'. 'der Akku ist leer' = the battery is dead."
+    },
+    {
+      "lvl": "B1",
+      "cat": "💻 Technologie",
+      "emoji": "📡",
+      "de": "das Netzwerk",
+      "en": "network",
+      "art": "das (n)",
+      "plural": "die Netzwerke",
+      "ph": "[ˈnɛtsvɛʁk]",
+      "ex": "Das WLAN-Netzwerk ist langsam.",
+      "note": "Netz(work)+Werk. Used for both computer networks and social networks."
+    },
+    {
+      "lvl": "B1",
+      "cat": "🌍 Umwelt",
+      "emoji": "♻️",
+      "de": "recyceln",
+      "en": "to recycle",
+      "art": "Verb",
+      "plural": "—",
+      "ph": "[ʁiˈsaɪ̯kl̩n]",
+      "ex": "Wir recyceln Papier und Plastik.",
+      "note": "Germany has very strict and detailed recycling rules — multiple bins!"
+    },
+    {
+      "lvl": "B1",
+      "cat": "🌍 Umwelt",
+      "emoji": "🌡️",
+      "de": "die Erwärmung",
+      "en": "warming",
+      "art": "die (f)",
+      "plural": "—",
+      "ph": "[ɛɐ̯ˈvɛʁmʊŋ]",
+      "ex": "Die globale Erwärmung betrifft uns alle.",
+      "note": "'globale Erwärmung' = global warming. 'betreffen' = to affect/concern."
+    },
+    {
+      "lvl": "B1",
+      "cat": "🌍 Umwelt",
+      "emoji": "🌳",
+      "de": "nachhaltig",
+      "en": "sustainable",
+      "art": "Adjektiv",
+      "plural": "—",
+      "ph": "[ˈnaːxhaltɪç]",
+      "ex": "Wir müssen nachhaltiger leben.",
+      "note": "Very common in modern German discourse around environment and business."
+    },
+    {
+      "lvl": "B1",
+      "cat": "🗣️ Meinungen",
+      "emoji": "🤷",
+      "de": "die Ansicht",
+      "en": "view/opinion",
+      "art": "die (f)",
+      "plural": "die Ansichten",
+      "ph": "[ˈanzɪçt]",
+      "ex": "Meiner Ansicht nach ist das richtig.",
+      "note": "'Meiner Ansicht nach' = In my view. Formal alternative to 'Meiner Meinung nach'."
+    },
+    {
+      "lvl": "B1",
+      "cat": "🗣️ Meinungen",
+      "emoji": "⚖️",
+      "de": "der Vorteil",
+      "en": "advantage",
+      "art": "der (m)",
+      "plural": "die Vorteile",
+      "ph": "[ˈfoːɐ̯taɪ̯l]",
+      "ex": "Das hat viele Vorteile.",
+      "note": "Opposite: 'der Nachteil' = disadvantage. Vor=before/forward, Nach=after."
+    },
+    {
+      "lvl": "B1",
+      "cat": "🗣️ Meinungen",
+      "emoji": "❌",
+      "de": "der Nachteil",
+      "en": "disadvantage",
+      "art": "der (m)",
+      "plural": "die Nachteile",
+      "ph": "[ˈnaːxtaɪ̯l]",
+      "ex": "Der Nachteil ist der hohe Preis.",
+      "note": "Opposite of 'Vorteil'. 'hoch' (high) becomes 'hohe' before a noun."
+    },
+    {
+      "lvl": "B2",
+      "cat": "🎭 Kultur",
+      "emoji": "🎻",
+      "de": "die Aufführung",
+      "en": "performance",
+      "art": "die (f)",
+      "plural": "die Aufführungen",
+      "ph": "[ˈaʊ̯ffyːʁʊŋ]",
+      "ex": "Die Aufführung war ausverkauft.",
+      "note": "'ausverkauft' = sold out. Used for concerts, theatre, opera performances."
+    },
+    {
+      "lvl": "B2",
+      "cat": "🎭 Kultur",
+      "emoji": "📖",
+      "de": "die Literatur",
+      "en": "literature",
+      "art": "die (f)",
+      "plural": "—",
+      "ph": "[lɪtəʁaˈtuːɐ̯]",
+      "ex": "Sie interessiert sich für deutsche Literatur.",
+      "note": "'sich interessieren für' = to be interested in (reflexive + preposition)."
+    },
+    {
+      "lvl": "B2",
+      "cat": "🏛️ Gesellschaft",
+      "emoji": "🗞️",
+      "de": "die Öffentlichkeit",
+      "en": "the public",
+      "art": "die (f)",
+      "plural": "—",
+      "ph": "[ˈœfəntlɪçkaɪ̯t]",
+      "ex": "Die Information wurde der Öffentlichkeit zugänglich gemacht.",
+      "note": "From 'öffentlich' (public) + -keit. 'zugänglich' = accessible."
+    },
+    {
+      "lvl": "B2",
+      "cat": "🏛️ Gesellschaft",
+      "emoji": "⚖️",
+      "de": "die Gerechtigkeit",
+      "en": "justice",
+      "art": "die (f)",
+      "plural": "—",
+      "ph": "[ɡəˈʁɛçtɪçkaɪ̯t]",
+      "ex": "Soziale Gerechtigkeit ist ein wichtiges Thema.",
+      "note": "From 'gerecht' (just/fair) + -keit. Common in political discourse."
+    },
+    {
+      "lvl": "B2",
+      "cat": "🏛️ Gesellschaft",
+      "emoji": "🌐",
+      "de": "die Globalisierung",
+      "en": "globalization",
+      "art": "die (f)",
+      "plural": "—",
+      "ph": "[ɡlobaliziːʁʊŋ]",
+      "ex": "Die Globalisierung verändert die Wirtschaft.",
+      "note": "'die Wirtschaft' = economy. International word, easy to recognize."
+    },
+    {
+      "lvl": "B2",
+      "cat": "💭 Abstrakt",
+      "emoji": "🧠",
+      "de": "das Bewusstsein",
+      "en": "consciousness/awareness",
+      "art": "das (n)",
+      "plural": "—",
+      "ph": "[bəˈvʊstzaɪ̯n]",
+      "ex": "Das Umweltbewusstsein wächst.",
+      "note": "Bewusst(sein)=conscious + sein=being. 'wachsen' = to grow."
+    },
+    {
+      "lvl": "B2",
+      "cat": "💭 Abstrakt",
+      "emoji": "🎭",
+      "de": "die Identität",
+      "en": "identity",
+      "art": "die (f)",
+      "plural": "die Identitäten",
+      "ph": "[idɛntiˈtɛːt]",
+      "ex": "Die kulturelle Identität spielt eine große Rolle.",
+      "note": "'eine Rolle spielen' = to play a role (idiomatic). Cognate, easy to spot."
+    },
+    {
+      "lvl": "B2",
+      "cat": "💭 Abstrakt",
+      "emoji": "🔮",
+      "de": "die Perspektive",
+      "en": "perspective",
+      "art": "die (f)",
+      "plural": "die Perspektiven",
+      "ph": "[pɛʁspɛkˈtiːvə]",
+      "ex": "Aus dieser Perspektive sieht es anders aus.",
+      "note": "'aussehen' = to look/appear (separable verb: sieht...aus)."
+    },
+    {
+      "lvl": "B2",
+      "cat": "💼 Wirtschaft",
+      "emoji": "📊",
+      "de": "die Wirtschaft",
+      "en": "economy",
+      "art": "die (f)",
+      "plural": "die Wirtschaften",
+      "ph": "[ˈvɪʁtʃaft]",
+      "ex": "Die deutsche Wirtschaft wächst langsam.",
+      "note": "Also means 'pub/inn' in Austrian/Bavarian dialect — context matters!"
+    },
+    {
+      "lvl": "B2",
+      "cat": "💼 Wirtschaft",
+      "emoji": "💹",
+      "de": "die Investition",
+      "en": "investment",
+      "art": "die (f)",
+      "plural": "die Investitionen",
+      "ph": "[ɪnvɛstiˈtsioːn]",
+      "ex": "Das ist eine sichere Investition.",
+      "note": "'sicher' = safe/certain. International finance vocabulary, easy cognate."
+    },
+    {
+      "lvl": "B2",
+      "cat": "💼 Wirtschaft",
+      "emoji": "📉",
+      "de": "die Inflation",
+      "en": "inflation",
+      "art": "die (f)",
+      "plural": "—",
+      "ph": "[ɪnflaˈtsioːn]",
+      "ex": "Die Inflation steigt jedes Jahr.",
+      "note": "'steigen' = to rise/climb (uses 'sein' in perfect tense)."
+    },
+    {
+      "lvl": "B2",
+      "cat": "🔬 Wissenschaft",
+      "emoji": "🧪",
+      "de": "die Forschung",
+      "en": "research",
+      "art": "die (f)",
+      "plural": "die Forschungen",
+      "ph": "[ˈfɔʁʃʊŋ]",
+      "ex": "Die Forschung macht große Fortschritte.",
+      "note": "From 'forschen' (to research). Germany invests heavily in scientific research."
+    },
+    {
+      "lvl": "B2",
+      "cat": "🔬 Wissenschaft",
+      "emoji": "🔭",
+      "de": "die Entwicklung",
+      "en": "development",
+      "art": "die (f)",
+      "plural": "die Entwicklungen",
+      "ph": "[ɛntˈvɪklʊŋ]",
+      "ex": "Diese Entwicklung war nicht vorhersehbar.",
+      "note": "'vorhersehbar' = predictable/foreseeable. Versatile word: tech, personal, societal development."
+    },
+    {
+      "lvl": "B2",
+      "cat": "🔬 Wissenschaft",
+      "emoji": "🧬",
+      "de": "die Wissenschaft",
+      "en": "science",
+      "art": "die (f)",
+      "plural": "die Wissenschaften",
+      "ph": "[ˈvɪsənʃaft]",
+      "ex": "Die Wissenschaft hat viele Fragen beantwortet.",
+      "note": "Wissen(schaft)=knowledge. 'der Wissenschaftler' = scientist."
+    },
+    {
+      "lvl": "B2",
+      "cat": "🗣️ Diskussion",
+      "emoji": "💬",
+      "de": "die Auseinandersetzung",
+      "en": "discussion/dispute",
+      "art": "die (f)",
+      "plural": "die Auseinandersetzungen",
+      "ph": "[aʊ̯sʔaɪ̯nandɐˈzɛtsʊŋ]",
+      "ex": "Es gab eine heftige Auseinandersetzung.",
+      "note": "Long compound word! 'heftig' = intense/fierce. Can mean serious debate or conflict."
+    },
+    {
+      "lvl": "B2",
+      "cat": "🗣️ Diskussion",
+      "emoji": "🎯",
+      "de": "die Konsequenz",
+      "en": "consequence",
+      "art": "die (f)",
+      "plural": "die Konsequenzen",
+      "ph": "[kɔnzeˈkvɛnts]",
+      "ex": "Das hat ernste Konsequenzen.",
+      "note": "'ernst' = serious. Also means 'consistency' in a behavioral sense."
     }
   ],
   "freq": [
@@ -1592,6 +3116,906 @@
       "ex": "Natürlich komme ich!",
       "note": "'natürlich' = of course. 'selbstverständlich' = goes without saying (B2).",
       "lvl": "B1"
+    },
+    {
+      "rank": 51,
+      "de": "Mensch",
+      "en": "human/person",
+      "pos": "Nomen",
+      "ex": "Jeder Mensch ist einzigartig.",
+      "note": "'der Mensch' (m), irregular: den/dem/des Menschen in all cases except nominative!",
+      "lvl": "A2"
+    },
+    {
+      "rank": 52,
+      "de": "Jahr",
+      "en": "year",
+      "pos": "Nomen",
+      "ex": "Dieses Jahr war besonders.",
+      "note": "'das Jahr' (n). 'Dieses' = this (neuter demonstrative).",
+      "lvl": "A2"
+    },
+    {
+      "rank": 53,
+      "de": "Zeit",
+      "en": "time",
+      "pos": "Nomen",
+      "ex": "Ich habe keine Zeit.",
+      "note": "'die Zeit' (f). 'keine Zeit haben' = to not have time (very common).",
+      "lvl": "A2"
+    },
+    {
+      "rank": 54,
+      "de": "Weg",
+      "en": "way/path",
+      "pos": "Nomen",
+      "ex": "Welchen Weg nehmen wir?",
+      "note": "'der Weg' (m). Also means 'route'. 'unterwegs' = on the way (adverb).",
+      "lvl": "A2"
+    },
+    {
+      "rank": 55,
+      "de": "Frage",
+      "en": "question",
+      "pos": "Nomen",
+      "ex": "Ich habe eine Frage.",
+      "note": "'die Frage' (f). 'fragen' = to ask (the verb form).",
+      "lvl": "A2"
+    },
+    {
+      "rank": 56,
+      "de": "Hand",
+      "en": "hand",
+      "pos": "Nomen",
+      "ex": "Gib mir deine Hand.",
+      "note": "'die Hand' (f). 'zur Hand haben' = to have on hand (idiom).",
+      "lvl": "A2"
+    },
+    {
+      "rank": 57,
+      "de": "Teil",
+      "en": "part",
+      "pos": "Nomen",
+      "ex": "Das ist nur ein Teil des Problems.",
+      "note": "'der Teil' (m), though sometimes 'das Teil' for a physical piece/component.",
+      "lvl": "A2"
+    },
+    {
+      "rank": 58,
+      "de": "Welt",
+      "en": "world",
+      "pos": "Nomen",
+      "ex": "Die Welt ist groß.",
+      "note": "'die Welt' (f). 'Weltkrieg' = world war. 'überall in der Welt' = all over the world.",
+      "lvl": "A2"
+    },
+    {
+      "rank": 59,
+      "de": "Leben",
+      "en": "life",
+      "pos": "Nomen",
+      "ex": "Das Leben ist schön.",
+      "note": "'das Leben' (n), from the verb 'leben' (to live). Nominalized infinitive.",
+      "lvl": "A2"
+    },
+    {
+      "rank": 60,
+      "de": "einfach",
+      "en": "simple/just",
+      "pos": "Adjektiv/Adverb",
+      "ex": "Das ist ganz einfach.",
+      "note": "Double use: 'simple' (adjective) or 'simply/just' (adverb): 'Ich will einfach schlafen.'",
+      "lvl": "A2"
+    },
+    {
+      "rank": 61,
+      "de": "genau",
+      "en": "exact(ly)",
+      "pos": "Adjektiv/Adverb",
+      "ex": "Das ist genau richtig.",
+      "note": "Very common filler/agreement word too: 'Genau!' = Exactly!",
+      "lvl": "A2"
+    },
+    {
+      "rank": 62,
+      "de": "wichtig",
+      "en": "important",
+      "pos": "Adjektiv",
+      "ex": "Das ist sehr wichtig für mich.",
+      "note": "Regular adjective. 'Wichtigkeit' = importance (noun form).",
+      "lvl": "A2"
+    },
+    {
+      "rank": 63,
+      "de": "möglich",
+      "en": "possible",
+      "pos": "Adjektiv",
+      "ex": "Ist das möglich?",
+      "note": "Opposite: 'unmöglich' = impossible. Simply add 'un-' prefix.",
+      "lvl": "A2"
+    },
+    {
+      "rank": 64,
+      "de": "klar",
+      "en": "clear",
+      "pos": "Adjektiv",
+      "ex": "Alles klar?",
+      "note": "'Alles klar?' = Everything clear/OK? Common casual check-in phrase.",
+      "lvl": "A2"
+    },
+    {
+      "rank": 65,
+      "de": "ganz",
+      "en": "whole/quite",
+      "pos": "Adjektiv/Adverb",
+      "ex": "Das ist ganz schön schwer.",
+      "note": "As adverb means 'quite/rather'. 'ganz schön' = quite/pretty (intensifier).",
+      "lvl": "A2"
+    },
+    {
+      "rank": 66,
+      "de": "lang",
+      "en": "long",
+      "pos": "Adjektiv",
+      "ex": "Der Film ist sehr lang.",
+      "note": "Comparative: länger. 'lange' (adverb) = for a long time: 'Ich warte lange.'",
+      "lvl": "A2"
+    },
+    {
+      "rank": 67,
+      "de": "kurz",
+      "en": "short",
+      "pos": "Adjektiv",
+      "ex": "Mach es kurz, bitte.",
+      "note": "Opposite of 'lang'. 'kurz vor' = shortly before (time expression).",
+      "lvl": "A2"
+    },
+    {
+      "rank": 68,
+      "de": "alt",
+      "en": "old",
+      "pos": "Adjektiv",
+      "ex": "Wie alt bist du?",
+      "note": "Used for age of people AND things. Comparative: älter (umlaut).",
+      "lvl": "A2"
+    },
+    {
+      "rank": 69,
+      "de": "neu",
+      "en": "new",
+      "pos": "Adjektiv",
+      "ex": "Ich habe ein neues Handy.",
+      "note": "'neu' takes adjective endings: 'ein neues Handy' (neuter accusative).",
+      "lvl": "A2"
+    },
+    {
+      "rank": 70,
+      "de": "jung",
+      "en": "young",
+      "pos": "Adjektiv",
+      "ex": "Sie ist noch sehr jung.",
+      "note": "Comparative: jünger (umlaut). Opposite of 'alt'.",
+      "lvl": "A2"
+    },
+    {
+      "rank": 71,
+      "de": "besser",
+      "en": "better",
+      "pos": "Adjektiv",
+      "ex": "Das ist viel besser.",
+      "note": "Comparative of 'gut' (good) — irregular, not 'guter'!",
+      "lvl": "A2"
+    },
+    {
+      "rank": 72,
+      "de": "schlecht",
+      "en": "bad",
+      "pos": "Adjektiv",
+      "ex": "Mir geht es schlecht.",
+      "note": "'Mir geht es schlecht' = I'm not feeling well. Common health expression.",
+      "lvl": "A2"
+    },
+    {
+      "rank": 73,
+      "de": "richtig",
+      "en": "correct/right",
+      "pos": "Adjektiv",
+      "ex": "Das ist die richtige Antwort.",
+      "note": "Opposite: 'falsch' = wrong. Also used as intensifier: 'richtig gut' = really good.",
+      "lvl": "A2"
+    },
+    {
+      "rank": 74,
+      "de": "falsch",
+      "en": "wrong/false",
+      "pos": "Adjektiv",
+      "ex": "Das ist leider falsch.",
+      "note": "Opposite of 'richtig'. 'leider' = unfortunately (common softener).",
+      "lvl": "A2"
+    },
+    {
+      "rank": 75,
+      "de": "frei",
+      "en": "free",
+      "pos": "Adjektiv",
+      "ex": "Ist dieser Platz frei?",
+      "note": "'Ist dieser Platz frei?' = Is this seat free? Essential public transport phrase.",
+      "lvl": "A2"
+    },
+    {
+      "rank": 76,
+      "de": "fertig",
+      "en": "finished/ready",
+      "pos": "Adjektiv",
+      "ex": "Bist du fertig?",
+      "note": "'fertig sein' = to be done/ready. Very commonly used in daily life.",
+      "lvl": "A2"
+    },
+    {
+      "rank": 77,
+      "de": "nötig",
+      "en": "necessary",
+      "pos": "Adjektiv",
+      "ex": "Das ist nicht nötig.",
+      "note": "'Das ist nicht nötig' = That's not necessary. Polite way to decline help.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 78,
+      "de": "bereit",
+      "en": "ready/prepared",
+      "pos": "Adjektiv",
+      "ex": "Ich bin bereit zu gehen.",
+      "note": "'bereit sein, zu...' = to be ready to... Common with infinitive clauses.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 79,
+      "de": "plötzlich",
+      "en": "suddenly",
+      "pos": "Adverb",
+      "ex": "Plötzlich fing es an zu regnen.",
+      "note": "'anfangen' = to begin (separable: fing...an, past tense).",
+      "lvl": "B1"
+    },
+    {
+      "rank": 80,
+      "de": "endlich",
+      "en": "finally",
+      "pos": "Adverb",
+      "ex": "Endlich bist du da!",
+      "note": "Expresses relief. 'Endlich!' alone is a common exclamation.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 81,
+      "de": "während",
+      "en": "during/while",
+      "pos": "Präposition/Konjunktion",
+      "ex": "Während des Urlaubs habe ich viel gelesen.",
+      "note": "As preposition takes GENITIVE: 'während DES Urlaubs'. As conjunction, sends verb to end.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 82,
+      "de": "bis",
+      "en": "until/by",
+      "pos": "Präposition",
+      "ex": "Ich bleibe bis Freitag.",
+      "note": "Takes accusative. 'Bis bald!' = See you soon! Very common farewell.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 83,
+      "de": "seit",
+      "en": "since/for",
+      "pos": "Präposition",
+      "ex": "Ich wohne seit drei Jahren hier.",
+      "note": "Always + dative. Used with present tense for ongoing duration — unlike English!",
+      "lvl": "B1"
+    },
+    {
+      "rank": 84,
+      "de": "ohne",
+      "en": "without",
+      "pos": "Präposition",
+      "ex": "Ich trinke Kaffee ohne Zucker.",
+      "note": "Always + accusative. 'ohne...zu' = without doing... (infinitive clause).",
+      "lvl": "B1"
+    },
+    {
+      "rank": 85,
+      "de": "gegen",
+      "en": "against/towards",
+      "pos": "Präposition",
+      "ex": "Wir spielen gegen die andere Mannschaft.",
+      "note": "Always + accusative. Also used for approximate time: 'gegen 5 Uhr' = around 5.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 86,
+      "de": "durch",
+      "en": "through/by",
+      "pos": "Präposition",
+      "ex": "Wir gehen durch den Park.",
+      "note": "Always + accusative. Also expresses cause: 'durch Zufall' = by chance.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 87,
+      "de": "über",
+      "en": "over/about",
+      "pos": "Präposition",
+      "ex": "Wir sprechen über das Wetter.",
+      "note": "Location: dative. Movement: accusative. 'über' + topic = 'about' (always accusative then).",
+      "lvl": "B1"
+    },
+    {
+      "rank": 88,
+      "de": "unter",
+      "en": "under/among",
+      "pos": "Präposition",
+      "ex": "Die Katze schläft unter dem Tisch.",
+      "note": "Location: dative. Movement: accusative. Also means 'among': 'unter Freunden'.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 89,
+      "de": "neben",
+      "en": "next to",
+      "pos": "Präposition",
+      "ex": "Der Stuhl steht neben dem Tisch.",
+      "note": "Location: dative. Movement: accusative. Two-way preposition like 'in/auf/an'.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 90,
+      "de": "zwischen",
+      "en": "between",
+      "pos": "Präposition",
+      "ex": "Berlin liegt zwischen Hamburg und München.",
+      "note": "Location: dative. Movement: accusative. 'zwischen...und' = between...and.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 91,
+      "de": "jeder",
+      "en": "every/each",
+      "pos": "Pronomen/Artikel",
+      "ex": "Jeder Mensch ist anders.",
+      "note": "Declines like 'der': jeder/jede/jedes depending on gender.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 92,
+      "de": "alle",
+      "en": "all/everyone",
+      "pos": "Pronomen",
+      "ex": "Alle sind eingeladen.",
+      "note": "Plural form. 'alles' (neuter singular) = everything — different word!",
+      "lvl": "B1"
+    },
+    {
+      "rank": 93,
+      "de": "manche",
+      "en": "some",
+      "pos": "Pronomen",
+      "ex": "Manche Leute mögen das nicht.",
+      "note": "Used for an indefinite subset. 'manche Leute' = some people.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 94,
+      "de": "einige",
+      "en": "some/several",
+      "pos": "Pronomen",
+      "ex": "Ich habe einige Fragen.",
+      "note": "Similar to 'manche' but slightly more neutral/factual in tone.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 95,
+      "de": "viele",
+      "en": "many",
+      "pos": "Pronomen",
+      "ex": "Viele Menschen reisen gern.",
+      "note": "Plural quantifier. Singular 'viel' = much: 'viel Geld' (uncountable).",
+      "lvl": "B1"
+    },
+    {
+      "rank": 96,
+      "de": "wenige",
+      "en": "few",
+      "pos": "Pronomen",
+      "ex": "Nur wenige wissen das.",
+      "note": "Opposite of 'viele'. 'ein wenig' (without -e) = a little bit — different meaning!",
+      "lvl": "B1"
+    },
+    {
+      "rank": 97,
+      "de": "nichts",
+      "en": "nothing",
+      "pos": "Pronomen",
+      "ex": "Ich habe nichts gesagt.",
+      "note": "'nichts' never changes form. 'Macht nichts!' = No worries/never mind!",
+      "lvl": "B1"
+    },
+    {
+      "rank": 98,
+      "de": "jemand",
+      "en": "someone",
+      "pos": "Pronomen",
+      "ex": "Hat jemand meinen Schlüssel gesehen?",
+      "note": "Opposite: 'niemand' = no one. Both decline slightly in dative: jemandem.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 99,
+      "de": "niemand",
+      "en": "no one",
+      "pos": "Pronomen",
+      "ex": "Niemand war zu Hause.",
+      "note": "Negation pronoun. Don't double-negate: 'Niemand war nicht da' is wrong!",
+      "lvl": "B1"
+    },
+    {
+      "rank": 100,
+      "de": "etwas",
+      "en": "something/a bit",
+      "pos": "Pronomen",
+      "ex": "Ich möchte etwas trinken.",
+      "note": "Also used as intensifier: 'etwas müde' = a bit tired.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 101,
+      "de": "brauchen",
+      "en": "to need",
+      "pos": "Verb",
+      "ex": "Ich brauche deine Hilfe.",
+      "note": "Regular weak verb. Without 'zu' before infinitive in negative: 'Du brauchst nicht zu kommen' (colloquially drops 'zu' too).",
+      "lvl": "A2"
+    },
+    {
+      "rank": 102,
+      "de": "finden",
+      "en": "to find/think (opinion)",
+      "pos": "Verb",
+      "ex": "Ich finde das interessant.",
+      "note": "Double meaning: 'to find' (locate) AND 'to find/think' (opinion): 'Ich finde, dass...'",
+      "lvl": "A2"
+    },
+    {
+      "rank": 103,
+      "de": "glauben",
+      "en": "to believe/think",
+      "pos": "Verb",
+      "ex": "Ich glaube, das stimmt.",
+      "note": "'Ich glaube' = I think/believe (very common hedge in conversation).",
+      "lvl": "B1"
+    },
+    {
+      "rank": 104,
+      "de": "bleiben",
+      "en": "to stay/remain",
+      "pos": "Verb",
+      "ex": "Wie lange bleibst du?",
+      "note": "Uses 'sein' in perfect tense (like movement verbs): 'Ich bin geblieben.'",
+      "lvl": "A2"
+    },
+    {
+      "rank": 105,
+      "de": "stehen",
+      "en": "to stand",
+      "pos": "Verb",
+      "ex": "Das Auto steht vor dem Haus.",
+      "note": "Also used for objects' position, not just people standing. Uses 'haben' typically.",
+      "lvl": "A2"
+    },
+    {
+      "rank": 106,
+      "de": "liegen",
+      "en": "to lie/be located",
+      "pos": "Verb",
+      "ex": "Das Buch liegt auf dem Tisch.",
+      "note": "For flat/horizontal position. 'Berlin liegt in Deutschland' = Berlin is located in Germany.",
+      "lvl": "A2"
+    },
+    {
+      "rank": 107,
+      "de": "setzen",
+      "en": "to set/put (sitting)",
+      "pos": "Verb",
+      "ex": "Setz dich, bitte!",
+      "note": "'sich setzen' (reflexive) = to sit down (the action). 'sitzen' = to BE sitting (state).",
+      "lvl": "B1"
+    },
+    {
+      "rank": 108,
+      "de": "bringen",
+      "en": "to bring",
+      "pos": "Verb",
+      "ex": "Kannst du mir das Buch bringen?",
+      "note": "Irregular: brachte (past), gebracht (participle). Strong verb pattern.",
+      "lvl": "A2"
+    },
+    {
+      "rank": 109,
+      "de": "nehmen",
+      "en": "to take",
+      "pos": "Verb",
+      "ex": "Ich nehme den Bus.",
+      "note": "Strong verb: du nimmst, er nimmt (vowel change e→i). Very common.",
+      "lvl": "A2"
+    },
+    {
+      "rank": 110,
+      "de": "halten",
+      "en": "to hold/stop",
+      "pos": "Verb",
+      "ex": "Der Bus hält hier.",
+      "note": "Vowel change: du hältst, er hält. Means both 'to hold' and 'to stop' (vehicles).",
+      "lvl": "B1"
+    },
+    {
+      "rank": 111,
+      "de": "folgen",
+      "en": "to follow",
+      "pos": "Verb",
+      "ex": "Folgen Sie mir, bitte.",
+      "note": "Takes DATIVE: 'mir folgen' = follow me. Uses 'sein' in perfect tense.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 112,
+      "de": "erreichen",
+      "en": "to reach/achieve",
+      "pos": "Verb",
+      "ex": "Wir haben unser Ziel erreicht.",
+      "note": "Inseparable 'er-' prefix. Used for both physical arrival and goal achievement.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 113,
+      "de": "verlieren",
+      "en": "to lose",
+      "pos": "Verb",
+      "ex": "Ich habe meinen Schlüssel verloren.",
+      "note": "Strong verb: verlor, verloren. Inseparable 'ver-' prefix.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 114,
+      "de": "gewinnen",
+      "en": "to win",
+      "pos": "Verb",
+      "ex": "Unsere Mannschaft hat gewonnen!",
+      "note": "Strong verb: gewann, gewonnen. Opposite of 'verlieren'.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 115,
+      "de": "bedeuten",
+      "en": "to mean",
+      "pos": "Verb",
+      "ex": "Was bedeutet dieses Wort?",
+      "note": "Essential learner phrase: 'Was bedeutet...?' = What does...mean?",
+      "lvl": "B1"
+    },
+    {
+      "rank": 116,
+      "de": "vergessen",
+      "en": "to forget",
+      "pos": "Verb",
+      "ex": "Ich habe meinen Schlüssel vergessen.",
+      "note": "Strong verb: vergaß, vergessen. Inseparable 'ver-' prefix, no 'ge-' added.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 117,
+      "de": "erinnern",
+      "en": "to remind/remember",
+      "pos": "Verb",
+      "ex": "Ich erinnere mich nicht.",
+      "note": "Reflexive for 'to remember': 'sich erinnern an' + accusative.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 118,
+      "de": "versuchen",
+      "en": "to try",
+      "pos": "Verb",
+      "ex": "Ich versuche es noch einmal.",
+      "note": "+ infinitive with 'zu': 'Ich versuche, früh aufzustehen.'",
+      "lvl": "B1"
+    },
+    {
+      "rank": 119,
+      "de": "schaffen",
+      "en": "to manage/create",
+      "pos": "Verb",
+      "ex": "Ich habe es geschafft!",
+      "note": "'Ich habe es geschafft!' = I made it/managed it! Very common celebratory phrase.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 120,
+      "de": "passieren",
+      "en": "to happen",
+      "pos": "Verb",
+      "ex": "Was ist passiert?",
+      "note": "Uses 'sein' in perfect (like movement/change verbs): 'ist passiert', not 'hat'.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 121,
+      "de": "interessieren",
+      "en": "to interest",
+      "pos": "Verb",
+      "ex": "Das interessiert mich sehr.",
+      "note": "Reflexive for personal interest: 'sich interessieren für' = to be interested in.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 122,
+      "de": "bemerken",
+      "en": "to notice",
+      "pos": "Verb",
+      "ex": "Hast du das bemerkt?",
+      "note": "Inseparable 'be-' prefix, regular weak verb otherwise.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 123,
+      "de": "vorschlagen",
+      "en": "to suggest",
+      "pos": "Verb",
+      "ex": "Ich schlage vor, dass wir gehen.",
+      "note": "Separable verb! 'schlage...vor'. Key for B1 conversations and meetings.",
+      "lvl": "B2"
+    },
+    {
+      "rank": 124,
+      "de": "entdecken",
+      "en": "to discover",
+      "pos": "Verb",
+      "ex": "Wir haben einen neuen Ort entdeckt.",
+      "note": "Inseparable 'ent-' prefix. 'der Ort' = place/location.",
+      "lvl": "B2"
+    },
+    {
+      "rank": 125,
+      "de": "vermeiden",
+      "en": "to avoid",
+      "pos": "Verb",
+      "ex": "Ich versuche, Stress zu vermeiden.",
+      "note": "Strong verb: vermied, vermieden. Inseparable 'ver-' prefix.",
+      "lvl": "B2"
+    },
+    {
+      "rank": 126,
+      "de": "dennoch",
+      "en": "nevertheless/yet",
+      "pos": "Konnektor",
+      "ex": "Es war schwer, dennoch hat sie es geschafft.",
+      "note": "Synonym of 'trotzdem', slightly more formal/written register. Causes inversion too.",
+      "lvl": "B2"
+    },
+    {
+      "rank": 127,
+      "de": "deshalb",
+      "en": "therefore",
+      "pos": "Konnektor",
+      "ex": "Ich bin müde, deshalb gehe ich schlafen.",
+      "note": "Causes verb-subject inversion: 'deshalb GEHE ich' (verb second position rule).",
+      "lvl": "B2"
+    },
+    {
+      "rank": 128,
+      "de": "außer",
+      "en": "except/besides",
+      "pos": "Präposition",
+      "ex": "Alle kommen außer mir.",
+      "note": "Takes dative: 'außer MIR' = except me. Also means 'apart from/besides'.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 129,
+      "de": "besonders",
+      "en": "especially",
+      "pos": "Adverb",
+      "ex": "Ich mag besonders den Sommer.",
+      "note": "Very versatile intensifier. 'nichts Besonderes' = nothing special (noun use).",
+      "lvl": "B2"
+    },
+    {
+      "rank": 130,
+      "de": "selten",
+      "en": "rarely",
+      "pos": "Adverb",
+      "ex": "Ich gehe selten ins Kino.",
+      "note": "Frequency adverb. Scale: nie→selten→manchmal→oft→immer (never→always).",
+      "lvl": "B1"
+    },
+    {
+      "rank": 131,
+      "de": "meistens",
+      "en": "mostly/usually",
+      "pos": "Adverb",
+      "ex": "Ich esse meistens zu Hause.",
+      "note": "From 'meist' (most). Very common in describing habits and routines.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 132,
+      "de": "ständig",
+      "en": "constantly",
+      "pos": "Adverb",
+      "ex": "Er beschwert sich ständig.",
+      "note": "Often has slightly negative connotation (constant complaint/repetition).",
+      "lvl": "B2"
+    },
+    {
+      "rank": 133,
+      "de": "unbedingt",
+      "en": "absolutely/definitely",
+      "pos": "Adverb",
+      "ex": "Du musst das unbedingt probieren!",
+      "note": "Strong intensifier, often used with 'müssen' for emphasis.",
+      "lvl": "B2"
+    },
+    {
+      "rank": 134,
+      "de": "kaum",
+      "en": "hardly/barely",
+      "pos": "Adverb",
+      "ex": "Ich habe kaum Zeit.",
+      "note": "Near-negative. 'kaum jemand' = hardly anyone.",
+      "lvl": "B2"
+    },
+    {
+      "rank": 135,
+      "de": "fast",
+      "en": "almost",
+      "pos": "Adverb",
+      "ex": "Ich bin fast fertig.",
+      "note": "Not related to English 'fast' (speed)! That's 'schnell' in German.",
+      "lvl": "B2"
+    },
+    {
+      "rank": 136,
+      "de": "ungefähr",
+      "en": "approximately",
+      "pos": "Adverb",
+      "ex": "Es dauert ungefähr eine Stunde.",
+      "note": "'dauern' = to take/last (time). Synonym: 'etwa'.",
+      "lvl": "B2"
+    },
+    {
+      "rank": 137,
+      "de": "tatsächlich",
+      "en": "actually/indeed",
+      "pos": "Adverb",
+      "ex": "Das ist tatsächlich wahr.",
+      "note": "Confirms surprising truth. 'wahr' = true. Stronger than 'eigentlich'.",
+      "lvl": "B2"
+    },
+    {
+      "rank": 138,
+      "de": "hoffentlich",
+      "en": "hopefully",
+      "pos": "Adverb",
+      "ex": "Hoffentlich kommt er pünktlich.",
+      "note": "From 'hoffen' (to hope) + -lich. Sentence-initial adverb, very common.",
+      "lvl": "B2"
+    },
+    {
+      "rank": 139,
+      "de": "leider",
+      "en": "unfortunately",
+      "pos": "Adverb",
+      "ex": "Leider kann ich nicht kommen.",
+      "note": "Common softener for bad news or declining invitations politely.",
+      "lvl": "B2"
+    },
+    {
+      "rank": 140,
+      "de": "gerade",
+      "en": "right now/just",
+      "pos": "Adverb",
+      "ex": "Ich esse gerade.",
+      "note": "Indicates an action in progress right now. Also means 'straight' (direction).",
+      "lvl": "B1"
+    },
+    {
+      "rank": 141,
+      "de": "sofort",
+      "en": "immediately",
+      "pos": "Adverb",
+      "ex": "Komm sofort her!",
+      "note": "Strong urgency. 'so' + 'fort' (away/forth) historically.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 142,
+      "de": "später",
+      "en": "later",
+      "pos": "Adverb",
+      "ex": "Wir sehen uns später.",
+      "note": "Comparative of 'spät' (late). 'Bis später!' = See you later!",
+      "lvl": "A2"
+    },
+    {
+      "rank": 143,
+      "de": "früher",
+      "en": "earlier/in the past",
+      "pos": "Adverb",
+      "ex": "Früher war alles anders.",
+      "note": "Comparative of 'früh' (early), but also means 'in the past' generally.",
+      "lvl": "A2"
+    },
+    {
+      "rank": 144,
+      "de": "überall",
+      "en": "everywhere",
+      "pos": "Adverb",
+      "ex": "Man findet sie überall.",
+      "note": "über+all. Opposite: 'nirgends/nirgendwo' = nowhere.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 145,
+      "de": "nirgendwo",
+      "en": "nowhere",
+      "pos": "Adverb",
+      "ex": "Ich kann ihn nirgendwo finden.",
+      "note": "Opposite of 'überall'. Less common than 'nirgends' but equally correct.",
+      "lvl": "B1"
+    },
+    {
+      "rank": 146,
+      "de": "draußen",
+      "en": "outside",
+      "pos": "Adverb",
+      "ex": "Die Kinder spielen draußen.",
+      "note": "Opposite: 'drinnen' = inside. Common in weather/activity descriptions.",
+      "lvl": "A2"
+    },
+    {
+      "rank": 147,
+      "de": "drinnen",
+      "en": "inside",
+      "pos": "Adverb",
+      "ex": "Bei Regen bleiben wir drinnen.",
+      "note": "Opposite of 'draußen'. 'bei Regen' = in case of rain (common weather phrase).",
+      "lvl": "A2"
+    },
+    {
+      "rank": 148,
+      "de": "oben",
+      "en": "up/above",
+      "pos": "Adverb",
+      "ex": "Das Buch liegt oben auf dem Schrank.",
+      "note": "Opposite: 'unten' = down/below. Static location, not direction.",
+      "lvl": "A2"
+    },
+    {
+      "rank": 149,
+      "de": "unten",
+      "en": "down/below",
+      "pos": "Adverb",
+      "ex": "Die Schuhe stehen unten.",
+      "note": "Opposite of 'oben'. For direction use 'nach oben/unten' instead.",
+      "lvl": "A2"
+    },
+    {
+      "rank": 150,
+      "de": "nebenan",
+      "en": "next door",
+      "pos": "Adverb",
+      "ex": "Meine Nachbarn wohnen nebenan.",
+      "note": "neben+an. 'der Nachbar' = neighbor (related word).",
+      "lvl": "B1"
     }
   ],
   "chunks": [
@@ -1774,6 +4198,276 @@
       "note": "Simple but essential. 'Das klingt gut!' = That sounds good! Also common.",
       "cat": "💡 Vorschläge",
       "lvl": "A1"
+    },
+    {
+      "situation": "Ask for the WiFi password",
+      "de": "Wie ist das WLAN-Passwort?",
+      "en": "What's the WiFi password?",
+      "formal": "Könnten Sie mir das WLAN-Passwort geben?",
+      "note": "'WLAN' is pronounced 'VEH-lahn' in German, not 'wi-fi'!",
+      "cat": "💻 Technologie",
+      "lvl": "A1"
+    },
+    {
+      "situation": "Introduce yourself at work",
+      "de": "Ich bin der/die Neue hier.",
+      "en": "I'm the new person here.",
+      "formal": "Mein Name ist... Ich bin seit heute hier.",
+      "note": "'der/die Neue' depending on your gender. Very natural first-day phrase.",
+      "cat": "💼 Arbeit",
+      "lvl": "A2"
+    },
+    {
+      "situation": "Ask someone's profession",
+      "de": "Was machst du beruflich?",
+      "en": "What do you do for work?",
+      "formal": "Was sind Sie beruflich tätig?",
+      "note": "'beruflich' = professionally. Common small-talk question among adults.",
+      "cat": "💼 Arbeit",
+      "lvl": "A2"
+    },
+    {
+      "situation": "Decline an invitation politely",
+      "de": "Das klingt toll, aber ich kann leider nicht.",
+      "en": "That sounds great, but unfortunately I can't.",
+      "formal": "Das ist eine schöne Einladung, ich muss aber leider absagen.",
+      "note": "'absagen' = to decline/cancel. Softening with 'leider' is very German politeness.",
+      "cat": "🙅 Ablehnung",
+      "lvl": "A2"
+    },
+    {
+      "situation": "Accept an invitation enthusiastically",
+      "de": "Klar, ich komme gerne!",
+      "en": "Sure, I'd love to come!",
+      "formal": "Gerne, ich nehme die Einladung an.",
+      "note": "'gerne' alone means 'gladly/sure' — very flexible everyday word.",
+      "cat": "🙆 Zustimmung",
+      "lvl": "A1"
+    },
+    {
+      "situation": "Ask for clarification on price",
+      "de": "Ist das der Endpreis?",
+      "en": "Is that the final price?",
+      "formal": "Ist in diesem Preis bereits alles enthalten?",
+      "note": "'enthalten' = included. Useful when checking for hidden fees.",
+      "cat": "🛍️ Einkaufen",
+      "lvl": "A2"
+    },
+    {
+      "situation": "Say you're running late",
+      "de": "Ich komme ein bisschen später.",
+      "en": "I'll be a bit late.",
+      "formal": "Ich werde mich um einige Minuten verspäten.",
+      "note": "'sich verspäten' = to be late (reflexive verb), more formal register.",
+      "cat": "⏰ Zeit",
+      "lvl": "A2"
+    },
+    {
+      "situation": "Ask if seat is taken",
+      "de": "Ist hier noch frei?",
+      "en": "Is this seat free?",
+      "formal": "Ist dieser Platz noch frei?",
+      "note": "Extremely common in cafés, trains, and shared tables in Germany.",
+      "cat": "🍴 Restaurant",
+      "lvl": "A1"
+    },
+    {
+      "situation": "Order without specific preference",
+      "de": "Was würdest du empfehlen?",
+      "en": "What would you recommend?",
+      "formal": "Was können Sie mir empfehlen?",
+      "note": "'empfehlen' = to recommend. Great way to let a waiter or local guide you.",
+      "cat": "🍴 Restaurant",
+      "lvl": "A2"
+    },
+    {
+      "situation": "Say food is delicious",
+      "de": "Das schmeckt richtig gut!",
+      "en": "This tastes really good!",
+      "formal": "Das schmeckt ausgezeichnet.",
+      "note": "'richtig' here means 'really' (intensifier), not 'correctly'.",
+      "cat": "🍴 Restaurant",
+      "lvl": "A1"
+    },
+    {
+      "situation": "Ask for separate bills",
+      "de": "Können wir getrennt zahlen?",
+      "en": "Can we pay separately?",
+      "formal": "Wäre es möglich, getrennt zu bezahlen?",
+      "note": "'getrennt' = separately. Very useful phrase when splitting a restaurant bill.",
+      "cat": "🍴 Restaurant",
+      "lvl": "A2"
+    },
+    {
+      "situation": "Express you're full",
+      "de": "Ich bin satt, danke.",
+      "en": "I'm full, thanks.",
+      "formal": "Ich bin bereits satt, vielen Dank.",
+      "note": "'satt' specifically means full from food — different from 'voll' (full, general)!",
+      "cat": "🍴 Restaurant",
+      "lvl": "A1"
+    },
+    {
+      "situation": "Ask how to get somewhere by public transport",
+      "de": "Welche Linie fährt zum Hauptbahnhof?",
+      "en": "Which line goes to the main station?",
+      "formal": "Könnten Sie mir sagen, welche Linie zum Hauptbahnhof fährt?",
+      "note": "'die Linie' = transit line. 'der Hauptbahnhof' = main train station.",
+      "cat": "🗺️ Orientierung",
+      "lvl": "A2"
+    },
+    {
+      "situation": "Ask if a ticket is valid",
+      "de": "Gilt dieses Ticket auch für den Bus?",
+      "en": "Is this ticket also valid for the bus?",
+      "formal": "Ist dieses Ticket für alle Verkehrsmittel gültig?",
+      "note": "'gelten' = to be valid. 'gültig' = valid (adjective form).",
+      "cat": "🗺️ Orientierung",
+      "lvl": "B1"
+    },
+    {
+      "situation": "Say you're lost",
+      "de": "Ich glaube, ich habe mich verlaufen.",
+      "en": "I think I'm lost.",
+      "formal": "Entschuldigung, ich finde meinen Weg nicht mehr.",
+      "note": "'sich verlaufen' = to lose one's way (reflexive, on foot specifically).",
+      "cat": "🗺️ Orientierung",
+      "lvl": "B1"
+    },
+    {
+      "situation": "Express enthusiasm about plans",
+      "de": "Ich freue mich schon darauf!",
+      "en": "I'm already looking forward to it!",
+      "formal": "Ich freue mich sehr auf dieses Ereignis.",
+      "note": "'sich freuen auf' + accusative = to look forward to. Very common positive phrase.",
+      "cat": "😊 Gefühle",
+      "lvl": "A2"
+    },
+    {
+      "situation": "Express you're nervous",
+      "de": "Ich bin ein bisschen nervös.",
+      "en": "I'm a little nervous.",
+      "formal": "Ich muss zugeben, dass ich etwas angespannt bin.",
+      "note": "'zugeben' = to admit. 'angespannt' = tense/strained (more formal word for nervous).",
+      "cat": "😊 Gefühle",
+      "lvl": "A2"
+    },
+    {
+      "situation": "Comfort someone who's upset",
+      "de": "Das wird schon wieder!",
+      "en": "It'll be okay!",
+      "formal": "Ich bin sicher, die Situation wird sich verbessern.",
+      "note": "Extremely common, warm German comfort phrase — almost untranslatable literally.",
+      "cat": "😊 Gefühle",
+      "lvl": "B1"
+    },
+    {
+      "situation": "Express that you're proud",
+      "de": "Ich bin richtig stolz auf dich!",
+      "en": "I'm really proud of you!",
+      "formal": "Ich bin sehr stolz auf deine Leistung.",
+      "note": "'stolz auf' + accusative = proud of. 'die Leistung' = achievement.",
+      "cat": "😊 Gefühle",
+      "lvl": "A2"
+    },
+    {
+      "situation": "Ask for a doctor recommendation",
+      "de": "Kennst du einen guten Arzt hier?",
+      "en": "Do you know a good doctor here?",
+      "formal": "Könnten Sie mir einen Arzt empfehlen?",
+      "note": "'kennen' (know a person/place) vs 'wissen' (know facts) — important distinction.",
+      "cat": "🏥 Gesundheit",
+      "lvl": "A2"
+    },
+    {
+      "situation": "Describe mild symptoms",
+      "de": "Mir ist ein bisschen schwindelig.",
+      "en": "I feel a little dizzy.",
+      "formal": "Mir ist etwas schwindelig, ich sollte mich hinsetzen.",
+      "note": "'Mir ist...' construction (dative) is used for many physical sensations in German.",
+      "cat": "🏥 Gesundheit",
+      "lvl": "B1"
+    },
+    {
+      "situation": "Ask if a pharmacy is open",
+      "de": "Hat die Apotheke noch offen?",
+      "en": "Is the pharmacy still open?",
+      "formal": "Wissen Sie, ob die Apotheke noch geöffnet hat?",
+      "note": "'die Apotheke' = pharmacy. In Germany, pharmacies are marked with a red 'A' symbol.",
+      "cat": "🏥 Gesundheit",
+      "lvl": "A2"
+    },
+    {
+      "situation": "Ask to borrow something",
+      "de": "Kann ich mir das kurz ausleihen?",
+      "en": "Can I borrow this for a moment?",
+      "formal": "Wäre es möglich, mir das kurz auszuleihen?",
+      "note": "'ausleihen' = to borrow/lend (reflexive 'sich' for borrowing TO yourself).",
+      "cat": "🤝 Angebote",
+      "lvl": "A2"
+    },
+    {
+      "situation": "Offer to pay for something",
+      "de": "Lass mich das bezahlen, ich lade dich ein.",
+      "en": "Let me pay for this, it's my treat.",
+      "formal": "Erlauben Sie mir, das zu übernehmen.",
+      "note": "'einladen' here means 'to treat someone' (pay for them), not just 'to invite'.",
+      "cat": "🤝 Angebote",
+      "lvl": "B1"
+    },
+    {
+      "situation": "Insist politely on paying your share",
+      "de": "Nein, lass mich meinen Teil bezahlen.",
+      "en": "No, let me pay my share.",
+      "formal": "Ich bestehe darauf, meinen Anteil zu übernehmen.",
+      "note": "'bestehen auf' + dative = to insist on. Splitting bills is very common in Germany.",
+      "cat": "🤝 Angebote",
+      "lvl": "B1"
+    },
+    {
+      "situation": "Ask someone to wait a moment",
+      "de": "Einen Moment, bitte!",
+      "en": "One moment, please!",
+      "formal": "Einen Augenblick, bitte.",
+      "note": "'der Augenblick' literally means 'eye-glance' — a poetic word for 'moment'.",
+      "cat": "💬 Verstehen",
+      "lvl": "A1"
+    },
+    {
+      "situation": "Check if someone understood you",
+      "de": "Macht das Sinn für dich?",
+      "en": "Does that make sense to you?",
+      "formal": "Ist das für Sie verständlich?",
+      "note": "'Sinn machen' = to make sense (somewhat informal, debated by purists but very common).",
+      "cat": "💬 Verstehen",
+      "lvl": "B1"
+    },
+    {
+      "situation": "Politely interrupt someone",
+      "de": "Darf ich kurz etwas sagen?",
+      "en": "May I say something quickly?",
+      "formal": "Entschuldigen Sie die Unterbrechung, darf ich kurz etwas hinzufügen?",
+      "note": "'die Unterbrechung' = interruption. Polite way to enter a conversation.",
+      "cat": "💬 Verstehen",
+      "lvl": "B1"
+    },
+    {
+      "situation": "Express strong agreement in debate",
+      "de": "Da stimme ich dir voll und ganz zu!",
+      "en": "I completely agree with you on that!",
+      "formal": "Ich teile diese Ansicht vollkommen.",
+      "note": "'zustimmen' takes dative: 'dir zustimmen'. 'voll und ganz' = completely (idiom).",
+      "cat": "💭 Meinungen",
+      "lvl": "B1"
+    },
+    {
+      "situation": "Concede a point in an argument",
+      "de": "Da hast du wahrscheinlich recht.",
+      "en": "You're probably right about that.",
+      "formal": "Ich muss zugeben, dass Sie damit recht haben könnten.",
+      "note": "'recht haben' = to be right. Softened with 'wahrscheinlich' (probably) to ease disagreement.",
+      "cat": "💭 Meinungen",
+      "lvl": "B1"
     }
   ],
   "verbs": [
@@ -2176,6 +4870,406 @@
       "emoji": "✅",
       "cat": "🧠 Denken",
       "lvl": "B1"
+    },
+    {
+      "de": "kaufen",
+      "en": "to buy",
+      "type": "schwaches Verb",
+      "pp": "gekauft (hat)",
+      "ph": "[ˈkaʊ̯fən]",
+      "conj": {
+        "ich": "kaufe",
+        "du": "kaufst",
+        "er": "kauft",
+        "wir": "kaufen",
+        "ihr": "kauft",
+        "sie": "kaufen"
+      },
+      "ex": "Ich kaufe frisches Brot.",
+      "note": "Regular weak verb, very common in shopping contexts. 'verkaufen' = to sell (related word).",
+      "emoji": "🛒",
+      "cat": "🛍️ Einkaufen",
+      "lvl": "A1"
+    },
+    {
+      "de": "bezahlen",
+      "en": "to pay",
+      "type": "schwaches Verb",
+      "pp": "bezahlt (hat)",
+      "ph": "[bəˈtsaːlən]",
+      "conj": {
+        "ich": "bezahle",
+        "du": "bezahlst",
+        "er": "bezahlt",
+        "wir": "bezahlen",
+        "ihr": "bezahlt",
+        "sie": "bezahlen"
+      },
+      "ex": "Ich bezahle mit Karte.",
+      "note": "Inseparable 'be-' prefix, no extra 'ge-' in participle. Different from plain 'zahlen' (slightly more general).",
+      "emoji": "💳",
+      "cat": "🛍️ Einkaufen",
+      "lvl": "A1"
+    },
+    {
+      "de": "öffnen",
+      "en": "to open",
+      "type": "schwaches Verb",
+      "pp": "geöffnet (hat)",
+      "ph": "[ˈœfnən]",
+      "conj": {
+        "ich": "öffne",
+        "du": "öffnest",
+        "er": "öffnet",
+        "wir": "öffnen",
+        "ihr": "öffnet",
+        "sie": "öffnen"
+      },
+      "ex": "Kannst du das Fenster öffnen?",
+      "note": "Stems ending in -n often add extra -e: du öffnest (not öffnst).",
+      "emoji": "🚪",
+      "cat": "🌙 Alltag",
+      "lvl": "A1"
+    },
+    {
+      "de": "schließen",
+      "en": "to close",
+      "type": "starkes Verb",
+      "pp": "geschlossen (hat)",
+      "ph": "[ˈʃliːsən]",
+      "conj": {
+        "ich": "schließe",
+        "du": "schließt",
+        "er": "schließt",
+        "wir": "schließen",
+        "ihr": "schließt",
+        "sie": "schließen"
+      },
+      "ex": "Bitte schließ die Tür.",
+      "note": "Strong verb: schloss, geschlossen. Opposite of 'öffnen'.",
+      "emoji": "🔒",
+      "cat": "🌙 Alltag",
+      "lvl": "A1"
+    },
+    {
+      "de": "putzen",
+      "en": "to clean",
+      "type": "schwaches Verb",
+      "pp": "geputzt (hat)",
+      "ph": "[ˈpʊtsən]",
+      "conj": {
+        "ich": "putze",
+        "du": "putzt",
+        "er": "putzt",
+        "wir": "putzen",
+        "ihr": "putzt",
+        "sie": "putzen"
+      },
+      "ex": "Ich putze jeden Samstag die Wohnung.",
+      "note": "Regular weak verb. 'die Zähne putzen' = to brush teeth (literally 'clean teeth').",
+      "emoji": "🧹",
+      "cat": "🌙 Alltag",
+      "lvl": "A1"
+    },
+    {
+      "de": "waschen",
+      "en": "to wash",
+      "type": "starkes Verb",
+      "pp": "gewaschen (hat)",
+      "ph": "[ˈvaʃən]",
+      "conj": {
+        "ich": "wasche",
+        "du": "wäschst",
+        "er": "wäscht",
+        "wir": "waschen",
+        "ihr": "wascht",
+        "sie": "waschen"
+      },
+      "ex": "Ich wasche meine Hände.",
+      "note": "Umlaut vowel change: du wäschst, er wäscht. 'sich waschen' = reflexive, to wash oneself.",
+      "emoji": "🧼",
+      "cat": "🌙 Alltag",
+      "lvl": "A1"
+    },
+    {
+      "de": "aufstehen",
+      "en": "to get up",
+      "type": "starkes Verb (trennbar)",
+      "pp": "aufgestanden (ist)",
+      "ph": "[ˈaʊ̯fʃteːən]",
+      "conj": {
+        "ich": "stehe...auf",
+        "du": "stehst...auf",
+        "er": "steht...auf",
+        "wir": "stehen...auf",
+        "ihr": "steht...auf",
+        "sie": "stehen...auf"
+      },
+      "ex": "Ich stehe um sieben Uhr auf.",
+      "note": "SEPARABLE verb! 'auf' goes to the end of the sentence. Uses 'sein' in perfect (movement-related).",
+      "emoji": "⏰",
+      "cat": "🌙 Alltag",
+      "lvl": "A1"
+    },
+    {
+      "de": "anziehen",
+      "en": "to put on (clothes)",
+      "type": "starkes Verb (trennbar)",
+      "pp": "angezogen (hat)",
+      "ph": "[ˈantsiːən]",
+      "conj": {
+        "ich": "ziehe...an",
+        "du": "ziehst...an",
+        "er": "zieht...an",
+        "wir": "ziehen...an",
+        "ihr": "zieht...an",
+        "sie": "ziehen...an"
+      },
+      "ex": "Ich ziehe meine Jacke an.",
+      "note": "Separable verb. 'sich anziehen' (reflexive) = to get dressed. 'ausziehen' = to take off (opposite).",
+      "emoji": "🧥",
+      "cat": "👗 Kleidung",
+      "lvl": "A1"
+    },
+    {
+      "de": "anrufen",
+      "en": "to call (phone)",
+      "type": "starkes Verb (trennbar)",
+      "pp": "angerufen (hat)",
+      "ph": "[ˈanʁuːfən]",
+      "conj": {
+        "ich": "rufe...an",
+        "du": "rufst...an",
+        "er": "ruft...an",
+        "wir": "rufen...an",
+        "ihr": "ruft...an",
+        "sie": "rufen...an"
+      },
+      "ex": "Ich rufe dich später an.",
+      "note": "Separable verb. 'an' goes to end: 'Ich rufe dich AN' not 'Ich anrufe dich'.",
+      "emoji": "📞",
+      "cat": "💬 Kommunikation",
+      "lvl": "A2"
+    },
+    {
+      "de": "einkaufen",
+      "en": "to go shopping",
+      "type": "schwaches Verb (trennbar)",
+      "pp": "eingekauft (hat)",
+      "ph": "[ˈaɪ̯nkaʊ̯fən]",
+      "ex": "Wir gehen heute einkaufen.",
+      "note": "Separable verb, often used with 'gehen': 'einkaufen gehen' = to go shopping.",
+      "conj": {
+        "ich": "kaufe...ein",
+        "du": "kaufst...ein",
+        "er": "kauft...ein",
+        "wir": "kaufen...ein",
+        "ihr": "kauft...ein",
+        "sie": "kaufen...ein"
+      },
+      "emoji": "🛍️",
+      "cat": "🛍️ Einkaufen",
+      "lvl": "A1"
+    },
+    {
+      "de": "fernsehen",
+      "en": "to watch TV",
+      "type": "starkes Verb (trennbar)",
+      "pp": "ferngesehen (hat)",
+      "ph": "[ˈfɛʁnzeːən]",
+      "conj": {
+        "ich": "sehe...fern",
+        "du": "siehst...fern",
+        "er": "sieht...fern",
+        "wir": "sehen...fern",
+        "ihr": "seht...fern",
+        "sie": "sehen...fern"
+      },
+      "ex": "Abends sehe ich gern fern.",
+      "note": "fern=far + sehen=to see. Separable. 'der Fernseher' = the TV (noun form).",
+      "emoji": "📺",
+      "cat": "🎯 Freizeit",
+      "lvl": "A2"
+    },
+    {
+      "de": "aufräumen",
+      "en": "to tidy up",
+      "type": "schwaches Verb (trennbar)",
+      "pp": "aufgeräumt (hat)",
+      "ph": "[ˈaʊ̯fʁɔɪ̯mən]",
+      "conj": {
+        "ich": "räume...auf",
+        "du": "räumst...auf",
+        "er": "räumt...auf",
+        "wir": "räumen...auf",
+        "ihr": "räumt...auf",
+        "sie": "räumen...auf"
+      },
+      "ex": "Ich räume mein Zimmer auf.",
+      "note": "Separable. Very common household chore verb, often said to children!",
+      "emoji": "🧹",
+      "cat": "🌙 Alltag",
+      "lvl": "A2"
+    },
+    {
+      "de": "sich freuen",
+      "en": "to be happy/glad",
+      "type": "schwaches Verb (reflexiv)",
+      "pp": "sich gefreut (hat)",
+      "ph": "[zɪç ˈfʁɔɪ̯ən]",
+      "conj": {
+        "ich": "freue mich",
+        "du": "freust dich",
+        "er": "freut sich",
+        "wir": "freuen uns",
+        "ihr": "freut euch",
+        "sie": "freuen sich"
+      },
+      "ex": "Ich freue mich auf das Wochenende.",
+      "note": "Reflexive verb — pronoun changes with subject! 'sich freuen auf' + accusative = look forward to.",
+      "emoji": "😊",
+      "cat": "😊 Gefühle",
+      "lvl": "A2"
+    },
+    {
+      "de": "sich beeilen",
+      "en": "to hurry",
+      "type": "schwaches Verb (reflexiv)",
+      "pp": "sich beeilt (hat)",
+      "ph": "[zɪç bəˈʔaɪ̯lən]",
+      "conj": {
+        "ich": "beeile mich",
+        "du": "beeilst dich",
+        "er": "beeilt sich",
+        "wir": "beeilen uns",
+        "ihr": "beeilt euch",
+        "sie": "beeilen sich"
+      },
+      "ex": "Beeil dich, wir sind spät!",
+      "note": "Reflexive verb. 'Beeil dich!' = Hurry up! (imperative, very commonly heard).",
+      "emoji": "🏃",
+      "cat": "⏰ Zeit",
+      "lvl": "A2"
+    },
+    {
+      "de": "sich erholen",
+      "en": "to recover/relax",
+      "type": "schwaches Verb (reflexiv)",
+      "pp": "sich erholt (hat)",
+      "ph": "[zɪç ɛɐ̯ˈhoːlən]",
+      "conj": {
+        "ich": "erhole mich",
+        "du": "erholst dich",
+        "er": "erholt sich",
+        "wir": "erholen uns",
+        "ihr": "erholt euch",
+        "sie": "erholen sich"
+      },
+      "ex": "Ich erhole mich gut im Urlaub.",
+      "note": "Reflexive. Used both for recovering from illness AND relaxing/recharging generally.",
+      "emoji": "🏖️",
+      "cat": "🏥 Gesundheit",
+      "lvl": "B1"
+    },
+    {
+      "de": "vorbereiten",
+      "en": "to prepare",
+      "type": "schwaches Verb (trennbar)",
+      "pp": "vorbereitet (hat)",
+      "ph": "[ˈfoːɐ̯bəʁaɪ̯tən]",
+      "conj": {
+        "ich": "bereite...vor",
+        "du": "bereitest...vor",
+        "er": "bereitet...vor",
+        "wir": "bereiten...vor",
+        "ihr": "bereitet...vor",
+        "sie": "bereiten...vor"
+      },
+      "ex": "Ich bereite mich auf die Prüfung vor.",
+      "note": "Separable + often reflexive: 'sich vorbereiten auf' = to prepare for (something).",
+      "emoji": "📋",
+      "cat": "💼 Arbeit",
+      "lvl": "B1"
+    },
+    {
+      "de": "sich beschweren",
+      "en": "to complain",
+      "type": "schwaches Verb (reflexiv)",
+      "pp": "sich beschwert (hat)",
+      "ph": "[zɪç bəˈʃveːʁən]",
+      "conj": {
+        "ich": "beschwere mich",
+        "du": "beschwerst dich",
+        "er": "beschwert sich",
+        "wir": "beschweren uns",
+        "ihr": "beschwert euch",
+        "sie": "beschweren sich"
+      },
+      "ex": "Ich möchte mich beschweren.",
+      "note": "'sich beschweren über' + accusative = to complain about. Useful in customer service contexts.",
+      "emoji": "😠",
+      "cat": "💭 Meinungen",
+      "lvl": "B1"
+    },
+    {
+      "de": "sich verabschieden",
+      "en": "to say goodbye",
+      "type": "schwaches Verb (reflexiv)",
+      "pp": "sich verabschiedet (hat)",
+      "ph": "[zɪç fɛɐ̯ˈʔapʃiːdən]",
+      "conj": {
+        "ich": "verabschiede mich",
+        "du": "verabschiedest dich",
+        "er": "verabschiedet sich",
+        "wir": "verabschieden uns",
+        "ihr": "verabschiedet euch",
+        "sie": "verabschieden sich"
+      },
+      "ex": "Wir verabschieden uns von unseren Gästen.",
+      "note": "Reflexive. 'der Abschied' = farewell/departure (related noun).",
+      "emoji": "👋",
+      "cat": "👋 Begrüßung",
+      "lvl": "B1"
+    },
+    {
+      "de": "untersuchen",
+      "en": "to examine/investigate",
+      "type": "schwaches Verb",
+      "pp": "untersucht (hat)",
+      "ph": "[ʊntɐˈzuːxən]",
+      "conj": {
+        "ich": "untersuche",
+        "du": "untersuchst",
+        "er": "untersucht",
+        "wir": "untersuchen",
+        "ihr": "untersucht",
+        "sie": "untersuchen"
+      },
+      "ex": "Der Arzt untersucht den Patienten.",
+      "note": "Inseparable 'unter-' prefix, no extra 'ge-' in participle. Used by doctors and investigators alike.",
+      "emoji": "🔍",
+      "cat": "🏥 Gesundheit",
+      "lvl": "B1"
+    },
+    {
+      "de": "sich verändern",
+      "en": "to change (oneself)",
+      "type": "schwaches Verb (reflexiv)",
+      "pp": "sich verändert (hat)",
+      "ph": "[zɪç fɛɐ̯ˈʔɛndɐn]",
+      "conj": {
+        "ich": "verändere mich",
+        "du": "veränderst dich",
+        "er": "verändert sich",
+        "wir": "verändern uns",
+        "ihr": "verändert euch",
+        "sie": "verändern sich"
+      },
+      "ex": "Die Stadt hat sich stark verändert.",
+      "note": "Reflexive when subject changes itself. Non-reflexive 'verändern' = to change something else.",
+      "emoji": "🔄",
+      "cat": "💭 Konzepte",
+      "lvl": "B1"
     }
   ],
   "fillers": [
@@ -2313,6 +5407,141 @@
       "note": "Abbreviated 'd.h.' in writing. Used to clarify or conclude.",
       "cat": "🔗 Paraphrasieren",
       "lvl": "A2"
+    },
+    {
+      "de": "naja",
+      "en": "well... (hesitation)",
+      "type": "Partikel",
+      "ex": "Naja, das stimmt nicht ganz.",
+      "note": "Common verbal hesitation/softener, similar to English 'well...'. Very colloquial.",
+      "cat": "🔤 Füllwörter",
+      "lvl": "A2"
+    },
+    {
+      "de": "quasi",
+      "en": "basically/sort of",
+      "type": "Partikel",
+      "ex": "Das ist quasi das Gleiche.",
+      "note": "Borrowed from Latin, used very casually in spoken German to mean 'basically/practically'.",
+      "cat": "🔤 Füllwörter",
+      "lvl": "B1"
+    },
+    {
+      "de": "sowieso",
+      "en": "anyway/in any case",
+      "type": "Adverb",
+      "ex": "Ich komme sowieso später.",
+      "note": "Used to add a reason that holds regardless of other factors — very common.",
+      "cat": "🔤 Füllwörter",
+      "lvl": "A2"
+    },
+    {
+      "de": "jedenfalls",
+      "en": "anyway/in any case",
+      "type": "Adverb",
+      "ex": "Jedenfalls, das ist meine Meinung.",
+      "note": "Similar to 'sowieso' but often used to return to a main point after a digression.",
+      "cat": "🔤 Füllwörter",
+      "lvl": "B1"
+    },
+    {
+      "de": "wahrscheinlich",
+      "en": "probably",
+      "type": "Adverb",
+      "ex": "Es wird wahrscheinlich regnen.",
+      "note": "From 'wahr' (true) + 'scheinlich'. Common hedge word for uncertain predictions.",
+      "cat": "🔗 Konnektoren",
+      "lvl": "A2"
+    },
+    {
+      "de": "andererseits",
+      "en": "on the other hand",
+      "type": "Konnektor",
+      "ex": "Einerseits ist es teuer, andererseits ist es gut.",
+      "note": "Pairs with 'einerseits' (on the one hand) for balanced argumentation.",
+      "cat": "🔗 Konnektoren",
+      "lvl": "B1"
+    },
+    {
+      "de": "einerseits",
+      "en": "on the one hand",
+      "type": "Konnektor",
+      "ex": "Einerseits will ich gehen, andererseits bin ich müde.",
+      "note": "Always paired with 'andererseits'. Useful for presenting balanced opinions.",
+      "cat": "🔗 Konnektoren",
+      "lvl": "B1"
+    },
+    {
+      "de": "des Weiteren",
+      "en": "furthermore",
+      "type": "Konnektor",
+      "ex": "Des Weiteren möchte ich erwähnen, dass...",
+      "note": "Formal written connector for adding points, common in essays and presentations.",
+      "cat": "🔗 Konnektoren",
+      "lvl": "B2"
+    },
+    {
+      "de": "trotz",
+      "en": "despite",
+      "type": "Präposition",
+      "ex": "Trotz des Regens gehen wir spazieren.",
+      "note": "Takes genitive (or colloquially dative): 'trotz DES Regens'. Related to 'trotzdem'.",
+      "cat": "🔗 Konnektoren",
+      "lvl": "B1"
+    },
+    {
+      "de": "daher",
+      "en": "therefore/from there",
+      "type": "Konnektor",
+      "ex": "Es war spät, daher bin ich gegangen.",
+      "note": "Causes inversion. Slightly more formal than 'deshalb', same core meaning.",
+      "cat": "🔗 Konnektoren",
+      "lvl": "A2"
+    },
+    {
+      "de": "folglich",
+      "en": "consequently",
+      "type": "Konnektor",
+      "ex": "Er hat nicht gelernt, folglich ist er durchgefallen.",
+      "note": "Formal written-style connector. 'durchfallen' = to fail (an exam).",
+      "cat": "🔗 Konnektoren",
+      "lvl": "B2"
+    },
+    {
+      "de": "immerhin",
+      "en": "at least/after all",
+      "type": "Partikel",
+      "ex": "Immerhin hast du es versucht.",
+      "note": "Offers a silver lining or minimal positive in an otherwise negative situation.",
+      "cat": "🔤 Füllwörter",
+      "lvl": "B1"
+    },
+    {
+      "de": "übrigens",
+      "en": "by the way",
+      "type": "Adverb",
+      "ex": "Übrigens, hast du das gehört?",
+      "note": "Used to introduce a side remark or change topic smoothly in conversation.",
+      "cat": "🔤 Füllwörter",
+      "lvl": "A2"
+    },
+    {
+      "de": "sprich",
+      "en": "that is to say",
+      "type": "Ausdruck",
+      "ex": "Er kommt morgen, sprich Dienstag.",
+      "note": "Used to restate something more precisely, similar to 'das heißt'. Slightly formal/written.",
+      "cat": "🔗 Paraphrasieren",
+      "lvl": "B2"
+    },
+    {
+      "de": "genauer gesagt",
+      "en": "more precisely",
+      "type": "Ausdruck",
+      "ex": "Ich komme aus Bayern, genauer gesagt aus München.",
+      "note": "Used to narrow down or clarify a previous statement with more detail.",
+      "cat": "🔗 Paraphrasieren",
+      "lvl": "B1"
     }
   ],
   "conv": [
@@ -2491,6 +5720,326 @@
           "de": "Das klingt vernünftig. Einverstanden!",
           "en": "That sounds reasonable. Agreed!",
           "note": "'Einverstanden!' = Agreed! Perfect word to close a deal or discussion."
+        }
+      ]
+    },
+    {
+      "lvl": "A1",
+      "cat": "🛍️ Einkaufen",
+      "icon": "🛍️",
+      "title": "Im Supermarkt",
+      "scenario": "Shopping for groceries",
+      "tip": "German supermarkets often require you to bag your own groceries quickly — the cashier scans fast!",
+      "lines": [
+        {
+          "speaker": "Kundin",
+          "de": "Entschuldigung, wo finde ich Milch?",
+          "en": "Excuse me, where can I find milk?",
+          "note": "'Entschuldigung!' is the standard polite way to get someone's attention."
+        },
+        {
+          "speaker": "Verkäufer",
+          "de": "Die Milch ist im Kühlregal, dort hinten.",
+          "en": "The milk is in the fridge aisle, over there.",
+          "note": "'das Kühlregal' = refrigerated shelf. 'dort hinten' = over there/in the back."
+        },
+        {
+          "speaker": "Kundin",
+          "de": "Danke! Und wo ist die Kasse?",
+          "en": "Thanks! And where's the checkout?",
+          "note": "'die Kasse' = checkout/cash register. Essential shopping vocabulary."
+        },
+        {
+          "speaker": "Verkäufer",
+          "de": "Die Kasse ist vorne, neben dem Eingang.",
+          "en": "The checkout is at the front, next to the entrance.",
+          "note": "'der Eingang' = entrance. 'der Ausgang' = exit (related word)."
+        },
+        {
+          "speaker": "Kundin",
+          "de": "Perfekt, vielen Dank für Ihre Hilfe!",
+          "en": "Perfect, thank you very much for your help!",
+          "note": "'Vielen Dank' is warmer than just 'Danke' — good for showing genuine gratitude."
+        }
+      ]
+    },
+    {
+      "lvl": "A1",
+      "cat": "🏥 Gesundheit",
+      "icon": "🏥",
+      "title": "Beim Arzt",
+      "scenario": "Visiting the doctor with a cold",
+      "tip": "In Germany, you usually need an appointment (Termin) even for minor issues, though some clinics accept walk-ins.",
+      "lines": [
+        {
+          "speaker": "Arzt",
+          "de": "Guten Tag! Was fehlt Ihnen denn?",
+          "en": "Hello! What seems to be the problem?",
+          "note": "'Was fehlt Ihnen?' = literally 'What is missing to you?' — standard doctor's opening question."
+        },
+        {
+          "speaker": "Patient",
+          "de": "Ich habe seit zwei Tagen Kopfschmerzen.",
+          "en": "I've had a headache for two days.",
+          "note": "'seit' + time = for/since (ongoing). 'Kopfschmerzen' = headache (always plural in German)."
+        },
+        {
+          "speaker": "Arzt",
+          "de": "Haben Sie auch Fieber?",
+          "en": "Do you also have a fever?",
+          "note": "'das Fieber' = fever. Simple yes/no diagnostic question."
+        },
+        {
+          "speaker": "Patient",
+          "de": "Nein, aber ich bin sehr müde.",
+          "en": "No, but I'm very tired.",
+          "note": "'müde' = tired. Common symptom description."
+        },
+        {
+          "speaker": "Arzt",
+          "de": "Das klingt nach einer Erkältung. Ruhen Sie sich aus.",
+          "en": "That sounds like a cold. Get some rest.",
+          "note": "'sich ausruhen' = to rest (reflexive, separable verb). Common doctor's advice."
+        }
+      ]
+    },
+    {
+      "lvl": "A2",
+      "cat": "🏠 Wohnen",
+      "icon": "🏠",
+      "title": "Wohnungssuche",
+      "scenario": "Calling about a apartment listing",
+      "tip": "Apartment hunting in German cities is competitive — being direct and prepared with documents helps a lot!",
+      "lines": [
+        {
+          "speaker": "Anrufer",
+          "de": "Hallo, ich rufe wegen der Wohnungsanzeige an.",
+          "en": "Hello, I'm calling about the apartment listing.",
+          "note": "'anrufen wegen' = to call about/regarding. 'die Anzeige' = advertisement/listing."
+        },
+        {
+          "speaker": "Vermieter",
+          "de": "Ja, hallo! Die Wohnung ist noch frei.",
+          "en": "Yes, hello! The apartment is still available.",
+          "note": "'der Vermieter' = landlord. 'frei' = free/available, very versatile word."
+        },
+        {
+          "speaker": "Anrufer",
+          "de": "Wie viele Zimmer hat die Wohnung?",
+          "en": "How many rooms does the apartment have?",
+          "note": "German apartments are often described by room count, e.g. '2-Zimmer-Wohnung'."
+        },
+        {
+          "speaker": "Vermieter",
+          "de": "Es ist eine Zwei-Zimmer-Wohnung mit Balkon.",
+          "en": "It's a two-room apartment with a balcony.",
+          "note": "Note: 'Zimmer' count usually excludes kitchen and bathroom."
+        },
+        {
+          "speaker": "Anrufer",
+          "de": "Könnte ich die Wohnung diese Woche besichtigen?",
+          "en": "Could I view the apartment this week?",
+          "note": "'besichtigen' = to view/inspect. 'Könnte ich...?' is a polite conditional request."
+        }
+      ]
+    },
+    {
+      "lvl": "A2",
+      "cat": "💼 Arbeit",
+      "icon": "💼",
+      "title": "Erster Arbeitstag",
+      "scenario": "First day at a new job",
+      "tip": "German workplaces value punctuality and directness — arriving on time and asking clear questions is well received.",
+      "lines": [
+        {
+          "speaker": "Chefin",
+          "de": "Willkommen im Team! Ich zeige dir dein Büro.",
+          "en": "Welcome to the team! I'll show you your office.",
+          "note": "'Willkommen!' = Welcome! 'zeigen' + dative = to show someone something."
+        },
+        {
+          "speaker": "Neuer",
+          "de": "Vielen Dank! Ich freue mich auf die Arbeit hier.",
+          "en": "Thank you very much! I'm looking forward to working here.",
+          "note": "'sich freuen auf' + accusative = to look forward to."
+        },
+        {
+          "speaker": "Chefin",
+          "de": "Hast du schon einen Computer-Zugang?",
+          "en": "Do you already have computer access?",
+          "note": "'der Zugang' = access. Common IT onboarding question."
+        },
+        {
+          "speaker": "Neuer",
+          "de": "Nein, noch nicht. Wen sollte ich dafür kontaktieren?",
+          "en": "No, not yet. Who should I contact for that?",
+          "note": "'Wen sollte ich kontaktieren?' = Who should I contact? Useful workplace phrase."
+        },
+        {
+          "speaker": "Chefin",
+          "de": "Frag einfach Markus in der IT-Abteilung.",
+          "en": "Just ask Markus in the IT department.",
+          "note": "'einfach' here softens the suggestion — 'just ask'. 'die Abteilung' = department."
+        }
+      ]
+    },
+    {
+      "lvl": "B1",
+      "cat": "🗣️ Diskussion",
+      "icon": "🗣️",
+      "title": "Eine Meinungsverschiedenheit",
+      "scenario": "A friendly disagreement about weekend plans",
+      "tip": "Germans are generally comfortable with direct disagreement — it's seen as honest, not rude, especially among friends.",
+      "lines": [
+        {
+          "speaker": "Lisa",
+          "de": "Ich finde, wir sollten dieses Wochenende wandern gehen.",
+          "en": "I think we should go hiking this weekend.",
+          "note": "'Ich finde, dass...' (or simplified without dass) = I think/find that..."
+        },
+        {
+          "speaker": "Tom",
+          "de": "Ehrlich gesagt, hätte ich lieber etwas Ruhigeres.",
+          "en": "Honestly, I'd prefer something calmer.",
+          "note": "'Ehrlich gesagt' = Honestly speaking. 'hätte lieber' = would prefer (Konjunktiv II)."
+        },
+        {
+          "speaker": "Lisa",
+          "de": "Verstehe ich, aber frische Luft täte uns gut.",
+          "en": "I understand, but fresh air would do us good.",
+          "note": "'täte gut' = would do good (Konjunktiv II of 'tun'). Persuasive but gentle."
+        },
+        {
+          "speaker": "Tom",
+          "de": "Wie wäre es mit einem kurzen Spaziergang stattdessen?",
+          "en": "How about a short walk instead?",
+          "note": "'Wie wäre es mit...?' = How about...? Classic compromise-proposing phrase."
+        },
+        {
+          "speaker": "Lisa",
+          "de": "Das klingt nach einem guten Kompromiss!",
+          "en": "That sounds like a good compromise!",
+          "note": "'klingen nach' = to sound like. 'der Kompromiss' = compromise, easy cognate."
+        }
+      ]
+    },
+    {
+      "lvl": "B1",
+      "cat": "✈️ Reisen",
+      "icon": "✈️",
+      "title": "Am Flughafen",
+      "scenario": "Dealing with a delayed flight at the airport",
+      "tip": "For flight disruptions, EU regulations often entitle passengers to compensation — staff can usually explain your rights.",
+      "lines": [
+        {
+          "speaker": "Reisende",
+          "de": "Entschuldigung, mein Flug hat Verspätung. Was soll ich tun?",
+          "en": "Excuse me, my flight is delayed. What should I do?",
+          "note": "'Verspätung haben' = to be delayed. 'Was soll ich tun?' = What should I do?"
+        },
+        {
+          "speaker": "Mitarbeiter",
+          "de": "Lassen Sie mich das überprüfen. Wie ist Ihre Flugnummer?",
+          "en": "Let me check that. What's your flight number?",
+          "note": "'überprüfen' = to check/verify. 'die Flugnummer' = flight number."
+        },
+        {
+          "speaker": "Reisende",
+          "de": "Die Nummer ist LH 441 nach Frankfurt.",
+          "en": "The number is LH 441 to Frankfurt.",
+          "note": "Simple numeric/destination exchange — useful template for any booking reference."
+        },
+        {
+          "speaker": "Mitarbeiter",
+          "de": "Der Flug verspätet sich um zwei Stunden.",
+          "en": "The flight is delayed by two hours.",
+          "note": "'sich verspäten um' + time = to be delayed by (a duration)."
+        },
+        {
+          "speaker": "Reisende",
+          "de": "Das ist ärgerlich, aber danke für die Information.",
+          "en": "That's annoying, but thanks for the information.",
+          "note": "'ärgerlich' = annoying. Polite way to express mild frustration without being rude."
+        }
+      ]
+    },
+    {
+      "lvl": "B1",
+      "cat": "🤝 Beziehungen",
+      "icon": "☕",
+      "title": "Verabredung zum Kaffee",
+      "scenario": "Catching up with a friend over coffee",
+      "tip": "Catching up casually over coffee (\"Kaffee trinken gehen\") is a common, low-key way to socialize in Germany.",
+      "lines": [
+        {
+          "speaker": "Mia",
+          "de": "Wie läuft's bei dir so? Wir haben uns lange nicht gesehen.",
+          "en": "How's it going with you? We haven't seen each other in a while.",
+          "note": "'Wie läuft's?' = casual 'how's it going'. 'sich sehen' = reflexive, to see each other."
+        },
+        {
+          "speaker": "Jonas",
+          "de": "Eigentlich ganz gut, obwohl die Arbeit stressig war.",
+          "en": "Actually pretty good, although work has been stressful.",
+          "note": "'obwohl' sends the verb to the end: 'obwohl die Arbeit stressig WAR'."
+        },
+        {
+          "speaker": "Mia",
+          "de": "Das tut mir leid zu hören. Hast du dich erholt?",
+          "en": "I'm sorry to hear that. Have you recovered?",
+          "note": "'Das tut mir leid' = I'm sorry (to hear that). 'sich erholen' = to recover/relax."
+        },
+        {
+          "speaker": "Jonas",
+          "de": "Ein bisschen. Und wie sieht's bei dir aus?",
+          "en": "A little. And what about you?",
+          "note": "'Wie sieht's aus?' = informal 'what's the situation' — very natural conversational phrase."
+        },
+        {
+          "speaker": "Mia",
+          "de": "Mir geht's gut, ich habe vor kurzem eine neue Stelle gefunden.",
+          "en": "I'm doing well, I recently found a new job.",
+          "note": "'vor kurzem' = recently. 'eine Stelle' = a position/job (formal term)."
+        }
+      ]
+    },
+    {
+      "lvl": "B1",
+      "cat": "🏛️ Gesellschaft",
+      "icon": "🗳️",
+      "title": "Politisches Gespräch",
+      "scenario": "A light discussion about a local issue",
+      "tip": "Germans often engage thoughtfully in political discussion, but it's still wise to read the room with new acquaintances.",
+      "lines": [
+        {
+          "speaker": "Sophie",
+          "de": "Hast du von dem neuen Radweg-Projekt gehört?",
+          "en": "Have you heard about the new bike lane project?",
+          "note": "'der Radweg' = bike path/lane. 'gehört von' = heard about."
+        },
+        {
+          "speaker": "Felix",
+          "de": "Ja, ich finde die Idee grundsätzlich gut.",
+          "en": "Yes, I think the idea is fundamentally good.",
+          "note": "'grundsätzlich' = fundamentally/in principle. Common in measured opinion statements."
+        },
+        {
+          "speaker": "Sophie",
+          "de": "Aber manche Leute beschweren sich über weniger Parkplätze.",
+          "en": "But some people are complaining about fewer parking spots.",
+          "note": "'sich beschweren über' + accusative = to complain about."
+        },
+        {
+          "speaker": "Felix",
+          "de": "Das verstehe ich, aber langfristig ist es besser für die Umwelt.",
+          "en": "I understand that, but in the long run it's better for the environment.",
+          "note": "'langfristig' = long-term. 'die Umwelt' = the environment."
+        },
+        {
+          "speaker": "Sophie",
+          "de": "Da hast du wahrscheinlich recht.",
+          "en": "You're probably right about that.",
+          "note": "'recht haben' = to be right. Softened agreement using 'wahrscheinlich' (probably)."
         }
       ]
     }
