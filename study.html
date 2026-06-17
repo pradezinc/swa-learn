@@ -504,7 +504,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);
         <div id="cf-visual"></div>
         <div class="tap-hint">
           <div class="tap-ring">?</div>
-          <div class="tap-lbl" id="cf-prompt">What is this in German?</div>
+          <div class="tap-lbl" id="cf-prompt">What is this?</div>
         </div>
         <div class="swipe-hint">
           <span class="swipe-h">← Wrong</span>
@@ -543,7 +543,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);
   <!-- TYPE ANSWER -->
   <div class="type-area" id="type-area" style="display:none">
     <input class="type-input" id="type-input"
-      placeholder="Type the German word..."
+      placeholder="Type the word..."
       autocomplete="off" autocorrect="off"
       autocapitalize="none" spellcheck="false"
       onkeydown="typeKeyDown(event)">
@@ -1028,12 +1028,13 @@ function renderCard(){
 
   // Front prompt
   const prompt = document.getElementById("cf-prompt");
-  if(activePillar === "vocab") prompt.textContent = "What is this in German?";
-  else if(activePillar === "freq") prompt.textContent = `Rank #${item.rank} — say it in German!`;
+  const langName = langData?.meta?.nameEn || "the language";
+  if(activePillar === "vocab") prompt.textContent = `What is this in ${langName}?`;
+  else if(activePillar === "freq") prompt.textContent = `Rank #${item.rank} — say it in ${langName}!`;
   else if(activePillar === "verbs") prompt.textContent = "What action is this?";
-  else if(activePillar === "chunks") prompt.textContent = item.situation || "What would you say in German?";
-  else if(activePillar === "fillers") prompt.textContent = "How do you say this in German?";
-  else prompt.textContent = "What is the German word?";
+  else if(activePillar === "chunks") prompt.textContent = item.situation || `What would you say in ${langName}?`;
+  else if(activePillar === "fillers") prompt.textContent = `How do you say this in ${langName}?`;
+  else prompt.textContent = `What is the ${langName} word?`;
 
   // Back visual (same emoji)
   const cbv = document.getElementById("cb-visual");
@@ -1248,6 +1249,8 @@ function showTypeInput(){
   const input = document.getElementById("type-input");
   input.value = "";
   input.className = "type-input";
+  const langName = langData?.meta?.nameEn || "the";
+  input.placeholder = `Type the ${langName} word...`;
   setTimeout(()=>input.focus(), 100);
 }
 
@@ -1585,6 +1588,6 @@ document.getElementById("settings-sheet").addEventListener("click", e => {
 });
 </script>
 
-<div class="version-badge">v3.4 — 2026-06-17 09:45</div>
+<div class="version-badge">v3.5 — 2026-06-17 12:50</div>
 </body>
 </html>
