@@ -108,6 +108,8 @@ main{max-width:700px;margin:0 auto;padding:1.25rem 1rem 5rem}
 .lang-prog-bar{width:100%;height:6px;background:var(--surface2);border-radius:3px;overflow:hidden;margin-bottom:8px}
 .lang-prog-fill{height:100%;border-radius:3px;transition:width .5s ease}
 .lang-stats{display:flex;gap:16px}
+.lang-eta{font-size:11px;color:var(--purple);background:var(--purple-l);
+  padding:5px 10px;border-radius:8px;margin-top:8px;display:inline-block}
 .lang-stat{font-size:11px;color:var(--text2)}
 .lang-stat strong{color:var(--text);font-weight:600}
 
@@ -314,16 +316,6 @@ main{max-width:700px;margin:0 auto;padding:1.25rem 1rem 5rem}
 .empty-title{font-size:16px;font-weight:600;margin-bottom:.5rem;color:var(--text)}
 .empty-sub{font-size:13px;line-height:1.6}
 
-/* ESTIMATED TIME */
-.eta-card{
-  background:var(--purple-l);border-radius:12px;
-  padding:12px 14px;margin-bottom:1.25rem;
-  display:flex;align-items:center;gap:12px;
-}
-.eta-icon{font-size:24px}
-.eta-text{font-size:13px;color:var(--purple);font-weight:500;line-height:1.5}
-.eta-text strong{font-size:15px;display:block}
-
 .version-badge{
   position:fixed;bottom:6px;right:8px;
   font-size:9px;color:#a0a098;
@@ -403,15 +395,6 @@ main{max-width:700px;margin:0 auto;padding:1.25rem 1rem 5rem}
     </div>
     <div class="today-card" style="border-radius:16px;padding:1rem">
       <div id="pillar-list"></div>
-    </div>
-  </div>
-
-  <!-- ESTIMATED TIME -->
-  <div class="eta-card" id="eta-card" style="display:none;margin-top:1.25rem">
-    <div class="eta-icon">🎯</div>
-    <div class="eta-text">
-      <strong id="eta-val">~0 hours</strong>
-      estimated to reach your next level
     </div>
   </div>
 
@@ -602,6 +585,7 @@ let settings = {
   srs: true
 };
 let pillarLangIdx = 0;
+const langPackCache = {}; // code -> parsed JSON, avoids refetching on every render
 
 // ── AUTH
 auth.onAuthStateChanged(async user => {
@@ -645,6 +629,21 @@ async function saveUserData(){
   if(!currentUser) return;
   const ref = db.collection("users").doc(currentUser.uid);
   await ref.set(userData, {merge: true});
+}
+
+// ── FETCH LANGUAGE PACK (cached) — needed for real per-level item totals
+async function getLangPack(code){
+  if(langPackCache[code]) return langPackCache[code];
+  try {
+    const res = await fetch(`data/${code}.json`);
+    if(!res.ok) throw new Error("not found");
+    const data = await res.json();
+    langPackCache[code] = data;
+    return data;
+  } catch(e){
+    console.warn(`Could not load language pack for ${code}:`, e);
+    return null;
+  }
 }
 
 // ── RENDER DASHBOARD
@@ -707,7 +706,7 @@ function renderStreakDays(){
   }).join("");
 }
 
-function renderLanguages(){
+async function renderLanguages(){
   const list = document.getElementById("lang-list");
   const langs = userData.languages || {};
   const keys = Object.keys(langs).filter(k => langs[k].active);
@@ -718,18 +717,31 @@ function renderLanguages(){
   // Remove existing lang cards
   list.querySelectorAll(".lang-card").forEach(el => el.remove());
 
-  keys.forEach(code => {
+  for(const code of keys){
     const lang = langs[code];
     const meta = AVAILABLE_LANGS.find(l => l.code === code) || {};
     const progress = userData.progress?.[code] || {};
     const totalMastered = (progress.vocab?.mastered||[]).length +
       (progress.verbs?.mastered||[]).length +
-      (progress.chunks?.mastered||[]).length;
-    const totalSeen = Object.keys(progress.vocab?.scores||{}).length;
-    const totalTime = Object.values(progress.timeSpent?.byDate||{})
-      .reduce((a,b)=>a+b,0);
+      (progress.chunks?.mastered||[]).length +
+      (progress.freq?.mastered||[]).length +
+      (progress.fillers?.mastered||[]).length;
+    const totalTime = progress.timeSpent?.total ?? Object.values(progress.timeSpent?.byDate||{}).reduce((a,b)=>a+b,0);
     const timeMins = Math.round(totalTime/60);
-    const pct = lang.progressPct || 0;
+    const currentLevel = lang.currentLevel || meta.levels?.[0] || "A1";
+
+    // Fetch real language pack data to calculate true level completion + ETA
+    const langPack = await getLangPack(code);
+    let pct = 0, etaLabel = "Loading...";
+    if(langPack){
+      const calc = calcLevelCompletion(code, langPack, progress, currentLevel);
+      pct = calc.pct;
+      etaLabel = calc.etaLabel;
+      // Keep progressPct in sync for anything else that reads it
+      lang.progressPct = pct;
+    } else {
+      etaLabel = "Level data unavailable";
+    }
 
     const card = document.createElement("div");
     card.className = "lang-card";
@@ -739,7 +751,7 @@ function renderLanguages(){
           <div class="lang-flag">${lang.flag}</div>
           <div>
             <div class="lang-name">${lang.name}</div>
-            <div class="lang-level">${lang.currentLevel || meta.levels?.[0] || "A1"} · ${meta.nameEn||""}</div>
+            <div class="lang-level">${currentLevel} · ${meta.nameEn||""}</div>
           </div>
         </div>
         <button class="lang-study-btn" onclick="studyLang('${code}')">Study →</button>
@@ -752,18 +764,16 @@ function renderLanguages(){
         <div class="lang-stat"><strong>${totalMastered}</strong> mastered</div>
         <div class="lang-stat"><strong>${timeMins}m</strong> total</div>
       </div>
+      <div class="lang-eta">🎯 ${etaLabel}</div>
     `;
     list.appendChild(card);
-  });
+  }
 
   // Pillars
   renderPillars(keys);
 
   // Weak words
   renderWeakWords(keys);
-
-  // ETA
-  renderETA(keys);
 }
 
 function renderPillars(langKeys){
@@ -828,16 +838,47 @@ function renderWeakWords(langKeys){
   ).join("");
 }
 
-function renderETA(langKeys){
-  const card = document.getElementById("eta-card");
-  if(langKeys.length === 0){ card.style.display = "none"; return; }
-  card.style.display = "flex";
-  // Simple estimate: average 2 min per new word, ~1000 words to next level
-  const totalProgress = langKeys.reduce((a,code) => {
-    return a + (userData.languages[code]?.progressPct || 0);
-  }, 0) / langKeys.length;
-  const remaining = Math.round((100 - totalProgress) * 0.5);
-  document.getElementById("eta-val").textContent = `~${remaining} hours`;
+// ── PER-LANGUAGE LEVEL COMPLETION + ETA
+// Returns { pct, masteredCount, totalCount, etaHours|null, etaLabel }
+// etaHours is null when there's not enough data yet (< 1 hour logged for this language)
+function calcLevelCompletion(code, langPack, progress, currentLevel){
+  const pillars = ["vocab","freq","chunks","verbs","fillers"];
+  let totalItems = 0, masteredItems = 0;
+
+  pillars.forEach(pillar => {
+    const items = (langPack?.[pillar] || []).filter(it => (it.lvl || "A1") === currentLevel);
+    totalItems += items.length;
+    const masteredKeys = new Set(progress?.[pillar]?.mastered || []);
+    items.forEach(it => {
+      const key = it.de || (it.rank != null ? String(it.rank) : JSON.stringify(it).slice(0,30));
+      if(masteredKeys.has(key)) masteredItems++;
+    });
+  });
+
+  const pct = totalItems > 0 ? Math.round(masteredItems/totalItems*100) : 0;
+
+  // Pace: words mastered per hour, based on THIS language's real history
+  const secondsSpent = progress?.timeSpent?.total || 0;
+  const hoursSpent = secondsSpent / 3600;
+  const totalMasteredAllLevels = pillars.reduce((sum,p) =>
+    sum + (progress?.[p]?.mastered?.length || 0), 0);
+
+  let etaHours = null;
+  let etaLabel = "Not enough data yet";
+
+  if(hoursSpent >= 1 && totalMasteredAllLevels > 0){
+    const pace = totalMasteredAllLevels / hoursSpent; // words per hour, this language
+    const remaining = Math.max(0, totalItems - masteredItems);
+    if(pace > 0){
+      etaHours = remaining / pace;
+      etaHours = Math.round(etaHours * 10) / 10;
+      etaLabel = etaHours <= 0 ? "Level complete!" : `~${etaHours}h to finish ${currentLevel}`;
+    }
+  } else if(hoursSpent < 1){
+    etaLabel = "Keep studying — ETA unlocks after 1 hour";
+  }
+
+  return { pct, masteredItems, totalItems, etaHours, etaLabel };
 }
 
 let activityView = "week"; // week | month | year | all
@@ -1254,6 +1295,6 @@ window.showToast = (msg) => {
   setTimeout(()=>t.classList.remove("show"), 2000);
 };
 </script>
-<div class="version-badge">v3.4 — 2026-06-17 09:45</div>
+<div class="version-badge">v3.5 — 2026-06-17 10:15</div>
 </body>
 </html>
