@@ -64,6 +64,15 @@ body{
 @keyframes spin{to{transform:rotate(360deg)}}
 .loading-text{font-size:13px;color:var(--text2)}
 .footer-note{margin-top:1.5rem;font-size:11px;color:var(--text3);line-height:1.6}
+
+.version-badge{
+  position:fixed;bottom:6px;right:8px;
+  font-size:9px;color:#a0a098;
+  background:rgba(0,0,0,.04);
+  padding:2px 7px;border-radius:8px;
+  z-index:9999;font-family:-apple-system,sans-serif;
+  pointer-events:none;
+}
 </style>
 </head>
 <body>
@@ -213,5 +222,6 @@ function hideError(){
   document.getElementById("error-msg").style.display = "none";
 }
 </script>
+<div class="version-badge">v3.1 — 2026-06-17 08:22</div>
 </body>
 </html>

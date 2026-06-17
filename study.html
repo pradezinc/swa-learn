@@ -422,6 +422,15 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);
   padding:2px 7px;border-radius:6px;display:inline-block;margin-top:3px}
 .conv-tip{font-size:11px;color:var(--text2);font-style:italic;
   padding:8px 12px;background:var(--surface2);border-radius:8px;margin-top:4px}
+
+.version-badge{
+  position:fixed;bottom:6px;right:8px;
+  font-size:9px;color:#a0a098;
+  background:rgba(0,0,0,.04);
+  padding:2px 7px;border-radius:8px;
+  z-index:9999;font-family:-apple-system,sans-serif;
+  pointer-events:none;
+}
 </style>
 </head>
 <body>
@@ -961,6 +970,11 @@ function renderCard(){
   const cfv = document.getElementById("cf-visual");
   if(item.emoji){
     cfv.innerHTML = `<div class="card-emoji">${item.emoji}</div>`;
+  } else if(activePillar === "freq" || activePillar === "fillers"){
+    // No emoji — show the English word big so there's something to guess from
+    cfv.innerHTML = `<div class="word-main" style="font-size:26px;margin-bottom:0">${item.en}</div>`;
+  } else if(activePillar === "chunks"){
+    cfv.innerHTML = `<div class="word-main" style="font-size:18px;line-height:1.4;text-align:center;max-width:90%">${item.en}</div>`;
   } else {
     cfv.innerHTML = "";
   }
@@ -968,10 +982,10 @@ function renderCard(){
   // Front prompt
   const prompt = document.getElementById("cf-prompt");
   if(activePillar === "vocab") prompt.textContent = "What is this in German?";
-  else if(activePillar === "freq") prompt.textContent = `Rank #${item.rank} — translate!`;
+  else if(activePillar === "freq") prompt.textContent = `Rank #${item.rank} — say it in German!`;
   else if(activePillar === "verbs") prompt.textContent = "What action is this?";
-  else if(activePillar === "chunks") prompt.textContent = item.situation || "What would you say?";
-  else if(activePillar === "fillers") prompt.textContent = "What does this connector mean?";
+  else if(activePillar === "chunks") prompt.textContent = item.situation || "What would you say in German?";
+  else if(activePillar === "fillers") prompt.textContent = "How do you say this in German?";
   else prompt.textContent = "What is the German word?";
 
   // Back visual (same emoji)
@@ -1524,5 +1538,6 @@ document.getElementById("settings-sheet").addEventListener("click", e => {
 });
 </script>
 
+<div class="version-badge">v3.1 — 2026-06-17 08:22</div>
 </body>
 </html>

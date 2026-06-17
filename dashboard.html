@@ -319,6 +319,15 @@ main{max-width:700px;margin:0 auto;padding:1.25rem 1rem 5rem}
 .eta-icon{font-size:24px}
 .eta-text{font-size:13px;color:var(--purple);font-weight:500;line-height:1.5}
 .eta-text strong{font-size:15px;display:block}
+
+.version-badge{
+  position:fixed;bottom:6px;right:8px;
+  font-size:9px;color:#a0a098;
+  background:rgba(0,0,0,.04);
+  padding:2px 7px;border-radius:8px;
+  z-index:9999;font-family:-apple-system,sans-serif;
+  pointer-events:none;
+}
 </style>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
@@ -1095,5 +1104,6 @@ window.showToast = (msg) => {
   setTimeout(()=>t.classList.remove("show"), 2000);
 };
 </script>
+<div class="version-badge">v3.1 — 2026-06-17 08:22</div>
 </body>
 </html>
