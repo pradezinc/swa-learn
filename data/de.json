@@ -5270,6 +5270,806 @@
       "emoji": "🔄",
       "cat": "💭 Konzepte",
       "lvl": "B1"
+    },
+    {
+      "de": "geben",
+      "en": "to give",
+      "type": "starkes Verb",
+      "pp": "gegeben (hat)",
+      "ph": "[ˈɡeːbən]",
+      "conj": {
+        "ich": "gebe",
+        "du": "gibst",
+        "er": "gibt",
+        "wir": "geben",
+        "ihr": "gebt",
+        "sie": "geben"
+      },
+      "ex": "Ich gebe dir mein Buch.",
+      "note": "Strong verb with vowel change e→i: du gibst, er gibt. 'Es gibt' = there is/are (very common impersonal construction).",
+      "emoji": "🎁",
+      "cat": "⚡ Essentiell",
+      "lvl": "A2"
+    },
+    {
+      "de": "nehmen",
+      "en": "to take",
+      "type": "starkes Verb",
+      "pp": "genommen (hat)",
+      "ph": "[ˈneːmən]",
+      "conj": {
+        "ich": "nehme",
+        "du": "nimmst",
+        "er": "nimmt",
+        "wir": "nehmen",
+        "ihr": "nehmt",
+        "sie": "nehmen"
+      },
+      "ex": "Ich nehme den Bus.",
+      "note": "Strong verb with vowel change e→i and consonant shift: du nimmst (not nehmst). Very common everyday verb.",
+      "emoji": "🤲",
+      "cat": "⚡ Essentiell",
+      "lvl": "A2"
+    },
+    {
+      "de": "denken",
+      "en": "to think",
+      "type": "unregelmäßiges Verb",
+      "pp": "gedacht (hat)",
+      "ph": "[ˈdɛŋkən]",
+      "conj": {
+        "ich": "denke",
+        "du": "denkst",
+        "er": "denkt",
+        "wir": "denken",
+        "ihr": "denkt",
+        "sie": "denken"
+      },
+      "ex": "Ich denke oft an dich.",
+      "note": "Irregular past participle (gedacht, not gedenkt). 'denken an' + accusative = to think of/about.",
+      "emoji": "🤔",
+      "cat": "🧠 Denken",
+      "lvl": "A2"
+    },
+    {
+      "de": "wissen",
+      "en": "to know (facts)",
+      "type": "unregelmäßiges Verb",
+      "pp": "gewusst (hat)",
+      "ph": "[ˈvɪsən]",
+      "conj": {
+        "ich": "weiß",
+        "du": "weißt",
+        "er": "weiß",
+        "wir": "wissen",
+        "ihr": "wisst",
+        "sie": "wissen"
+      },
+      "ex": "Ich weiß die Antwort nicht.",
+      "note": "Highly irregular singular forms (weiß, weißt). Different from 'kennen' (to know a person/place).",
+      "emoji": "🧠",
+      "cat": "🧠 Denken",
+      "lvl": "A2"
+    },
+    {
+      "de": "kennen",
+      "en": "to know (people/places)",
+      "type": "unregelmäßiges Verb",
+      "pp": "gekannt (hat)",
+      "ph": "[ˈkɛnən]",
+      "conj": {
+        "ich": "kenne",
+        "du": "kennst",
+        "er": "kennt",
+        "wir": "kennen",
+        "ihr": "kennt",
+        "sie": "kennen"
+      },
+      "ex": "Ich kenne diese Stadt gut.",
+      "note": "Pairs conceptually with 'wissen' — kennen=know a person/place/thing, wissen=know a fact.",
+      "emoji": "👋",
+      "cat": "🧠 Denken",
+      "lvl": "A2"
+    },
+    {
+      "de": "sehen",
+      "en": "to see",
+      "type": "starkes Verb",
+      "pp": "gesehen (hat)",
+      "ph": "[ˈzeːən]",
+      "conj": {
+        "ich": "sehe",
+        "du": "siehst",
+        "er": "sieht",
+        "wir": "sehen",
+        "ihr": "seht",
+        "sie": "sehen"
+      },
+      "ex": "Ich sehe einen Vogel.",
+      "note": "Strong verb with vowel change e→ie: du siehst, er sieht. Root of 'fernsehen' (to watch TV).",
+      "emoji": "👁️",
+      "cat": "🧍 Sinne",
+      "lvl": "A2"
+    },
+    {
+      "de": "fühlen",
+      "en": "to feel",
+      "type": "schwaches Verb",
+      "pp": "gefühlt (hat)",
+      "ph": "[ˈfyːlən]",
+      "conj": {
+        "ich": "fühle",
+        "du": "fühlst",
+        "er": "fühlt",
+        "wir": "fühlen",
+        "ihr": "fühlt",
+        "sie": "fühlen"
+      },
+      "ex": "Ich fühle mich heute gut.",
+      "note": "Often used reflexively: 'sich fühlen' = to feel (a certain way). Regular weak verb.",
+      "emoji": "💭",
+      "cat": "😊 Gefühle",
+      "lvl": "A2"
+    },
+    {
+      "de": "riechen",
+      "en": "to smell",
+      "type": "starkes Verb",
+      "pp": "gerochen (hat)",
+      "ph": "[ˈʁiːçən]",
+      "conj": {
+        "ich": "rieche",
+        "du": "riechst",
+        "er": "riecht",
+        "wir": "riechen",
+        "ihr": "riecht",
+        "sie": "riechen"
+      },
+      "ex": "Das Essen riecht gut.",
+      "note": "Strong verb: roch, gerochen. Used both for 'to smell (something)' and 'to smell (of something)'.",
+      "emoji": "👃",
+      "cat": "🧍 Sinne",
+      "lvl": "A2"
+    },
+    {
+      "de": "schmecken",
+      "en": "to taste",
+      "type": "schwaches Verb",
+      "pp": "geschmeckt (hat)",
+      "ph": "[ˈʃmɛkən]",
+      "conj": {
+        "ich": "schmecke",
+        "du": "schmeckst",
+        "er": "schmeckt",
+        "wir": "schmecken",
+        "ihr": "schmeckt",
+        "sie": "schmecken"
+      },
+      "ex": "Die Suppe schmeckt lecker.",
+      "note": "Regular weak verb. 'Schmeckt's?' = informal way to ask 'Does it taste good?'",
+      "emoji": "😋",
+      "cat": "🍴 Essen",
+      "lvl": "A2"
+    },
+    {
+      "de": "besuchen",
+      "en": "to visit",
+      "type": "schwaches Verb",
+      "pp": "besucht (hat)",
+      "ph": "[bəˈzuːxən]",
+      "conj": {
+        "ich": "besuche",
+        "du": "besuchst",
+        "er": "besucht",
+        "wir": "besuchen",
+        "ihr": "besucht",
+        "sie": "besuchen"
+      },
+      "ex": "Ich besuche meine Großeltern.",
+      "note": "Inseparable 'be-' prefix, no extra 'ge-' in participle. Used for visiting people AND places (museums, cities).",
+      "emoji": "🚪",
+      "cat": "👋 Begrüßung",
+      "lvl": "A2"
+    },
+    {
+      "de": "treffen",
+      "en": "to meet",
+      "type": "starkes Verb",
+      "pp": "getroffen (hat)",
+      "ph": "[ˈtʁɛfən]",
+      "conj": {
+        "ich": "treffe",
+        "du": "triffst",
+        "er": "trifft",
+        "wir": "treffen",
+        "ihr": "trefft",
+        "sie": "treffen"
+      },
+      "ex": "Ich treffe meine Freunde im Park.",
+      "note": "Strong verb with vowel change e→i. Also means 'to hit (a target)' in other contexts.",
+      "emoji": "🤝",
+      "cat": "👋 Begrüßung",
+      "lvl": "A2"
+    },
+    {
+      "de": "kennenlernen",
+      "en": "to get to know / meet for first time",
+      "type": "schwaches Verb (trennbar)",
+      "pp": "kennengelernt (hat)",
+      "ph": "[ˈkɛnənlɛʁnən]",
+      "conj": {
+        "ich": "lerne...kennen",
+        "du": "lernst...kennen",
+        "er": "lernt...kennen",
+        "wir": "lernen...kennen",
+        "ihr": "lernt...kennen",
+        "sie": "lernen...kennen"
+      },
+      "ex": "Ich möchte dich besser kennenlernen.",
+      "note": "Compound of kennen+lernen, separable. Different from 'treffen' — implies the FIRST meeting, not just any meeting.",
+      "emoji": "🆕",
+      "cat": "👋 Begrüßung",
+      "lvl": "A2"
+    },
+    {
+      "de": "mitbringen",
+      "en": "to bring along",
+      "type": "starkes Verb (trennbar)",
+      "pp": "mitgebracht (hat)",
+      "ph": "[ˈmɪtbʁɪŋən]",
+      "conj": {
+        "ich": "bringe...mit",
+        "du": "bringst...mit",
+        "er": "bringt...mit",
+        "wir": "bringen...mit",
+        "ihr": "bringt...mit",
+        "sie": "bringen...mit"
+      },
+      "ex": "Ich bringe einen Kuchen mit.",
+      "note": "Separable: mit+bringen. Common when invited to a party — 'was soll ich mitbringen?' = what should I bring?",
+      "emoji": "🎂",
+      "cat": "👋 Begrüßung",
+      "lvl": "A2"
+    },
+    {
+      "de": "mitnehmen",
+      "en": "to take along/with",
+      "type": "starkes Verb (trennbar)",
+      "pp": "mitgenommen (hat)",
+      "ph": "[ˈmɪtneːmən]",
+      "conj": {
+        "ich": "nehme...mit",
+        "du": "nimmst...mit",
+        "er": "nimmt...mit",
+        "wir": "nehmen...mit",
+        "ihr": "nehmt...mit",
+        "sie": "nehmen...mit"
+      },
+      "ex": "Ich nehme meinen Regenschirm mit.",
+      "note": "Separable: mit+nehmen, keeps the same vowel change as 'nehmen' (du nimmst...mit).",
+      "emoji": "🎒",
+      "cat": "⚡ Essentiell",
+      "lvl": "A2"
+    },
+    {
+      "de": "vorhaben",
+      "en": "to plan / intend",
+      "type": "unregelmäßiges Verb (trennbar)",
+      "pp": "vorgehabt (hat)",
+      "ph": "[ˈfoːɐ̯haːbən]",
+      "conj": {
+        "ich": "habe...vor",
+        "du": "hast...vor",
+        "er": "hat...vor",
+        "wir": "haben...vor",
+        "ihr": "habt...vor",
+        "sie": "haben...vor"
+      },
+      "ex": "Was hast du heute vor?",
+      "note": "Separable: vor+haben. 'Was hast du vor?' = What are your plans? Very common question among friends.",
+      "emoji": "📅",
+      "cat": "💼 Arbeit",
+      "lvl": "A2"
+    },
+    {
+      "de": "sich entscheiden",
+      "en": "to decide (for oneself)",
+      "type": "starkes Verb (reflexiv)",
+      "pp": "sich entschieden (hat)",
+      "ph": "[zɪç ɛntˈʃaɪ̯dən]",
+      "conj": {
+        "ich": "entscheide mich",
+        "du": "entscheidest dich",
+        "er": "entscheidet sich",
+        "wir": "entscheiden uns",
+        "ihr": "entscheidet euch",
+        "sie": "entscheiden sich"
+      },
+      "ex": "Ich entscheide mich für das blaue Hemd.",
+      "note": "Reflexive version of 'entscheiden' (already in list as non-reflexive 'to decide'). 'sich entscheiden für' = to decide on/choose.",
+      "emoji": "🤔",
+      "cat": "🧠 Denken",
+      "lvl": "B1"
+    },
+    {
+      "de": "sich konzentrieren",
+      "en": "to concentrate",
+      "type": "schwaches Verb (reflexiv)",
+      "pp": "sich konzentriert (hat)",
+      "ph": "[zɪç kɔntsɛnˈtʁiːʁən]",
+      "conj": {
+        "ich": "konzentriere mich",
+        "du": "konzentrierst dich",
+        "er": "konzentriert sich",
+        "wir": "konzentrieren uns",
+        "ihr": "konzentriert euch",
+        "sie": "konzentrieren sich"
+      },
+      "ex": "Ich konzentriere mich auf die Arbeit.",
+      "note": "Reflexive verb, French/Latin loanword. 'sich konzentrieren auf' + accusative = to focus on.",
+      "emoji": "🎯",
+      "cat": "🧠 Denken",
+      "lvl": "B1"
+    },
+    {
+      "de": "vertrauen",
+      "en": "to trust",
+      "type": "schwaches Verb",
+      "pp": "vertraut (hat)",
+      "ph": "[fɛɐ̯ˈtʁaʊ̯ən]",
+      "conj": {
+        "ich": "vertraue",
+        "du": "vertraust",
+        "er": "vertraut",
+        "wir": "vertrauen",
+        "ihr": "vertraut",
+        "sie": "vertrauen"
+      },
+      "ex": "Ich vertraue dir vollkommen.",
+      "note": "Takes DATIVE: 'dir vertrauen' = to trust you. Inseparable 'ver-' prefix, no 'ge-' in participle.",
+      "emoji": "🤝",
+      "cat": "💭 Meinungen",
+      "lvl": "B1"
+    },
+    {
+      "de": "sich gewöhnen",
+      "en": "to get used to",
+      "type": "schwaches Verb (reflexiv)",
+      "pp": "sich gewöhnt (hat)",
+      "ph": "[zɪç ɡəˈvøːnən]",
+      "conj": {
+        "ich": "gewöhne mich",
+        "du": "gewöhnst dich",
+        "er": "gewöhnt sich",
+        "wir": "gewöhnen uns",
+        "ihr": "gewöhnt euch",
+        "sie": "gewöhnen sich"
+      },
+      "ex": "Ich gewöhne mich langsam an das Wetter hier.",
+      "note": "'sich gewöhnen an' + accusative = to get used to (something). Very useful for talking about adapting to new situations.",
+      "emoji": "🔄",
+      "cat": "💭 Konzepte",
+      "lvl": "B1"
+    },
+    {
+      "de": "vermissen",
+      "en": "to miss (someone/something)",
+      "type": "schwaches Verb",
+      "pp": "vermisst (hat)",
+      "ph": "[fɛɐ̯ˈmɪsən]",
+      "conj": {
+        "ich": "vermisse",
+        "du": "vermisst",
+        "er": "vermisst",
+        "wir": "vermissen",
+        "ihr": "vermisst",
+        "sie": "vermissen"
+      },
+      "ex": "Ich vermisse meine Familie.",
+      "note": "Inseparable 'ver-' prefix. Different from English 'miss' (a bus) — that's 'verpassen' instead.",
+      "emoji": "💔",
+      "cat": "😊 Gefühle",
+      "lvl": "B1"
+    },
+    {
+      "de": "verpassen",
+      "en": "to miss (a deadline/bus)",
+      "type": "schwaches Verb",
+      "pp": "verpasst (hat)",
+      "ph": "[fɛɐ̯ˈpasən]",
+      "conj": {
+        "ich": "verpasse",
+        "du": "verpasst",
+        "er": "verpasst",
+        "wir": "verpassen",
+        "ihr": "verpasst",
+        "sie": "verpassen"
+      },
+      "ex": "Ich habe den Zug verpasst.",
+      "note": "Pairs with 'vermissen' — different meaning of English 'miss'. Used for missing events/transport/deadlines.",
+      "emoji": "🚆",
+      "cat": "⏰ Zeit",
+      "lvl": "B1"
+    },
+    {
+      "de": "sich kümmern",
+      "en": "to take care of / deal with",
+      "type": "schwaches Verb (reflexiv)",
+      "pp": "sich gekümmert (hat)",
+      "ph": "[zɪç ˈkʏmɐn]",
+      "conj": {
+        "ich": "kümmere mich",
+        "du": "kümmerst dich",
+        "er": "kümmert sich",
+        "wir": "kümmern uns",
+        "ihr": "kümmert euch",
+        "sie": "kümmern sich"
+      },
+      "ex": "Ich kümmere mich um meine Großmutter.",
+      "note": "'sich kümmern um' + accusative = to take care of/deal with. Very versatile — used for people, tasks, problems.",
+      "emoji": "🤲",
+      "cat": "🏥 Gesundheit",
+      "lvl": "B1"
+    },
+    {
+      "de": "sich engagieren",
+      "en": "to get involved / commit",
+      "type": "schwaches Verb (reflexiv)",
+      "pp": "sich engagiert (hat)",
+      "ph": "[zɪç ɑ̃ɡaˈʒiːʁən]",
+      "conj": {
+        "ich": "engagiere mich",
+        "du": "engagierst dich",
+        "er": "engagiert sich",
+        "wir": "engagieren uns",
+        "ihr": "engagiert euch",
+        "sie": "engagieren sich"
+      },
+      "ex": "Sie engagiert sich für den Umweltschutz.",
+      "note": "French loanword, reflexive. 'sich engagieren für' = to commit to/advocate for (a cause).",
+      "emoji": "✊",
+      "cat": "🏛️ Gesellschaft",
+      "lvl": "B1"
+    },
+    {
+      "de": "überzeugen",
+      "en": "to convince",
+      "type": "schwaches Verb",
+      "pp": "überzeugt (hat)",
+      "ph": "[yːbɐˈtsɔɪ̯ɡən]",
+      "conj": {
+        "ich": "überzeuge",
+        "du": "überzeugst",
+        "er": "überzeugt",
+        "wir": "überzeugen",
+        "ihr": "überzeugt",
+        "sie": "überzeugen"
+      },
+      "ex": "Er hat mich überzeugt.",
+      "note": "Inseparable 'über-' prefix, no 'ge-' in participle. Also reflexive: 'sich überzeugen' = to convince oneself / verify.",
+      "emoji": "💡",
+      "cat": "💭 Meinungen",
+      "lvl": "B1"
+    },
+    {
+      "de": "erwarten",
+      "en": "to expect",
+      "type": "schwaches Verb",
+      "pp": "erwartet (hat)",
+      "ph": "[ɛɐ̯ˈvaʁtən]",
+      "conj": {
+        "ich": "erwarte",
+        "du": "erwartest",
+        "er": "erwartet",
+        "wir": "erwarten",
+        "ihr": "erwartet",
+        "sie": "erwarten"
+      },
+      "ex": "Ich erwarte eine Antwort von dir.",
+      "note": "Inseparable 'er-' prefix. Also used for expecting a baby: 'Sie erwartet ein Kind.'",
+      "emoji": "⏳",
+      "cat": "💭 Konzepte",
+      "lvl": "B1"
+    },
+    {
+      "de": "sich beschäftigen",
+      "en": "to occupy oneself / deal with",
+      "type": "schwaches Verb (reflexiv)",
+      "pp": "sich beschäftigt (hat)",
+      "ph": "[zɪç bəˈʃɛftɪɡən]",
+      "conj": {
+        "ich": "beschäftige mich",
+        "du": "beschäftigst dich",
+        "er": "beschäftigt sich",
+        "wir": "beschäftigen uns",
+        "ihr": "beschäftigt euch",
+        "sie": "beschäftigen sich"
+      },
+      "ex": "Ich beschäftige mich mit diesem Thema seit Jahren.",
+      "note": "'sich beschäftigen mit' + dative = to engage with/study (a topic). Also non-reflexive: 'jemanden beschäftigen' = to employ someone.",
+      "emoji": "📚",
+      "cat": "💼 Arbeit",
+      "lvl": "B1"
+    },
+    {
+      "de": "sich auskennen",
+      "en": "to know one's way around",
+      "type": "unregelmäßiges Verb (reflexiv, trennbar)",
+      "pp": "sich ausgekannt (hat)",
+      "ph": "[zɪç ˈaʊ̯skɛnən]",
+      "conj": {
+        "ich": "kenne mich...aus",
+        "du": "kennst dich...aus",
+        "er": "kennt sich...aus",
+        "wir": "kennen uns...aus",
+        "ihr": "kennt euch...aus",
+        "sie": "kennen sich...aus"
+      },
+      "ex": "Ich kenne mich hier nicht aus.",
+      "note": "Reflexive + separable, built from 'kennen'. 'sich auskennen' = to be familiar with a place/topic.",
+      "emoji": "🗺️",
+      "cat": "💭 Konzepte",
+      "lvl": "B1"
+    },
+    {
+      "de": "sich verlassen",
+      "en": "to rely on",
+      "type": "starkes Verb (reflexiv)",
+      "pp": "sich verlassen (hat)",
+      "ph": "[zɪç fɛɐ̯ˈlasən]",
+      "conj": {
+        "ich": "verlasse mich",
+        "du": "verlässt dich",
+        "er": "verlässt sich",
+        "wir": "verlassen uns",
+        "ihr": "verlasst euch",
+        "sie": "verlassen sich"
+      },
+      "ex": "Ich verlasse mich auf dich.",
+      "note": "'sich verlassen auf' + accusative = to rely/depend on. Non-reflexive 'verlassen' means 'to leave (a place)' — different meaning!",
+      "emoji": "🛡️",
+      "cat": "💭 Meinungen",
+      "lvl": "B1"
+    },
+    {
+      "de": "sich bewerben",
+      "en": "to apply (for a job)",
+      "type": "starkes Verb (reflexiv)",
+      "pp": "sich beworben (hat)",
+      "ph": "[zɪç bəˈvɛʁbən]",
+      "conj": {
+        "ich": "bewerbe mich",
+        "du": "bewirbst dich",
+        "er": "bewirbt sich",
+        "wir": "bewerben uns",
+        "ihr": "bewerbt euch",
+        "sie": "bewerben sich"
+      },
+      "ex": "Ich bewerbe mich um die Stelle.",
+      "note": "Strong verb with vowel change e→i. 'sich bewerben um' + accusative = to apply for. Essential job-search vocabulary.",
+      "emoji": "📝",
+      "cat": "💼 Arbeit",
+      "lvl": "B1"
+    },
+    {
+      "de": "verhandeln",
+      "en": "to negotiate",
+      "type": "schwaches Verb",
+      "pp": "verhandelt (hat)",
+      "ph": "[fɛɐ̯ˈhandl̩n]",
+      "conj": {
+        "ich": "verhandle",
+        "du": "verhandelst",
+        "er": "verhandelt",
+        "wir": "verhandeln",
+        "ihr": "verhandelt",
+        "sie": "verhandeln"
+      },
+      "ex": "Wir verhandeln über den Preis.",
+      "note": "Inseparable 'ver-' prefix, from 'handeln' (to act/trade). Common in business and diplomatic contexts.",
+      "emoji": "🤝",
+      "cat": "💼 Arbeit",
+      "lvl": "B1"
+    },
+    {
+      "de": "sich auseinandersetzen",
+      "en": "to engage with / grapple with",
+      "type": "schwaches Verb (reflexiv, trennbar)",
+      "pp": "sich auseinandergesetzt (hat)",
+      "ph": "[zɪç aʊ̯sʔaɪ̯nandɐˈzɛtsən]",
+      "conj": {
+        "ich": "setze mich...auseinander",
+        "du": "setzt dich...auseinander",
+        "er": "setzt sich...auseinander",
+        "wir": "setzen uns...auseinander",
+        "ihr": "setzt euch...auseinander",
+        "sie": "setzen sich...auseinander"
+      },
+      "ex": "Wir müssen uns mit diesem Problem auseinandersetzen.",
+      "note": "Long compound separable verb. 'sich auseinandersetzen mit' + dative = to grapple with/engage seriously with (an issue).",
+      "emoji": "🧩",
+      "cat": "💭 Abstrakt",
+      "lvl": "B2"
+    },
+    {
+      "de": "berücksichtigen",
+      "en": "to take into account",
+      "type": "schwaches Verb",
+      "pp": "berücksichtigt (hat)",
+      "ph": "[bəˈʁʏksɪçtɪɡən]",
+      "conj": {
+        "ich": "berücksichtige",
+        "du": "berücksichtigst",
+        "er": "berücksichtigt",
+        "wir": "berücksichtigen",
+        "ihr": "berücksichtigt",
+        "sie": "berücksichtigen"
+      },
+      "ex": "Wir müssen alle Faktoren berücksichtigen.",
+      "note": "Inseparable, formal verb common in academic/business writing. From 'Rücksicht' (consideration/regard).",
+      "emoji": "⚖️",
+      "cat": "💼 Wirtschaft",
+      "lvl": "B2"
+    },
+    {
+      "de": "sich widmen",
+      "en": "to devote oneself to",
+      "type": "schwaches Verb (reflexiv)",
+      "pp": "sich gewidmet (hat)",
+      "ph": "[zɪç ˈvɪdmən]",
+      "conj": {
+        "ich": "widme mich",
+        "du": "widmest dich",
+        "er": "widmet sich",
+        "wir": "widmen uns",
+        "ihr": "widmet euch",
+        "sie": "widmen sich"
+      },
+      "ex": "Sie widmet sich ganz ihrer Forschung.",
+      "note": "'sich widmen' + dative = to devote oneself to. Elevated register, common in formal biographical writing.",
+      "emoji": "🎯",
+      "cat": "🔬 Wissenschaft",
+      "lvl": "B2"
+    },
+    {
+      "de": "erörtern",
+      "en": "to discuss in depth / examine",
+      "type": "schwaches Verb",
+      "pp": "erörtert (hat)",
+      "ph": "[ɛɐ̯ˈʔœʁtɐn]",
+      "conj": {
+        "ich": "erörtere",
+        "du": "erörterst",
+        "er": "erörtert",
+        "wir": "erörtern",
+        "ihr": "erörtert",
+        "sie": "erörtern"
+      },
+      "ex": "Die Experten erörtern das Thema ausführlich.",
+      "note": "Formal, academic-register verb for in-depth discussion. Common in essays and formal debate ('die Erörterung' = the discussion essay genre in German schools).",
+      "emoji": "🗣️",
+      "cat": "🗣️ Diskussion",
+      "lvl": "B2"
+    },
+    {
+      "de": "sich auswirken",
+      "en": "to have an effect / impact",
+      "type": "schwaches Verb (reflexiv, trennbar)",
+      "pp": "sich ausgewirkt (hat)",
+      "ph": "[zɪç ˈaʊ̯svɪʁkən]",
+      "conj": {
+        "ich": "wirke mich...aus",
+        "du": "wirkst dich...aus",
+        "er": "wirkt sich...aus",
+        "wir": "wirken uns...aus",
+        "ihr": "wirkt euch...aus",
+        "sie": "wirken sich...aus"
+      },
+      "ex": "Die Krise wirkt sich auf die ganze Wirtschaft aus.",
+      "note": "'sich auswirken auf' + accusative = to impact/affect. Common in news and economic/political analysis.",
+      "emoji": "📊",
+      "cat": "💼 Wirtschaft",
+      "lvl": "B2"
+    },
+    {
+      "de": "gewährleisten",
+      "en": "to guarantee / ensure",
+      "type": "schwaches Verb",
+      "pp": "gewährleistet (hat)",
+      "ph": "[ɡəˈvɛːɐ̯laɪ̯stən]",
+      "conj": {
+        "ich": "gewährleiste",
+        "du": "gewährleistest",
+        "er": "gewährleistet",
+        "wir": "gewährleisten",
+        "ihr": "gewährleistet",
+        "sie": "gewährleisten"
+      },
+      "ex": "Diese Maßnahmen gewährleisten die Sicherheit.",
+      "note": "Formal, often used in legal/official contexts. No 'ge-' added in participle since the verb already starts with 'ge-'.",
+      "emoji": "🔒",
+      "cat": "🏛️ Gesellschaft",
+      "lvl": "B2"
+    },
+    {
+      "de": "verdeutlichen",
+      "en": "to clarify / illustrate",
+      "type": "schwaches Verb",
+      "pp": "verdeutlicht (hat)",
+      "ph": "[fɛɐ̯ˈdɔɪ̯tlɪçən]",
+      "conj": {
+        "ich": "verdeutliche",
+        "du": "verdeutlichst",
+        "er": "verdeutlicht",
+        "wir": "verdeutlichen",
+        "ihr": "verdeutlicht",
+        "sie": "verdeutlichen"
+      },
+      "ex": "Dieses Beispiel verdeutlicht das Problem.",
+      "note": "From 'deutlich' (clear) + 'ver-' prefix. Common academic verb for illustrating a point with an example.",
+      "emoji": "💡",
+      "cat": "🗣️ Diskussion",
+      "lvl": "B2"
+    },
+    {
+      "de": "sich abzeichnen",
+      "en": "to become apparent / loom",
+      "type": "schwaches Verb (reflexiv, trennbar)",
+      "pp": "sich abgezeichnet (hat)",
+      "ph": "[zɪç ˈapˌtsaɪ̯çnən]",
+      "conj": {
+        "ich": "zeichne mich...ab",
+        "du": "zeichnest dich...ab",
+        "er": "zeichnet sich...ab",
+        "wir": "zeichnen uns...ab",
+        "ihr": "zeichnet euch...ab",
+        "sie": "zeichnen sich...ab"
+      },
+      "ex": "Ein neuer Trend zeichnet sich ab.",
+      "note": "Used for emerging patterns/trends becoming visible. Common in analytical and journalistic writing.",
+      "emoji": "📈",
+      "cat": "💭 Abstrakt",
+      "lvl": "B2"
+    },
+    {
+      "de": "beeinflussen",
+      "en": "to influence",
+      "type": "schwaches Verb",
+      "pp": "beeinflusst (hat)",
+      "ph": "[bəˈʔaɪ̯nflʊsən]",
+      "conj": {
+        "ich": "beeinflusse",
+        "du": "beeinflusst",
+        "er": "beeinflusst",
+        "wir": "beeinflussen",
+        "ihr": "beeinflusst",
+        "sie": "beeinflussen"
+      },
+      "ex": "Soziale Medien beeinflussen unsere Meinungen.",
+      "note": "From 'Einfluss' (influence) + 'be-' prefix. Common in discussions of media, psychology, and society.",
+      "emoji": "🎭",
+      "cat": "🏛️ Gesellschaft",
+      "lvl": "B2"
+    },
+    {
+      "de": "sich verpflichten",
+      "en": "to commit / obligate oneself",
+      "type": "schwaches Verb (reflexiv)",
+      "pp": "sich verpflichtet (hat)",
+      "ph": "[zɪç fɛɐ̯ˈpflɪçtən]",
+      "conj": {
+        "ich": "verpflichte mich",
+        "du": "verpflichtest dich",
+        "er": "verpflichtet sich",
+        "wir": "verpflichten uns",
+        "ihr": "verpflichtet euch",
+        "sie": "verpflichten sich"
+      },
+      "ex": "Das Unternehmen verpflichtet sich zu mehr Transparenz.",
+      "note": "'sich verpflichten zu' + dative = to commit to. Formal register, common in contracts and corporate statements.",
+      "emoji": "✍️",
+      "cat": "💼 Wirtschaft",
+      "lvl": "B2"
     }
   ],
   "fillers": [
