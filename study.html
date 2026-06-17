@@ -762,6 +762,7 @@ auth.onAuthStateChanged(async user => {
   setActivePillar(settings.startPillar);
   setMode(settings.defaultMode);
   updateHeader();
+  startStudyTimeTracker();
 });
 
 async function loadUserData(){
@@ -789,6 +790,52 @@ async function loadLangData(){
     showToast("Could not load language data");
     console.error(e);
   }
+}
+
+// ── PER-LANGUAGE TIME TRACKER
+// Ticks every 30s while this study page is open AND the tab is visible.
+// Credits time to the CURRENTLY LOADED language (langCode) only —
+// this is the fix for the dashboard's old "always credits first language" bug.
+let studyTrackInterval = null;
+const TICK_SECONDS = 30;
+
+function startStudyTimeTracker(){
+  if(studyTrackInterval) clearInterval(studyTrackInterval);
+  studyTrackInterval = setInterval(() => {
+    if(document.visibilityState !== "visible") return; // don't count background tabs
+    tickStudyTime();
+  }, TICK_SECONDS * 1000);
+
+  // Save immediately when leaving the page so the last partial tick isn't lost on refresh/close
+  window.addEventListener("beforeunload", () => { saveProgress(); });
+  document.addEventListener("visibilitychange", () => {
+    if(document.visibilityState === "hidden") saveProgress();
+  });
+}
+
+function tickStudyTime(){
+  if(!userData) return;
+  const today = todayKey();
+
+  // 1) Global timeLog — feeds dashboard streak + week/month/year/all-time charts
+  if(!userData.timeLog) userData.timeLog = {};
+  userData.timeLog[today] = (userData.timeLog[today]||0) + TICK_SECONDS;
+
+  // 2) Per-language timeSpent — feeds the language card "total time" on dashboard
+  if(!userData.progress) userData.progress = {};
+  if(!userData.progress[langCode]) userData.progress[langCode] = {};
+  if(!userData.progress[langCode].timeSpent){
+    userData.progress[langCode].timeSpent = { total:0, byDate:{} };
+  }
+  const ts = userData.progress[langCode].timeSpent;
+  ts.total = (ts.total||0) + TICK_SECONDS;
+  ts.byDate[today] = (ts.byDate[today]||0) + TICK_SECONDS;
+
+  saveProgress();
+}
+
+function todayKey(){
+  return new Date().toISOString().split("T")[0];
 }
 
 // ── HEADER
@@ -1538,6 +1585,6 @@ document.getElementById("settings-sheet").addEventListener("click", e => {
 });
 </script>
 
-<div class="version-badge">v3.1 — 2026-06-17 08:22</div>
+<div class="version-badge">v3.4 — 2026-06-17 09:45</div>
 </body>
 </html>

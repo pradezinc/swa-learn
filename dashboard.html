@@ -157,6 +157,10 @@ main{max-width:700px;margin:0 auto;padding:1.25rem 1rem 5rem}
 .week-bar.today{background:var(--amber)}
 .week-day{font-size:9px;color:var(--text3);text-transform:uppercase}
 .week-legend{display:flex;gap:12px;font-size:10px;color:var(--text3)}
+.sel-pill-act{display:flex;gap:2px;background:var(--surface2);border-radius:20px;padding:3px;width:fit-content}
+.act-toggle{padding:5px 10px;border-radius:17px;border:none;font-size:11px;font-weight:600;
+  cursor:pointer;background:transparent;color:var(--text2);font-family:var(--font);transition:all .2s;white-space:nowrap}
+.act-toggle.active{background:var(--surface);color:var(--text);box-shadow:0 1px 3px rgba(0,0,0,.1)}
 .legend-dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:3px}
 
 /* STREAK */
@@ -420,11 +424,18 @@ main{max-width:700px;margin:0 auto;padding:1.25rem 1rem 5rem}
     <div class="weak-grid" id="weak-grid"></div>
   </div>
 
-  <!-- WEEKLY ACTIVITY -->
+  <!-- ACTIVITY CHART -->
   <div class="sec-hdr" style="margin-top:1.5rem">
-    <div class="sec-title">Weekly Activity</div>
-    <div class="sec-link" id="week-total">0 min this week</div>
+    <div class="sec-title">Activity</div>
   </div>
+  <div class="sel-pill-act" style="margin-bottom:.75rem">
+    <button class="act-toggle active" id="act-week" onclick="setActivityView('week')">Week</button>
+    <button class="act-toggle" id="act-month" onclick="setActivityView('month')">Month</button>
+    <button class="act-toggle" id="act-year" onclick="setActivityView('year')">Year</button>
+    <button class="act-toggle" id="act-all" onclick="setActivityView('all')">All-time</button>
+  </div>
+  </div>
+  <div class="sec-link" id="week-total" style="margin-bottom:.5rem;display:block">0 min this week</div>
   <div class="week-chart" id="week-chart"></div>
   <div class="week-legend">
     <span><span class="legend-dot" style="background:var(--teal)"></span>Study time</span>
@@ -829,7 +840,24 @@ function renderETA(langKeys){
   document.getElementById("eta-val").textContent = `~${remaining} hours`;
 }
 
+let activityView = "week"; // week | month | year | all
+
+function setActivityView(view){
+  activityView = view;
+  ["week","month","year","all"].forEach(v => {
+    document.getElementById("act-"+v).classList.toggle("active", view===v);
+  });
+  renderWeekChart();
+}
+
 function renderWeekChart(){
+  if(activityView === "month") renderMonthChart();
+  else if(activityView === "year") renderYearChart();
+  else if(activityView === "all") renderAllTimeChart();
+  else renderWeekOnlyChart();
+}
+
+function renderWeekOnlyChart(){
   const chart = document.getElementById("week-chart");
   const today = new Date().getDay();
   const todayIdx = today === 0 ? 6 : today - 1;
@@ -857,6 +885,129 @@ function renderWeekChart(){
 
   document.getElementById("week-total").textContent =
     Math.round(weekTotal/60) + " min this week";
+}
+
+function renderMonthChart(){
+  const chart = document.getElementById("week-chart");
+  const now = new Date();
+  const daysInMonth = new Date(now.getFullYear(), now.getMonth()+1, 0).getDate();
+  const todayDate = now.getDate();
+
+  // Group into weeks (5-6 bars) for the current month
+  const weekBuckets = [];
+  let bucket = { secs: 0, label: "W1", days: 0 };
+  let weekNum = 1;
+
+  for(let day = 1; day <= daysInMonth; day++){
+    const d = new Date(now.getFullYear(), now.getMonth(), day);
+    const key = d.toISOString().split("T")[0];
+    const secs = userData.timeLog?.[key] || 0;
+    bucket.secs += secs;
+    bucket.days++;
+
+    // New week bucket every 7 days, or last day of month
+    if(bucket.days === 7 || day === daysInMonth){
+      bucket.label = "W" + weekNum;
+      bucket.isCurrentWeek = day >= todayDate - 6 && day <= todayDate;
+      weekBuckets.push(bucket);
+      weekNum++;
+      bucket = { secs: 0, label: "W"+weekNum, days: 0 };
+    }
+  }
+
+  let monthTotal = weekBuckets.reduce((a,b) => a + b.secs, 0);
+  const maxSecs = Math.max(...weekBuckets.map(b=>b.secs), 60);
+
+  chart.innerHTML = weekBuckets.map(b => {
+    const h = Math.max(3, Math.round(b.secs/maxSecs*52));
+    const cls = b.isCurrentWeek ? "today" : b.secs > 0 ? "" : "empty";
+    return `
+      <div class="week-bar-wrap">
+        <div class="week-bar ${cls}" style="height:${h}px"></div>
+        <div class="week-day">${b.label}</div>
+      </div>
+    `;
+  }).join("");
+
+  const monthName = now.toLocaleDateString('en-US', { month: 'long' });
+  document.getElementById("week-total").textContent =
+    Math.round(monthTotal/60) + " min in " + monthName;
+}
+
+function renderYearChart(){
+  const chart = document.getElementById("week-chart");
+  const now = new Date();
+  const year = now.getFullYear();
+  const monthLabels = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  const currentMonth = now.getMonth();
+
+  const monthTotals = new Array(12).fill(0);
+  Object.entries(userData.timeLog || {}).forEach(([dateKey, secs]) => {
+    const d = new Date(dateKey);
+    if(d.getFullYear() === year){
+      monthTotals[d.getMonth()] += secs;
+    }
+  });
+
+  let yearTotal = monthTotals.reduce((a,b)=>a+b,0);
+  const maxSecs = Math.max(...monthTotals, 60);
+
+  chart.innerHTML = monthLabels.map((label, i) => {
+    const secs = monthTotals[i];
+    const h = Math.max(3, Math.round(secs/maxSecs*52));
+    const cls = i === currentMonth ? "today" : secs > 0 ? "" : "empty";
+    // Don't show future months as empty bars taking space oddly — still show for full year view
+    return `
+      <div class="week-bar-wrap">
+        <div class="week-bar ${cls}" style="height:${h}px"></div>
+        <div class="week-day">${label}</div>
+      </div>
+    `;
+  }).join("");
+
+  document.getElementById("week-total").textContent =
+    Math.round(yearTotal/3600*10)/10 + " hours in " + year;
+}
+
+function renderAllTimeChart(){
+  const chart = document.getElementById("week-chart");
+  const entries = Object.entries(userData.timeLog || {});
+
+  if(entries.length === 0){
+    chart.innerHTML = `<div style="width:100%;text-align:center;color:var(--text3);font-size:12px;padding:1rem 0">No activity recorded yet</div>`;
+    document.getElementById("week-total").textContent = "0 hours total";
+    return;
+  }
+
+  // Group by year
+  const yearTotals = {};
+  entries.forEach(([dateKey, secs]) => {
+    const y = new Date(dateKey).getFullYear();
+    yearTotals[y] = (yearTotals[y]||0) + secs;
+  });
+
+  const years = Object.keys(yearTotals).sort();
+  const currentYear = new Date().getFullYear();
+  let allTotal = Object.values(yearTotals).reduce((a,b)=>a+b,0);
+  const maxSecs = Math.max(...Object.values(yearTotals), 60);
+
+  chart.innerHTML = years.map(y => {
+    const secs = yearTotals[y];
+    const h = Math.max(3, Math.round(secs/maxSecs*52));
+    const cls = parseInt(y) === currentYear ? "today" : "";
+    return `
+      <div class="week-bar-wrap">
+        <div class="week-bar ${cls}" style="height:${h}px"></div>
+        <div class="week-day">${y}</div>
+      </div>
+    `;
+  }).join("");
+
+  const totalHours = Math.round(allTotal/3600*10)/10;
+  const firstDate = entries.map(e=>e[0]).sort()[0];
+  const daysSince = Math.max(1, Math.round((Date.now() - new Date(firstDate))/86400000));
+  document.getElementById("week-total").textContent =
+    `${totalHours} hours total · learning since ${firstDate}`;
 }
 
 function renderSettings(){
@@ -936,23 +1087,22 @@ let trackInterval;
 
 function startTimeTracker(){
   trackInterval = setInterval(async () => {
-    const elapsed = Math.round((Date.now() - sessionStart) / 1000);
+    if(document.visibilityState !== "visible") return; // don't count background tabs
     const today = todayKey();
     if(!userData.timeLog) userData.timeLog = {};
     userData.timeLog[today] = (userData.timeLog[today]||0) + 30; // add 30 secs
-    // Update active language time too
-    const langs = Object.keys(userData.languages||{}).filter(k=>userData.languages[k].active);
-    if(langs.length > 0){
-      const activeCode = langs[0];
-      if(!userData.progress[activeCode].timeSpent) userData.progress[activeCode].timeSpent = {total:0,byDate:{}};
-      userData.progress[activeCode].timeSpent.total += 30;
-      userData.progress[activeCode].timeSpent.byDate[today] =
-        (userData.progress[activeCode].timeSpent.byDate[today]||0) + 30;
-    }
+    // NOTE: per-language time is now tracked in study.html itself,
+    // tagged to whichever language is actually being studied.
+    // This dashboard ticker only feeds the global streak/activity charts.
     await saveUserData();
     renderStats();
     renderWeekChart();
   }, 30000); // every 30 seconds
+
+  window.addEventListener("beforeunload", () => { saveUserData(); });
+  document.addEventListener("visibilitychange", () => {
+    if(document.visibilityState === "hidden") saveUserData();
+  });
 }
 
 // ── SETTINGS ACTIONS
@@ -1104,6 +1254,6 @@ window.showToast = (msg) => {
   setTimeout(()=>t.classList.remove("show"), 2000);
 };
 </script>
-<div class="version-badge">v3.1 — 2026-06-17 08:22</div>
+<div class="version-badge">v3.4 — 2026-06-17 09:45</div>
 </body>
 </html>
