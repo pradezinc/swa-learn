@@ -883,8 +883,9 @@ function setCat(c){
 }
 
 function itemMatchesLevel(item){
-  if(activeLevel === "Alle") return settings.showB2 || item.lvl !== "B2";
-  return item.lvl === activeLevel;
+  const lvl = item.lvl || "A1"; // fallback if data missing level
+  if(activeLevel === "Alle") return settings.showB2 || lvl !== "B2";
+  return lvl === activeLevel;
 }
 
 // ── FILTER DECK
