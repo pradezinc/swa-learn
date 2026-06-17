@@ -128,39 +128,63 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const provider = new firebase.auth.GoogleAuthProvider();
 
-// Handle redirect result FIRST (when returning from Google)
-showLoading(true, "Completing sign in...");
+// Detect if we're returning from a redirect
+const isReturningFromRedirect = sessionStorage.getItem("swa-redirecting") === "true";
 
+if(isReturningFromRedirect){
+  showLoading(true, "Completing sign in...");
+  sessionStorage.removeItem("swa-redirecting");
+}
+
+// Handle redirect result FIRST (when returning from Google)
 auth.getRedirectResult()
   .then(result => {
     if(result && result.user){
-      // Successfully signed in via redirect
       window.location.replace("dashboard.html");
+    } else if(isReturningFromRedirect) {
+      // We expected a result but got none — show the actual issue
+      showLoading(false);
+      showError("Sign-in did not complete. Check Firebase authorized domains.");
     } else {
-      // No redirect result — show the login page normally
       showLoading(false);
     }
   })
   .catch(err => {
     showLoading(false);
-    showError("Sign in failed: " + err.message);
+    showError("Error: " + err.code + " — " + err.message);
+    console.error("Redirect result error:", err);
   });
 
 // Also check if already logged in
 auth.onAuthStateChanged(user => {
-  if(user){
+  if(user && !isReturningFromRedirect){
     window.location.replace("dashboard.html");
   }
 });
 
 function signInGoogle() {
-  showLoading(true, "Redirecting to Google...");
+  showLoading(true, "Opening sign in...");
   hideError();
-  // Use REDIRECT not popup — works on Safari iPhone PWA
-  auth.signInWithRedirect(provider)
+
+  // Try POPUP first (works on desktop, some mobile browsers)
+  auth.signInWithPopup(provider)
+    .then(result => {
+      if(result.user) window.location.replace("dashboard.html");
+    })
     .catch(err => {
-      showLoading(false);
-      showError("Could not start sign in. Please try again.");
+      console.error("Popup error:", err.code, err.message);
+      if(err.code === 'auth/popup-blocked' || err.code === 'auth/popup-closed-by-user' || err.code === 'auth/cancelled-popup-request'){
+        // Fallback to redirect for mobile/blocked popups
+        showLoading(true, "Redirecting to Google...");
+        sessionStorage.setItem("swa-redirecting", "true");
+        auth.signInWithRedirect(provider).catch(redirectErr => {
+          showLoading(false);
+          showError("Error: " + redirectErr.code + " — " + redirectErr.message);
+        });
+      } else {
+        showLoading(false);
+        showError("Error: " + err.code + " — " + err.message);
+      }
     });
 }
 
@@ -173,7 +197,7 @@ function signInAnon() {
     })
     .catch(err => {
       showLoading(false);
-      showError("Could not sign in anonymously.");
+      showError("Error: " + err.code + " — " + err.message);
     });
 }
 
