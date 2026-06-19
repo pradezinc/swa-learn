@@ -367,6 +367,35 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);
 .sel-opt.active{background:var(--surface);color:var(--text);
   box-shadow:0 1px 3px rgba(0,0,0,.1)}
 
+/* ── REPORT ISSUE ── */
+.report-btn{
+  display:flex;align-items:center;justify-content:center;gap:5px;
+  margin:10px auto 0;padding:6px 14px;border-radius:14px;
+  background:var(--surface2);border:.5px solid var(--border2);
+  color:var(--text2);font-size:11px;font-weight:600;cursor:pointer;
+  font-family:var(--font);
+}
+.report-btn:active{opacity:.7}
+.report-context{
+  background:var(--surface2);border-radius:10px;padding:10px 12px;
+  margin-bottom:14px;font-size:12px;color:var(--text2);
+}
+.report-context strong{color:var(--text);font-size:13px}
+.report-textarea{
+  width:100%;min-height:90px;padding:10px 12px;border-radius:12px;
+  border:.5px solid var(--border2);background:var(--surface);
+  color:var(--text);font-family:var(--font);font-size:13px;
+  resize:none;margin-bottom:12px;box-sizing:border-box;
+}
+.report-textarea:focus{outline:none;border-color:var(--teal)}
+.report-submit{
+  width:100%;padding:12px;border-radius:12px;border:none;
+  background:var(--teal);color:#fff;font-size:14px;font-weight:700;
+  cursor:pointer;font-family:var(--font);
+}
+.report-submit:disabled{opacity:.5;cursor:default}
+.report-submit:active:not(:disabled){opacity:.85}
+
 /* ── CONFETTI ── */
 .conf-wrap{position:fixed;top:0;left:0;width:100%;height:100%;
   pointer-events:none;overflow:hidden;z-index:999}
@@ -523,6 +552,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);
         <div class="word-en" id="cb-en"></div>
         <div class="en-note" id="cb-note"></div>
         <div class="conj-box" id="cb-conj" style="display:none"></div>
+        <button class="report-btn" onclick="openReport(event)">🚩 Report issue</button>
         <span class="flip-hint">Tap to flip back</span>
       </div>
       <!-- SWIPE INDICATORS -->
@@ -675,6 +705,21 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);
   </div>
 </div>
 
+<!-- REPORT ISSUE SHEET -->
+<div class="sheet-overlay" id="report-sheet">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-title">Report an Issue</div>
+
+    <div class="report-context" id="report-context"></div>
+
+    <textarea class="report-textarea" id="report-text"
+      placeholder="What's wrong? e.g. wrong translation, bad audio match, typo, confusing example..."></textarea>
+
+    <button class="report-submit" id="report-submit" onclick="submitReport()">Submit Report</button>
+  </div>
+</div>
+
 <div class="conf-wrap" id="conf"></div>
 <div class="toast" id="toast"></div>
 
@@ -745,6 +790,7 @@ const PILLARS = [
   { key:"verbs",   icon:"🏃", label:"Verbs"   },
   { key:"fillers", icon:"🔗", label:"Connect" },
   { key:"conv",    icon:"💬", label:"Talk"    },
+  { key:"grammar", icon:"📐", label:"Grammar" },
 ];
 
 // ── INIT
@@ -1022,6 +1068,8 @@ function renderCard(){
     cfv.innerHTML = `<div class="word-main" style="font-size:26px;margin-bottom:0">${item.en}</div>`;
   } else if(activePillar === "chunks"){
     cfv.innerHTML = `<div class="word-main" style="font-size:18px;line-height:1.4;text-align:center;max-width:90%">${item.en}</div>`;
+  } else if(activePillar === "grammar"){
+    cfv.innerHTML = `<div class="word-main" style="font-size:20px;line-height:1.4;text-align:center;max-width:90%">${item.en}</div>`;
   } else {
     cfv.innerHTML = "";
   }
@@ -1034,6 +1082,7 @@ function renderCard(){
   else if(activePillar === "verbs") prompt.textContent = "What action is this?";
   else if(activePillar === "chunks") prompt.textContent = item.situation || `What would you say in ${langName}?`;
   else if(activePillar === "fillers") prompt.textContent = `How do you say this in ${langName}?`;
+  else if(activePillar === "grammar") prompt.textContent = item.clue || "What is the rule?";
   else prompt.textContent = `What is the ${langName} word?`;
 
   // Back visual (same emoji)
@@ -1523,6 +1572,56 @@ function closeSettings(){
   document.getElementById("settings-sheet").classList.remove("show");
 }
 
+// ── REPORT ISSUE
+function openReport(e){
+  if(e) e.stopPropagation(); // don't trigger card flip
+  if(!deck.length) return;
+  const item = deck[idx];
+  const word = item.de || item.de_word || "?";
+  const en = item.en || item.situation || item.title || "";
+  const ctx = document.getElementById("report-context");
+  ctx.innerHTML = `<strong>${word}</strong>${en ? " — " + en : ""}<br>${langData?.meta?.nameEn || ""} · ${activePillar}${item.lvl ? " · " + item.lvl : ""}`;
+  document.getElementById("report-text").value = "";
+  document.getElementById("report-submit").disabled = false;
+  document.getElementById("report-submit").textContent = "Submit Report";
+  document.getElementById("report-sheet").classList.add("show");
+}
+
+function closeReport(){
+  document.getElementById("report-sheet").classList.remove("show");
+}
+
+async function submitReport(){
+  const text = document.getElementById("report-text").value.trim();
+  if(!text){ showToast("Please describe the issue"); return; }
+  const item = deck[idx];
+  const btn = document.getElementById("report-submit");
+  btn.disabled = true;
+  btn.textContent = "Submitting…";
+  try{
+    await db.collection("reports").add({
+      uid: currentUser?.uid || null,
+      langCode: langCode,
+      langName: langData?.meta?.nameEn || "",
+      pillar: activePillar,
+      itemKey: getItemKey(item),
+      itemDe: item.de || "",
+      itemEn: item.en || item.situation || item.title || "",
+      lvl: item.lvl || activeLevel || "",
+      issue: text,
+      status: "open",
+      createdAt: firebase.firestore.FieldValue.serverTimestamp()
+    });
+    closeReport();
+    showToast("Thanks — issue reported! 🚩");
+  } catch(err){
+    console.error("Report failed:", err);
+    btn.disabled = false;
+    btn.textContent = "Submit Report";
+    showToast("Couldn't submit — try again");
+  }
+}
+
 // ── NAVIGATION
 function goBack(){
   saveProgress();
@@ -1586,8 +1685,13 @@ document.addEventListener("keydown",e=>{
 document.getElementById("settings-sheet").addEventListener("click", e => {
   if(e.target === document.getElementById("settings-sheet")) closeSettings();
 });
+
+// Close report sheet on outside tap
+document.getElementById("report-sheet").addEventListener("click", e => {
+  if(e.target === document.getElementById("report-sheet")) closeReport();
+});
 </script>
 
-<div class="version-badge">v3.5 — 2026-06-17 12:50</div>
+<div class="version-badge">v3.7 — 2026-06-19 00:00</div>
 </body>
 </html>

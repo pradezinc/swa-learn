@@ -290,6 +290,61 @@ main{max-width:700px;margin:0 auto;padding:1.25rem 1rem 5rem}
   cursor:pointer;color:var(--text2);font-family:var(--font);margin-top:1rem;
 }
 
+/* REPORTS ADMIN */
+.report-badge{
+  position:relative;
+}
+.report-count{
+  position:absolute;top:-6px;right:-6px;
+  background:var(--red);color:#fff;font-size:10px;font-weight:700;
+  border-radius:10px;min-width:18px;height:18px;padding:0 4px;
+  display:flex;align-items:center;justify-content:center;
+  line-height:1;
+}
+.report-tabs{display:flex;gap:6px;margin-bottom:1rem}
+.report-tab{
+  padding:6px 14px;border-radius:20px;border:.5px solid var(--border2);
+  background:var(--surface);font-size:12px;font-weight:600;
+  cursor:pointer;color:var(--text2);font-family:var(--font);
+}
+.report-tab.active{background:var(--teal);color:#fff;border-color:var(--teal)}
+.report-list{display:flex;flex-direction:column;gap:10px}
+.report-item{
+  background:var(--surface2);border-radius:14px;padding:12px 14px;
+  border:.5px solid var(--border);
+}
+.report-item.resolved{opacity:.55}
+.report-item-top{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:8px;margin-bottom:6px;flex-wrap:wrap;
+}
+.report-item-word{font-size:14px;font-weight:700;color:var(--text)}
+.report-item-meta{
+  font-size:10px;color:var(--text2);
+  background:var(--surface);padding:2px 8px;border-radius:8px;
+  border:.5px solid var(--border2);
+}
+.report-item-en{font-size:12px;color:var(--text2);margin-bottom:6px}
+.report-item-issue{
+  font-size:13px;color:var(--text);line-height:1.5;
+  background:var(--surface);padding:8px 10px;border-radius:10px;
+  margin-bottom:8px;
+}
+.report-item-foot{display:flex;align-items:center;justify-content:space-between}
+.report-item-date{font-size:10px;color:var(--text2)}
+.report-item-actions{display:flex;gap:6px}
+.report-action-btn{
+  padding:5px 12px;border-radius:14px;border:.5px solid var(--border2);
+  background:var(--surface);font-size:11px;font-weight:600;
+  cursor:pointer;color:var(--text2);font-family:var(--font);
+}
+.report-action-btn.resolve{color:var(--teal);border-color:var(--teal)}
+.report-action-btn.reopen{color:var(--amber);border-color:var(--amber)}
+.report-action-btn.delete{color:var(--red);border-color:var(--red)}
+.report-empty{
+  text-align:center;padding:2.5rem 1rem;color:var(--text2);font-size:13px;
+}
+
 /* TOAST */
 .toast{
   position:fixed;bottom:20px;left:50%;transform:translateX(-50%);
@@ -434,6 +489,12 @@ main{max-width:700px;margin:0 auto;padding:1.25rem 1rem 5rem}
     <button class="action-btn" onclick="importData()">📥 Import</button>
     <button class="action-btn" onclick="openStudy()">📚 Study</button>
   </div>
+  <div class="action-row">
+    <button class="action-btn report-badge" onclick="openReports()">
+      🚩 Reported Issues
+      <span class="report-count" id="report-count" style="display:none">0</span>
+    </button>
+  </div>
   <input type="file" id="import-file" accept=".json" style="display:none" onchange="handleImport(event)">
 
 </main>
@@ -518,6 +579,22 @@ main{max-width:700px;margin:0 auto;padding:1.25rem 1rem 5rem}
   </div>
 </div>
 
+<!-- REPORTED ISSUES MODAL -->
+<div class="modal-overlay" id="reports-modal" onclick="closeReportsModal(event)">
+  <div class="modal">
+    <div class="modal-title">Reported Issues</div>
+    <div class="report-tabs">
+      <button class="report-tab active" id="rtab-open" onclick="setReportTab('open')">Open</button>
+      <button class="report-tab" id="rtab-resolved" onclick="setReportTab('resolved')">Resolved</button>
+      <button class="report-tab" id="rtab-all" onclick="setReportTab('all')">All</button>
+    </div>
+    <div class="report-list" id="report-list">
+      <div class="report-empty">Loading…</div>
+    </div>
+    <button class="modal-close" onclick="closeReportsModal()">Close</button>
+  </div>
+</div>
+
 <div class="toast" id="toast"></div>
 
 <script>
@@ -597,6 +674,7 @@ auth.onAuthStateChanged(async user => {
   await loadUserData();
   renderDashboard();
   startTimeTracker();
+  refreshReportCount();
 });
 
 // ── LOAD USER DATA
@@ -689,6 +767,9 @@ function renderStats(){
     mastered += (lp.vocab?.mastered||[]).length;
     mastered += (lp.verbs?.mastered||[]).length;
     mastered += (lp.chunks?.mastered||[]).length;
+    mastered += (lp.freq?.mastered||[]).length;
+    mastered += (lp.fillers?.mastered||[]).length;
+    mastered += (lp.grammar?.mastered||[]).length;
   });
   document.getElementById("total-words").textContent = mastered;
 }
@@ -725,7 +806,8 @@ async function renderLanguages(){
       (progress.verbs?.mastered||[]).length +
       (progress.chunks?.mastered||[]).length +
       (progress.freq?.mastered||[]).length +
-      (progress.fillers?.mastered||[]).length;
+      (progress.fillers?.mastered||[]).length +
+      (progress.grammar?.mastered||[]).length;
     const totalTime = progress.timeSpent?.total ?? Object.values(progress.timeSpent?.byDate||{}).reduce((a,b)=>a+b,0);
     const timeMins = Math.round(totalTime/60);
     const currentLevel = lang.currentLevel || meta.levels?.[0] || "A1";
@@ -842,7 +924,7 @@ function renderWeakWords(langKeys){
 // Returns { pct, masteredCount, totalCount, etaHours|null, etaLabel }
 // etaHours is null when there's not enough data yet (< 1 hour logged for this language)
 function calcLevelCompletion(code, langPack, progress, currentLevel){
-  const pillars = ["vocab","freq","chunks","verbs","fillers"];
+  const pillars = ["vocab","freq","chunks","verbs","fillers","grammar"];
   let totalItems = 0, masteredItems = 0;
 
   pillars.forEach(pillar => {
@@ -1114,6 +1196,7 @@ window.addLanguage = async (code) => {
     chunks:{scores:{},mastered:[],struggling:[]},
     freq:{scores:{},mastered:[],struggling:[]},
     fillers:{scores:{},mastered:[],struggling:[]},
+    grammar:{scores:{},mastered:[],struggling:[]},
     timeSpent:{total:0,byDate:{}}
   };
   await saveUserData();
@@ -1225,6 +1308,128 @@ window.handleImport = async (e) => {
   e.target.value = "";
 };
 
+// ── REPORTED ISSUES (ADMIN)
+let reportTab = "open";
+let reportCache = [];
+
+async function refreshReportCount(){
+  try{
+    const snap = await db.collection("reports").where("status","==","open").get();
+    const n = snap.size;
+    const badge = document.getElementById("report-count");
+    if(n > 0){
+      badge.textContent = n > 99 ? "99+" : n;
+      badge.style.display = "flex";
+    } else {
+      badge.style.display = "none";
+    }
+  } catch(err){
+    console.error("Report count failed:", err);
+  }
+}
+
+window.setReportTab = (tab) => {
+  reportTab = tab;
+  ["open","resolved","all"].forEach(t=>{
+    document.getElementById(`rtab-${t}`).classList.toggle("active", t===tab);
+  });
+  renderReportList();
+};
+
+async function loadReports(){
+  const list = document.getElementById("report-list");
+  list.innerHTML = `<div class="report-empty">Loading…</div>`;
+  try{
+    const snap = await db.collection("reports").orderBy("createdAt","desc").limit(200).get();
+    reportCache = snap.docs.map(d => ({id:d.id, ...d.data()}));
+  } catch(err){
+    console.error("Load reports failed:", err);
+    reportCache = [];
+    list.innerHTML = `<div class="report-empty">Couldn't load reports.</div>`;
+    return;
+  }
+  renderReportList();
+}
+
+function renderReportList(){
+  const list = document.getElementById("report-list");
+  let items = reportCache;
+  if(reportTab === "open") items = items.filter(r => r.status !== "resolved");
+  if(reportTab === "resolved") items = items.filter(r => r.status === "resolved");
+
+  if(items.length === 0){
+    list.innerHTML = `<div class="report-empty">No ${reportTab === "all" ? "" : reportTab} reports 🎉</div>`;
+    return;
+  }
+
+  list.innerHTML = items.map(r => {
+    const resolved = r.status === "resolved";
+    const date = r.createdAt?.toDate ? r.createdAt.toDate().toLocaleDateString() : "";
+    const meta = [r.langName, r.pillar, r.lvl].filter(Boolean).join(" · ");
+    return `
+      <div class="report-item ${resolved ? "resolved" : ""}">
+        <div class="report-item-top">
+          <span class="report-item-word">${escapeHtml(r.itemDe || "?")}</span>
+          <span class="report-item-meta">${escapeHtml(meta)}</span>
+        </div>
+        ${r.itemEn ? `<div class="report-item-en">${escapeHtml(r.itemEn)}</div>` : ""}
+        <div class="report-item-issue">${escapeHtml(r.issue || "")}</div>
+        <div class="report-item-foot">
+          <span class="report-item-date">${date}</span>
+          <div class="report-item-actions">
+            ${resolved
+              ? `<button class="report-action-btn reopen" onclick="reopenReport('${r.id}')">↺ Reopen</button>`
+              : `<button class="report-action-btn resolve" onclick="resolveReport('${r.id}')">✓ Resolve</button>`}
+            <button class="report-action-btn delete" onclick="deleteReport('${r.id}')">🗑️</button>
+          </div>
+        </div>
+      </div>`;
+  }).join("");
+}
+
+function escapeHtml(s){
+  const d = document.createElement("div");
+  d.textContent = s ?? "";
+  return d.innerHTML;
+}
+
+window.resolveReport = async (id) => {
+  await db.collection("reports").doc(id).update({status:"resolved"});
+  const r = reportCache.find(x=>x.id===id);
+  if(r) r.status = "resolved";
+  renderReportList();
+  refreshReportCount();
+};
+
+window.reopenReport = async (id) => {
+  await db.collection("reports").doc(id).update({status:"open"});
+  const r = reportCache.find(x=>x.id===id);
+  if(r) r.status = "open";
+  renderReportList();
+  refreshReportCount();
+};
+
+window.deleteReport = async (id) => {
+  if(!confirm("Delete this report permanently?")) return;
+  await db.collection("reports").doc(id).delete();
+  reportCache = reportCache.filter(x=>x.id!==id);
+  renderReportList();
+  refreshReportCount();
+};
+
+window.openReports = () => {
+  document.getElementById("reports-modal").classList.add("show");
+  reportTab = "open";
+  ["open","resolved","all"].forEach(t=>{
+    document.getElementById(`rtab-${t}`).classList.toggle("active", t==="open");
+  });
+  loadReports();
+};
+window.closeReportsModal = (e) => {
+  if(!e || e.target===document.getElementById("reports-modal"))
+    document.getElementById("reports-modal").classList.remove("show");
+};
+
 // ── NAVIGATION
 window.studyLang = (code) => {
   localStorage.setItem("swa-active-lang", code);
@@ -1295,6 +1500,6 @@ window.showToast = (msg) => {
   setTimeout(()=>t.classList.remove("show"), 2000);
 };
 </script>
-<div class="version-badge">v3.5 — 2026-06-17 10:15</div>
+<div class="version-badge">v3.6 — 2026-06-19 00:00</div>
 </body>
 </html>
