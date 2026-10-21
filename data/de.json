@@ -10642,7 +10642,8 @@
       "note": "Uses 'sein' in perfect tense! 'Ich bin gegangen.' Movement verbs use sein!",
       "emoji": "🚶",
       "cat": "🏃 Bewegung",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Ich bin jeden Tag zur Schule gegangen."
     },
     {
       "de": "laufen",
@@ -10662,7 +10663,8 @@
       "note": "Vowel change: laufen → läuft (du/er). Umlaut! Uses 'sein'.",
       "emoji": "🏃",
       "cat": "🏃 Bewegung",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Er ist sehr schnell gelaufen."
     },
     {
       "de": "kommen",
@@ -10682,7 +10684,8 @@
       "note": "'Woher kommst du?' = Where do you come from? Uses 'sein' in perfect!",
       "emoji": "👋",
       "cat": "🏃 Bewegung",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Woher bist du gekommen?"
     },
     {
       "de": "fahren",
@@ -10702,7 +10705,8 @@
       "note": "Vowel change: fahren → fährt. For any vehicle! Uses 'sein'.",
       "emoji": "🚗",
       "cat": "🏃 Bewegung",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Ich bin mit dem Auto gefahren."
     },
     {
       "de": "essen",
@@ -10722,7 +10726,8 @@
       "note": "'isst' (eats) vs 'ist' (is) — sounds identical! Context is key!",
       "emoji": "🍽️",
       "cat": "🍴 Essen",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Ich habe einen Apfel gegessen."
     },
     {
       "de": "trinken",
@@ -10742,7 +10747,8 @@
       "note": "Strong verb: trinken → getrunken. Uses 'haben'.",
       "emoji": "☕",
       "cat": "🍴 Essen",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Er hat Kaffee jeden Morgen getrunken."
     },
     {
       "de": "kochen",
@@ -10762,7 +10768,8 @@
       "note": "Regular weak verb! kochen → kochte → gekocht. Uses 'haben'.",
       "emoji": "🍳",
       "cat": "🍴 Essen",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Ich habe jeden Abend gekocht."
     },
     {
       "de": "sprechen",
@@ -10782,7 +10789,8 @@
       "note": "Strong: e→i vowel change (du sprichst, er spricht). Uses 'haben'.",
       "emoji": "💬",
       "cat": "💬 Kommunikation",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Ich habe Deutsch und Englisch gesprochen."
     },
     {
       "de": "hören",
@@ -10802,7 +10810,8 @@
       "note": "Regular weak verb. 'Musik hören' = to listen to music. No 'to' needed!",
       "emoji": "🎵",
       "cat": "💬 Kommunikation",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Ich habe gerne Musik gehört."
     },
     {
       "de": "schreiben",
@@ -10822,7 +10831,8 @@
       "note": "Strong verb. 'einen Brief' = accusative masculine. Uses 'haben'.",
       "emoji": "✍️",
       "cat": "💬 Kommunikation",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Ich habe einen Brief geschrieben."
     },
     {
       "de": "lesen",
@@ -10842,7 +10852,8 @@
       "note": "Strong: e→ie change (du liest, er liest). Uses 'haben'.",
       "emoji": "📖",
       "cat": "💬 Kommunikation",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Ich habe ein Buch gelesen."
     },
     {
       "de": "schlafen",
@@ -10862,7 +10873,8 @@
       "note": "Strong: a→ä umlaut (du schläfst). Uses 'haben' NOT 'sein'!",
       "emoji": "😴",
       "cat": "🌙 Alltag",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Das Baby hat geschlafen."
     },
     {
       "de": "arbeiten",
@@ -10882,7 +10894,8 @@
       "note": "Extra -e-: arbeit+e+st (not arbeitst). Stems ending in -t add -e!",
       "emoji": "💼",
       "cat": "🌙 Alltag",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Ich habe von 9 bis 17 Uhr gearbeitet."
     },
     {
       "de": "lernen",
@@ -10902,7 +10915,8 @@
       "note": "Regular weak verb. No article needed with languages: 'Ich lerne Deutsch'!",
       "emoji": "📚",
       "cat": "🌙 Alltag",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Ich habe Deutsch gelernt."
     },
     {
       "de": "spielen",
@@ -10922,7 +10936,8 @@
       "note": "Regular. Covers sports, music AND games — very versatile!",
       "emoji": "⚽",
       "cat": "🌙 Alltag",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Die Kinder haben im Park gespielt."
     },
     {
       "de": "tanzen",
@@ -10942,7 +10957,8 @@
       "note": "Regular weak verb. 'auf der Party' = at the party (dative, location).",
       "emoji": "💃",
       "cat": "🎭 Freizeit",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Wir haben auf der Party getanzt."
     },
     {
       "de": "helfen",
@@ -10962,7 +10978,8 @@
       "note": "Takes DATIVE! 'mir helfen' = help me. 'dir' = you (dative). KEY rule!",
       "emoji": "🤝",
       "cat": "💼 Arbeit",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Hast du mir geholfen?"
     },
     {
       "de": "erklären",
@@ -10982,7 +10999,8 @@
       "note": "'er-' prefix is inseparable. 'Kannst du...?' = Can you...? (modal)",
       "emoji": "💡",
       "cat": "💬 Kommunikation",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Hast du das erklärt?"
     },
     {
       "de": "verstehen",
@@ -11002,7 +11020,8 @@
       "note": "Inseparable 'ver-'. 'Ich verstehe nicht' = I don't understand. KEY phrase!",
       "emoji": "🤔",
       "cat": "💬 Kommunikation",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Ich habe das nicht verstanden."
     },
     {
       "de": "entscheiden",
@@ -11022,7 +11041,8 @@
       "note": "'sich entscheiden' = reflexive. 'muss' + infinitive = must. B1 structure!",
       "emoji": "✅",
       "cat": "🧠 Denken",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Ich habe mich entschieden."
     },
     {
       "de": "kaufen",
@@ -11042,7 +11062,8 @@
       "note": "Regular weak verb, very common in shopping contexts. 'verkaufen' = to sell (related word).",
       "emoji": "🛒",
       "cat": "🛍️ Einkaufen",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Ich habe frisches Brot gekauft."
     },
     {
       "de": "bezahlen",
@@ -11062,7 +11083,8 @@
       "note": "Inseparable 'be-' prefix, no extra 'ge-' in participle. Different from plain 'zahlen' (slightly more general).",
       "emoji": "💳",
       "cat": "🛍️ Einkaufen",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Ich habe mit Karte bezahlt."
     },
     {
       "de": "öffnen",
@@ -11082,7 +11104,8 @@
       "note": "Stems ending in -n often add extra -e: du öffnest (not öffnst).",
       "emoji": "🚪",
       "cat": "🌙 Alltag",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Hast du das Fenster geöffnet?"
     },
     {
       "de": "schließen",
@@ -11102,7 +11125,8 @@
       "note": "Strong verb: schloss, geschlossen. Opposite of 'öffnen'.",
       "emoji": "🔒",
       "cat": "🌙 Alltag",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Ich habe die Tür geschlossen."
     },
     {
       "de": "putzen",
@@ -11122,7 +11146,8 @@
       "note": "Regular weak verb. 'die Zähne putzen' = to brush teeth (literally 'clean teeth').",
       "emoji": "🧹",
       "cat": "🌙 Alltag",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Ich habe jeden Samstag die Wohnung geputzt."
     },
     {
       "de": "waschen",
@@ -11142,7 +11167,8 @@
       "note": "Umlaut vowel change: du wäschst, er wäscht. 'sich waschen' = reflexive, to wash oneself.",
       "emoji": "🧼",
       "cat": "🌙 Alltag",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Ich habe meine Hände gewaschen."
     },
     {
       "de": "aufstehen",
@@ -11162,7 +11188,8 @@
       "note": "SEPARABLE verb! 'auf' goes to the end of the sentence. Uses 'sein' in perfect (movement-related).",
       "emoji": "⏰",
       "cat": "🌙 Alltag",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Ich bin um sieben Uhr aufgestanden."
     },
     {
       "de": "anziehen",
@@ -11182,7 +11209,8 @@
       "note": "Separable verb. 'sich anziehen' (reflexive) = to get dressed. 'ausziehen' = to take off (opposite).",
       "emoji": "🧥",
       "cat": "👗 Kleidung",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Ich habe meine Jacke angezogen."
     },
     {
       "de": "anrufen",
@@ -11202,7 +11230,8 @@
       "note": "Separable verb. 'an' goes to end: 'Ich rufe dich AN' not 'Ich anrufe dich'.",
       "emoji": "📞",
       "cat": "💬 Kommunikation",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Ich habe dich später angerufen."
     },
     {
       "de": "einkaufen",
@@ -11222,7 +11251,8 @@
       },
       "emoji": "🛍️",
       "cat": "🛍️ Einkaufen",
-      "lvl": "A1"
+      "lvl": "A1",
+      "ex_past": "Wir sind gestern einkaufen gegangen."
     },
     {
       "de": "fernsehen",
@@ -11242,7 +11272,8 @@
       "note": "fern=far + sehen=to see. Separable. 'der Fernseher' = the TV (noun form).",
       "emoji": "📺",
       "cat": "🎯 Freizeit",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Abends habe ich gern ferngesehen."
     },
     {
       "de": "aufräumen",
@@ -11262,7 +11293,8 @@
       "note": "Separable. Very common household chore verb, often said to children!",
       "emoji": "🧹",
       "cat": "🌙 Alltag",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Ich habe mein Zimmer aufgeräumt."
     },
     {
       "de": "sich freuen",
@@ -11282,7 +11314,8 @@
       "note": "Reflexive verb — pronoun changes with subject! 'sich freuen auf' + accusative = look forward to.",
       "emoji": "😊",
       "cat": "😊 Gefühle",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Ich habe mich auf das Wochenende gefreut."
     },
     {
       "de": "sich beeilen",
@@ -11302,7 +11335,8 @@
       "note": "Reflexive verb. 'Beeil dich!' = Hurry up! (imperative, very commonly heard).",
       "emoji": "🏃",
       "cat": "⏰ Zeit",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Wir haben uns beeilt, aber wir waren trotzdem spät."
     },
     {
       "de": "sich erholen",
@@ -11322,7 +11356,8 @@
       "note": "Reflexive. Used both for recovering from illness AND relaxing/recharging generally.",
       "emoji": "🏖️",
       "cat": "🏥 Gesundheit",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Ich habe mich gut im Urlaub erholt."
     },
     {
       "de": "vorbereiten",
@@ -11342,7 +11377,8 @@
       "note": "Separable + often reflexive: 'sich vorbereiten auf' = to prepare for (something).",
       "emoji": "📋",
       "cat": "💼 Arbeit",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Ich habe mich auf die Prüfung vorbereitet."
     },
     {
       "de": "sich beschweren",
@@ -11362,7 +11398,8 @@
       "note": "'sich beschweren über' + accusative = to complain about. Useful in customer service contexts.",
       "emoji": "😠",
       "cat": "💭 Meinungen",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Ich habe mich beschwert."
     },
     {
       "de": "sich verabschieden",
@@ -11382,7 +11419,8 @@
       "note": "Reflexive. 'der Abschied' = farewell/departure (related noun).",
       "emoji": "👋",
       "cat": "👋 Begrüßung",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Wir haben uns von unseren Gästen verabschiedet."
     },
     {
       "de": "untersuchen",
@@ -11402,7 +11440,8 @@
       "note": "Inseparable 'unter-' prefix, no extra 'ge-' in participle. Used by doctors and investigators alike.",
       "emoji": "🔍",
       "cat": "🏥 Gesundheit",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Der Arzt hat den Patienten untersucht."
     },
     {
       "de": "sich verändern",
@@ -11418,11 +11457,12 @@
         "ihr": "verändert euch",
         "sie": "verändern sich"
       },
-      "ex": "Die Stadt hat sich stark verändert.",
+      "ex": "Die Stadt verändert sich ständig.",
       "note": "Reflexive when subject changes itself. Non-reflexive 'verändern' = to change something else.",
       "emoji": "🔄",
       "cat": "💭 Konzepte",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Die Stadt hat sich stark verändert."
     },
     {
       "de": "geben",
@@ -11442,7 +11482,8 @@
       "note": "Strong verb with vowel change e→i: du gibst, er gibt. 'Es gibt' = there is/are (very common impersonal construction).",
       "emoji": "🎁",
       "cat": "⚡ Essentiell",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Ich habe dir mein Buch gegeben."
     },
     {
       "de": "nehmen",
@@ -11462,7 +11503,8 @@
       "note": "Strong verb with vowel change e→i and consonant shift: du nimmst (not nehmst). Very common everyday verb.",
       "emoji": "🤲",
       "cat": "⚡ Essentiell",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Ich habe den Bus genommen."
     },
     {
       "de": "denken",
@@ -11482,7 +11524,8 @@
       "note": "Irregular past participle (gedacht, not gedenkt). 'denken an' + accusative = to think of/about.",
       "emoji": "🤔",
       "cat": "🧠 Denken",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Ich habe oft an dich gedacht."
     },
     {
       "de": "wissen",
@@ -11502,7 +11545,8 @@
       "note": "Highly irregular singular forms (weiß, weißt). Different from 'kennen' (to know a person/place).",
       "emoji": "🧠",
       "cat": "🧠 Denken",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Ich wusste die Antwort nicht."
     },
     {
       "de": "kennen",
@@ -11522,7 +11566,8 @@
       "note": "Pairs conceptually with 'wissen' — kennen=know a person/place/thing, wissen=know a fact.",
       "emoji": "👋",
       "cat": "🧠 Denken",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Ich habe diese Stadt gut gekannt."
     },
     {
       "de": "sehen",
@@ -11542,7 +11587,8 @@
       "note": "Strong verb with vowel change e→ie: du siehst, er sieht. Root of 'fernsehen' (to watch TV).",
       "emoji": "👁️",
       "cat": "🧍 Sinne",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Ich habe einen Vogel gesehen."
     },
     {
       "de": "fühlen",
@@ -11562,7 +11608,8 @@
       "note": "Often used reflexively: 'sich fühlen' = to feel (a certain way). Regular weak verb.",
       "emoji": "💭",
       "cat": "😊 Gefühle",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Ich habe mich heute gut gefühlt."
     },
     {
       "de": "riechen",
@@ -11582,7 +11629,8 @@
       "note": "Strong verb: roch, gerochen. Used both for 'to smell (something)' and 'to smell (of something)'.",
       "emoji": "👃",
       "cat": "🧍 Sinne",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Das Essen hat gut gerochen."
     },
     {
       "de": "schmecken",
@@ -11602,7 +11650,8 @@
       "note": "Regular weak verb. 'Schmeckt's?' = informal way to ask 'Does it taste good?'",
       "emoji": "😋",
       "cat": "🍴 Essen",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Die Suppe hat lecker geschmeckt."
     },
     {
       "de": "besuchen",
@@ -11622,7 +11671,8 @@
       "note": "Inseparable 'be-' prefix, no extra 'ge-' in participle. Used for visiting people AND places (museums, cities).",
       "emoji": "🚪",
       "cat": "👋 Begrüßung",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Ich habe meine Großeltern besucht."
     },
     {
       "de": "treffen",
@@ -11642,7 +11692,8 @@
       "note": "Strong verb with vowel change e→i. Also means 'to hit (a target)' in other contexts.",
       "emoji": "🤝",
       "cat": "👋 Begrüßung",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Ich habe meine Freunde im Park getroffen."
     },
     {
       "de": "kennenlernen",
@@ -11662,7 +11713,8 @@
       "note": "Compound of kennen+lernen, separable. Different from 'treffen' — implies the FIRST meeting, not just any meeting.",
       "emoji": "🆕",
       "cat": "👋 Begrüßung",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Ich habe dich letztes Jahr kennengelernt."
     },
     {
       "de": "mitbringen",
@@ -11682,7 +11734,8 @@
       "note": "Separable: mit+bringen. Common when invited to a party — 'was soll ich mitbringen?' = what should I bring?",
       "emoji": "🎂",
       "cat": "👋 Begrüßung",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Ich habe einen Kuchen mitgebracht."
     },
     {
       "de": "mitnehmen",
@@ -11702,7 +11755,8 @@
       "note": "Separable: mit+nehmen, keeps the same vowel change as 'nehmen' (du nimmst...mit).",
       "emoji": "🎒",
       "cat": "⚡ Essentiell",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Ich habe meinen Regenschirm mitgenommen."
     },
     {
       "de": "vorhaben",
@@ -11722,7 +11776,8 @@
       "note": "Separable: vor+haben. 'Was hast du vor?' = What are your plans? Very common question among friends.",
       "emoji": "📅",
       "cat": "💼 Arbeit",
-      "lvl": "A2"
+      "lvl": "A2",
+      "ex_past": "Was hast du heute vorgehabt?"
     },
     {
       "de": "sich entscheiden",
@@ -11742,7 +11797,8 @@
       "note": "Reflexive version of 'entscheiden' (already in list as non-reflexive 'to decide'). 'sich entscheiden für' = to decide on/choose.",
       "emoji": "🤔",
       "cat": "🧠 Denken",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Ich habe mich für das blaue Hemd entschieden."
     },
     {
       "de": "sich konzentrieren",
@@ -11762,7 +11818,8 @@
       "note": "Reflexive verb, French/Latin loanword. 'sich konzentrieren auf' + accusative = to focus on.",
       "emoji": "🎯",
       "cat": "🧠 Denken",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Ich habe mich auf die Arbeit konzentriert."
     },
     {
       "de": "vertrauen",
@@ -11782,7 +11839,8 @@
       "note": "Takes DATIVE: 'dir vertrauen' = to trust you. Inseparable 'ver-' prefix, no 'ge-' in participle.",
       "emoji": "🤝",
       "cat": "💭 Meinungen",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Ich habe dir vollkommen vertraut."
     },
     {
       "de": "sich gewöhnen",
@@ -11802,7 +11860,8 @@
       "note": "'sich gewöhnen an' + accusative = to get used to (something). Very useful for talking about adapting to new situations.",
       "emoji": "🔄",
       "cat": "💭 Konzepte",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Ich habe mich langsam an das Wetter hier gewöhnt."
     },
     {
       "de": "vermissen",
@@ -11822,7 +11881,8 @@
       "note": "Inseparable 'ver-' prefix. Different from English 'miss' (a bus) — that's 'verpassen' instead.",
       "emoji": "💔",
       "cat": "😊 Gefühle",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Ich habe meine Familie vermisst."
     },
     {
       "de": "verpassen",
@@ -11838,11 +11898,12 @@
         "ihr": "verpasst",
         "sie": "verpassen"
       },
-      "ex": "Ich habe den Zug verpasst.",
+      "ex": "Ich verpasse oft den Bus.",
       "note": "Pairs with 'vermissen' — different meaning of English 'miss'. Used for missing events/transport/deadlines.",
       "emoji": "🚆",
       "cat": "⏰ Zeit",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Ich habe den Zug verpasst."
     },
     {
       "de": "sich kümmern",
@@ -11862,7 +11923,8 @@
       "note": "'sich kümmern um' + accusative = to take care of/deal with. Very versatile — used for people, tasks, problems.",
       "emoji": "🤲",
       "cat": "🏥 Gesundheit",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Ich habe mich um meine Großmutter gekümmert."
     },
     {
       "de": "sich engagieren",
@@ -11882,7 +11944,8 @@
       "note": "French loanword, reflexive. 'sich engagieren für' = to commit to/advocate for (a cause).",
       "emoji": "✊",
       "cat": "🏛️ Gesellschaft",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Sie hat sich für den Umweltschutz engagiert."
     },
     {
       "de": "überzeugen",
@@ -11898,11 +11961,12 @@
         "ihr": "überzeugt",
         "sie": "überzeugen"
       },
-      "ex": "Er hat mich überzeugt.",
+      "ex": "Seine Idee überzeugt mich.",
       "note": "Inseparable 'über-' prefix, no 'ge-' in participle. Also reflexive: 'sich überzeugen' = to convince oneself / verify.",
       "emoji": "💡",
       "cat": "💭 Meinungen",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Er hat mich überzeugt."
     },
     {
       "de": "erwarten",
@@ -11922,7 +11986,8 @@
       "note": "Inseparable 'er-' prefix. Also used for expecting a baby: 'Sie erwartet ein Kind.'",
       "emoji": "⏳",
       "cat": "💭 Konzepte",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Ich habe eine Antwort von dir erwartet."
     },
     {
       "de": "sich beschäftigen",
@@ -11942,7 +12007,8 @@
       "note": "'sich beschäftigen mit' + dative = to engage with/study (a topic). Also non-reflexive: 'jemanden beschäftigen' = to employ someone.",
       "emoji": "📚",
       "cat": "💼 Arbeit",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Ich habe mich mit diesem Thema seit Jahren beschäftigt."
     },
     {
       "de": "sich auskennen",
@@ -11962,7 +12028,8 @@
       "note": "Reflexive + separable, built from 'kennen'. 'sich auskennen' = to be familiar with a place/topic.",
       "emoji": "🗺️",
       "cat": "💭 Konzepte",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Ich habe mich hier nicht ausgekannt."
     },
     {
       "de": "sich verlassen",
@@ -11982,7 +12049,8 @@
       "note": "'sich verlassen auf' + accusative = to rely/depend on. Non-reflexive 'verlassen' means 'to leave (a place)' — different meaning!",
       "emoji": "🛡️",
       "cat": "💭 Meinungen",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Ich habe mich auf dich verlassen."
     },
     {
       "de": "sich bewerben",
@@ -12002,7 +12070,8 @@
       "note": "Strong verb with vowel change e→i. 'sich bewerben um' + accusative = to apply for. Essential job-search vocabulary.",
       "emoji": "📝",
       "cat": "💼 Arbeit",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Ich habe mich um die Stelle beworben."
     },
     {
       "de": "verhandeln",
@@ -12022,7 +12091,8 @@
       "note": "Inseparable 'ver-' prefix, from 'handeln' (to act/trade). Common in business and diplomatic contexts.",
       "emoji": "🤝",
       "cat": "💼 Arbeit",
-      "lvl": "B1"
+      "lvl": "B1",
+      "ex_past": "Wir haben über den Preis verhandelt."
     },
     {
       "de": "sich auseinandersetzen",
@@ -12042,7 +12112,8 @@
       "note": "Long compound separable verb. 'sich auseinandersetzen mit' + dative = to grapple with/engage seriously with (an issue).",
       "emoji": "🧩",
       "cat": "💭 Abstrakt",
-      "lvl": "B2"
+      "lvl": "B2",
+      "ex_past": "Wir haben uns mit diesem Problem auseinandergesetzt."
     },
     {
       "de": "berücksichtigen",
@@ -12062,7 +12133,8 @@
       "note": "Inseparable, formal verb common in academic/business writing. From 'Rücksicht' (consideration/regard).",
       "emoji": "⚖️",
       "cat": "💼 Wirtschaft",
-      "lvl": "B2"
+      "lvl": "B2",
+      "ex_past": "Wir haben alle Faktoren berücksichtigt."
     },
     {
       "de": "sich widmen",
@@ -12082,7 +12154,8 @@
       "note": "'sich widmen' + dative = to devote oneself to. Elevated register, common in formal biographical writing.",
       "emoji": "🎯",
       "cat": "🔬 Wissenschaft",
-      "lvl": "B2"
+      "lvl": "B2",
+      "ex_past": "Sie hat sich ganz ihrer Forschung gewidmet."
     },
     {
       "de": "erörtern",
@@ -12102,7 +12175,8 @@
       "note": "Formal, academic-register verb for in-depth discussion. Common in essays and formal debate ('die Erörterung' = the discussion essay genre in German schools).",
       "emoji": "🗣️",
       "cat": "🗣️ Diskussion",
-      "lvl": "B2"
+      "lvl": "B2",
+      "ex_past": "Die Experten haben das Thema ausführlich erörtert."
     },
     {
       "de": "sich auswirken",
@@ -12122,7 +12196,8 @@
       "note": "'sich auswirken auf' + accusative = to impact/affect. Common in news and economic/political analysis.",
       "emoji": "📊",
       "cat": "💼 Wirtschaft",
-      "lvl": "B2"
+      "lvl": "B2",
+      "ex_past": "Die Krise hat sich auf die ganze Wirtschaft ausgewirkt."
     },
     {
       "de": "gewährleisten",
@@ -12142,7 +12217,8 @@
       "note": "Formal, often used in legal/official contexts. No 'ge-' added in participle since the verb already starts with 'ge-'.",
       "emoji": "🔒",
       "cat": "🏛️ Gesellschaft",
-      "lvl": "B2"
+      "lvl": "B2",
+      "ex_past": "Diese Maßnahmen haben die Sicherheit gewährleistet."
     },
     {
       "de": "verdeutlichen",
@@ -12162,7 +12238,8 @@
       "note": "From 'deutlich' (clear) + 'ver-' prefix. Common academic verb for illustrating a point with an example.",
       "emoji": "💡",
       "cat": "🗣️ Diskussion",
-      "lvl": "B2"
+      "lvl": "B2",
+      "ex_past": "Dieses Beispiel hat das Problem verdeutlicht."
     },
     {
       "de": "sich abzeichnen",
@@ -12182,7 +12259,8 @@
       "note": "Used for emerging patterns/trends becoming visible. Common in analytical and journalistic writing.",
       "emoji": "📈",
       "cat": "💭 Abstrakt",
-      "lvl": "B2"
+      "lvl": "B2",
+      "ex_past": "Ein neuer Trend hat sich abgezeichnet."
     },
     {
       "de": "beeinflussen",
@@ -12202,7 +12280,8 @@
       "note": "From 'Einfluss' (influence) + 'be-' prefix. Common in discussions of media, psychology, and society.",
       "emoji": "🎭",
       "cat": "🏛️ Gesellschaft",
-      "lvl": "B2"
+      "lvl": "B2",
+      "ex_past": "Soziale Medien haben unsere Meinungen beeinflusst."
     },
     {
       "de": "sich verpflichten",
@@ -12222,7 +12301,8 @@
       "note": "'sich verpflichten zu' + dative = to commit to. Formal register, common in contracts and corporate statements.",
       "emoji": "✍️",
       "cat": "💼 Wirtschaft",
-      "lvl": "B2"
+      "lvl": "B2",
+      "ex_past": "Das Unternehmen hat sich zu mehr Transparenz verpflichtet."
     },
     {
       "de": "stellen",
@@ -12239,7 +12319,8 @@
         "sie/Sie": "stellen"
       },
       "ex": "Ich stelle die Flasche auf den Tisch.",
-      "note": "Upright placement (vs. legen = horizontal). 'eine Frage stellen' = ask a question. Separable: vorstellen, darstellen."
+      "note": "Upright placement (vs. legen = horizontal). 'eine Frage stellen' = ask a question. Separable: vorstellen, darstellen.",
+      "ex_past": "Ich habe die Flasche auf den Tisch gestellt."
     },
     {
       "de": "legen",
@@ -12256,7 +12337,8 @@
         "sie/Sie": "legen"
       },
       "ex": "Ich lege das Buch auf den Tisch.",
-      "note": "Horizontal placement. Compare: liegen (to lie, state). 'sich hinlegen' = to lie down. Ablegen, auflegen, belegen."
+      "note": "Horizontal placement. Compare: liegen (to lie, state). 'sich hinlegen' = to lie down. Ablegen, auflegen, belegen.",
+      "ex_past": "Ich habe das Buch auf den Tisch gelegt."
     },
     {
       "de": "lassen",
@@ -12273,7 +12355,8 @@
         "sie/Sie": "lassen"
       },
       "ex": "Lass mich das machen! Ich lasse das Auto reparieren.",
-      "note": "Highly versatile: (1) permit, (2) have done (causative). Double infinitive in perfect: 'Ich habe das Auto reparieren lassen.'"
+      "note": "Highly versatile: (1) permit, (2) have done (causative). Double infinitive in perfect: 'Ich habe das Auto reparieren lassen.'",
+      "ex_past": "Ich habe das Auto reparieren lassen."
     },
     {
       "de": "halten",
@@ -12290,7 +12373,8 @@
         "sie/Sie": "halten"
       },
       "ex": "Halt die Tür auf! Der Zug hält am Bahnhof.",
-      "note": "Vowel change a→ä (du/er). Multiple meanings: hold, stop (transport), keep. 'etw. für... halten' = to consider sth. as."
+      "note": "Vowel change a→ä (du/er). Multiple meanings: hold, stop (transport), keep. 'etw. für... halten' = to consider sth. as.",
+      "ex_past": "Der Zug hat am Bahnhof gehalten."
     },
     {
       "de": "fallen",
@@ -12307,7 +12391,8 @@
         "sie/Sie": "fallen"
       },
       "ex": "Ihm fällt das Lernen leicht. Er ist gefallen.",
-      "note": "Uses SEIN in perfect. a→ä vowel change. 'es fällt mir leicht/schwer' = I find it easy/hard. Also in 'gefallen' (to please)."
+      "note": "Uses SEIN in perfect. a→ä vowel change. 'es fällt mir leicht/schwer' = I find it easy/hard. Also in 'gefallen' (to please).",
+      "ex_past": "Er ist letzte Woche gefallen."
     },
     {
       "de": "ziehen",
@@ -12324,7 +12409,8 @@
         "sie/Sie": "ziehen"
       },
       "ex": "Zieh die Tür zu! Wir ziehen nach Berlin.",
-      "note": "Double meaning: to pull (transitive, haben) or to move house (intransitive, sein). 'umziehen' = to move house/change clothes."
+      "note": "Double meaning: to pull (transitive, haben) or to move house (intransitive, sein). 'umziehen' = to move house/change clothes.",
+      "ex_past": "Wir sind nach Berlin gezogen."
     },
     {
       "de": "wachsen",
@@ -12341,7 +12427,8 @@
         "sie/Sie": "wachsen"
       },
       "ex": "Die Kinder wachsen schnell.",
-      "note": "Uses SEIN (intransitive growth). Vowel change a→ä. 'entwachsen' = to outgrow. 'das Wachstum' = growth (noun)."
+      "note": "Uses SEIN (intransitive growth). Vowel change a→ä. 'entwachsen' = to outgrow. 'das Wachstum' = growth (noun).",
+      "ex_past": "Die Kinder sind schnell gewachsen."
     },
     {
       "de": "sterben",
@@ -12357,8 +12444,9 @@
         "ihr": "sterbt",
         "sie/Sie": "sterben"
       },
-      "ex": "Er ist jung gestorben.",
-      "note": "Uses SEIN. Vowel change e→i (du/er). 'unsterblich' = immortal. 'der Tod' = death. Euphemism: 'sterben' is direct, 'ableben' is polite."
+      "ex": "Die Pflanze stirbt ohne Wasser.",
+      "note": "Uses SEIN. Vowel change e→i (du/er). 'unsterblich' = immortal. 'der Tod' = death. Euphemism: 'sterben' is direct, 'ableben' is polite.",
+      "ex_past": "Er ist jung gestorben."
     },
     {
       "de": "schlagen",
@@ -12374,8 +12462,9 @@
         "ihr": "schlagt",
         "sie/Sie": "schlagen"
       },
-      "ex": "Er hat den Weltrekord geschlagen.",
-      "note": "a→ä vowel change. Meanings: hit, beat (a record), defeat. 'Herzschlag' = heartbeat. 'schlagen' in many compounds."
+      "ex": "Er schlägt den Nagel mit dem Hammer.",
+      "note": "a→ä vowel change. Meanings: hit, beat (a record), defeat. 'Herzschlag' = heartbeat. 'schlagen' in many compounds.",
+      "ex_past": "Er hat den Weltrekord geschlagen."
     },
     {
       "de": "werfen",
@@ -12392,7 +12481,8 @@
         "sie/Sie": "werfen"
       },
       "ex": "Wirf den Ball!",
-      "note": "Vowel change e→i (du/er). 'umwerfen' = to knock over. 'der Wurf' = throw. 'Würfel' = dice (originally 'that which is thrown')."
+      "note": "Vowel change e→i (du/er). 'umwerfen' = to knock over. 'der Wurf' = throw. 'Würfel' = dice (originally 'that which is thrown').",
+      "ex_past": "Er hat den Ball geworfen."
     },
     {
       "de": "treiben",
@@ -12409,7 +12499,8 @@
         "sie/Sie": "treiben"
       },
       "ex": "Ich treibe regelmäßig Sport.",
-      "note": "'Sport treiben' = to do sport (common fixed expression). Also: drift (on water), drive animals, engage in an activity."
+      "note": "'Sport treiben' = to do sport (common fixed expression). Also: drift (on water), drive animals, engage in an activity.",
+      "ex_past": "Ich habe regelmäßig Sport getrieben."
     },
     {
       "de": "sinken",
@@ -12425,8 +12516,9 @@
         "ihr": "sinkt",
         "sie/Sie": "sinken"
       },
-      "ex": "Die Preise sind gesunken.",
-      "note": "Uses SEIN. 'Die Kurse sinken' = share prices fall. Opposite: steigen (to rise). 'untergehen' = to go under/perish."
+      "ex": "Die Preise sinken im Winter.",
+      "note": "Uses SEIN. 'Die Kurse sinken' = share prices fall. Opposite: steigen (to rise). 'untergehen' = to go under/perish.",
+      "ex_past": "Die Preise sind gesunken."
     },
     {
       "de": "steigen",
@@ -12442,8 +12534,9 @@
         "ihr": "steigt",
         "sie/Sie": "steigen"
       },
-      "ex": "Die Temperaturen sind gestiegen.",
-      "note": "Uses SEIN. Opposite of 'sinken'. 'in den Bus steigen' = board the bus. 'aussteigen' = get off. 'Aufstieg' = ascent/rise."
+      "ex": "Die Temperaturen steigen im Sommer.",
+      "note": "Uses SEIN. Opposite of 'sinken'. 'in den Bus steigen' = board the bus. 'aussteigen' = get off. 'Aufstieg' = ascent/rise.",
+      "ex_past": "Die Temperaturen sind gestiegen."
     },
     {
       "de": "bieten",
@@ -12460,7 +12553,8 @@
         "sie/Sie": "bieten"
       },
       "ex": "Das Hotel bietet viele Annehmlichkeiten.",
-      "note": "'Angebot' = offer (noun). At auctions: to bid. 'anbieten' = to offer (separable). 'Gebot' = bid/commandment."
+      "note": "'Angebot' = offer (noun). At auctions: to bid. 'anbieten' = to offer (separable). 'Gebot' = bid/commandment.",
+      "ex_past": "Das Hotel hat viele Annehmlichkeiten geboten."
     },
     {
       "de": "bitten",
@@ -12477,7 +12571,8 @@
         "sie/Sie": "bitten"
       },
       "ex": "Ich bitte Sie, das zu überprüfen.",
-      "note": "'Bitten um' = to request. Different from 'fragen' (ask a question). 'Bitte' = please (also the noun 'request')."
+      "note": "'Bitten um' = to request. Different from 'fragen' (ask a question). 'Bitte' = please (also the noun 'request').",
+      "ex_past": "Ich habe Sie gebeten, das zu überprüfen."
     },
     {
       "de": "schweigen",
@@ -12493,8 +12588,9 @@
         "ihr": "schweigt",
         "sie/Sie": "schweigen"
       },
-      "ex": "Er schwieg die ganze Zeit.",
-      "note": "'Schweigen' = silence (noun). 'Stillschweigen' = tacit agreement. 'Das Schweigen brechen' = to break the silence."
+      "ex": "Er schweigt die ganze Zeit.",
+      "note": "'Schweigen' = silence (noun). 'Stillschweigen' = tacit agreement. 'Das Schweigen brechen' = to break the silence.",
+      "ex_past": "Er schwieg die ganze Zeit."
     },
     {
       "de": "scheinen",
@@ -12511,7 +12607,8 @@
         "sie/Sie": "scheinen"
       },
       "ex": "Die Sonne scheint. Er scheint müde zu sein.",
-      "note": "Double meaning: (1) sun shines, (2) seems/appears. 'es scheint mir, dass' = it seems to me that. 'offensichtlich' = obviously."
+      "note": "Double meaning: (1) sun shines, (2) seems/appears. 'es scheint mir, dass' = it seems to me that. 'offensichtlich' = obviously.",
+      "ex_past": "Die Sonne hat gestern den ganzen Tag geschienen."
     },
     {
       "de": "gelten",
@@ -12528,7 +12625,8 @@
         "sie/Sie": "gelten"
       },
       "ex": "Das Gesetz gilt ab sofort. Er gilt als Experte.",
-      "note": "'Gilt ab sofort' = valid/effective immediately. 'als... gelten' = to be considered as. 'Gültigkeit' = validity."
+      "note": "'Gilt ab sofort' = valid/effective immediately. 'als... gelten' = to be considered as. 'Gültigkeit' = validity.",
+      "ex_past": "Das Gesetz hat ab letztem Jahr gegolten."
     },
     {
       "de": "scheitern",
@@ -12544,8 +12642,9 @@
         "ihr": "scheitert",
         "sie/Sie": "scheitern"
       },
-      "ex": "Das Projekt ist gescheitert.",
-      "note": "Uses SEIN. 'Am etwas scheitern' = to fail at/due to something. 'Scheitern als Chance' = failure as opportunity (German startup culture)."
+      "ex": "Das Projekt scheitert an fehlendem Geld.",
+      "note": "Uses SEIN. 'Am etwas scheitern' = to fail at/due to something. 'Scheitern als Chance' = failure as opportunity (German startup culture).",
+      "ex_past": "Das Projekt ist gescheitert."
     },
     {
       "de": "gelingen",
@@ -12561,8 +12660,9 @@
         "ihr": "—",
         "sie/Sie": "—"
       },
-      "ex": "Mir ist das Experiment gelungen.",
-      "note": "Uses SEIN. IMPERSONAL: dative person + 'gelingt'. 'Es ist mir gelungen' = I succeeded. Opposite: 'misslingen'. 'gelungen' = successful (adj)."
+      "ex": "Mir gelingt das Experiment.",
+      "note": "Uses SEIN. IMPERSONAL: dative person + 'gelingt'. 'Es ist mir gelungen' = I succeeded. Opposite: 'misslingen'. 'gelungen' = successful (adj).",
+      "ex_past": "Mir ist das Experiment gelungen."
     },
     {
       "de": "einladen",
@@ -12579,7 +12679,8 @@
         "sie/Sie": "laden...ein"
       },
       "ex": "Ich lade dich zum Abendessen ein.",
-      "note": "Separable: ein-. Vowel change a→ä (du/er). 'Einladung' = invitation. Also: 'einladen' = to load (upload) in digital contexts."
+      "note": "Separable: ein-. Vowel change a→ä (du/er). 'Einladung' = invitation. Also: 'einladen' = to load (upload) in digital contexts.",
+      "ex_past": "Ich habe dich zum Abendessen eingeladen."
     },
     {
       "de": "ausgeben",
@@ -12595,8 +12696,9 @@
         "ihr": "gebt...aus",
         "sie/Sie": "geben...aus"
       },
-      "ex": "Ich habe zu viel Geld ausgegeben.",
-      "note": "Separable: aus-. Vowel change e→i (du/er). 'Ausgabe' = expenditure/edition. 'ausgeben' für = to spend on."
+      "ex": "Ich gebe zu viel Geld aus.",
+      "note": "Separable: aus-. Vowel change e→i (du/er). 'Ausgabe' = expenditure/edition. 'ausgeben' für = to spend on.",
+      "ex_past": "Ich habe zu viel Geld ausgegeben."
     },
     {
       "de": "vorstellen",
@@ -12613,7 +12715,8 @@
         "sie/Sie": "stellen...vor"
       },
       "ex": "Darf ich mich vorstellen? Ich stelle mir das anders vor.",
-      "note": "Separable: vor-. Reflexive: 'sich vorstellen' = (1) introduce oneself, (2) imagine. Two different meanings!"
+      "note": "Separable: vor-. Reflexive: 'sich vorstellen' = (1) introduce oneself, (2) imagine. Two different meanings!",
+      "ex_past": "Ich habe mich vorgestellt."
     },
     {
       "de": "durchführen",
@@ -12629,8 +12732,9 @@
         "ihr": "führt...durch",
         "sie/Sie": "führen...durch"
       },
-      "ex": "Das Experiment wurde sorgfältig durchgeführt.",
-      "note": "Separable: durch-. 'Durchführung' = execution/implementation. Key in academic and professional writing."
+      "ex": "Sie führt das Experiment sorgfältig durch.",
+      "note": "Separable: durch-. 'Durchführung' = execution/implementation. Key in academic and professional writing.",
+      "ex_past": "Das Experiment wurde sorgfältig durchgeführt."
     },
     {
       "de": "aufbauen",
@@ -12646,8 +12750,9 @@
         "ihr": "baut...auf",
         "sie/Sie": "bauen...auf"
       },
-      "ex": "Er hat ein erfolgreiches Unternehmen aufgebaut.",
-      "note": "Separable: auf-. 'Aufbau' = construction/structure. 'aufgebaut' = built (adj). Common in business contexts."
+      "ex": "Er baut ein erfolgreiches Unternehmen auf.",
+      "note": "Separable: auf-. 'Aufbau' = construction/structure. 'aufgebaut' = built (adj). Common in business contexts.",
+      "ex_past": "Er hat ein erfolgreiches Unternehmen aufgebaut."
     },
     {
       "de": "zusammenfassen",
@@ -12664,7 +12769,8 @@
         "sie/Sie": "fassen...zusammen"
       },
       "ex": "Können Sie das kurz zusammenfassen?",
-      "note": "Separable: zusammen-. 'Zusammenfassung' = summary. Essential academic and presentation skill."
+      "note": "Separable: zusammen-. 'Zusammenfassung' = summary. Essential academic and presentation skill.",
+      "ex_past": "Sie hat das kurz zusammengefasst."
     },
     {
       "de": "einschätzen",
@@ -12681,7 +12787,8 @@
         "sie/Sie": "schätzen...ein"
       },
       "ex": "Ich schätze die Situation als schwierig ein.",
-      "note": "Separable: ein-. 'Einschätzung' = assessment. 'falsch einschätzen' = to misjudge."
+      "note": "Separable: ein-. 'Einschätzung' = assessment. 'falsch einschätzen' = to misjudge.",
+      "ex_past": "Ich habe die Situation als schwierig eingeschätzt."
     },
     {
       "de": "anerkennen",
@@ -12697,8 +12804,9 @@
         "ihr": "erkennt...an",
         "sie/Sie": "erkennen...an"
       },
-      "ex": "Seine Leistungen wurden anerkannt.",
-      "note": "Separable: an-. 'Anerkennung' = recognition/acknowledgement. Different from 'erkennen' (to recognise/identify)."
+      "ex": "Der Chef erkennt seine Leistungen an.",
+      "note": "Separable: an-. 'Anerkennung' = recognition/acknowledgement. Different from 'erkennen' (to recognise/identify).",
+      "ex_past": "Seine Leistungen wurden anerkannt."
     },
     {
       "de": "widersprechen",
@@ -12715,7 +12823,8 @@
         "sie/Sie": "widersprechen"
       },
       "ex": "Ich muss Ihnen in diesem Punkt widersprechen.",
-      "note": "Inseparable (wider-), takes dative: 'jemandem widersprechen'. 'Widerspruch' = contradiction/objection."
+      "note": "Inseparable (wider-), takes dative: 'jemandem widersprechen'. 'Widerspruch' = contradiction/objection.",
+      "ex_past": "Ich habe Ihnen in diesem Punkt widersprochen."
     },
     {
       "de": "hinweisen",
@@ -12732,7 +12841,8 @@
         "sie/Sie": "weisen...hin"
       },
       "ex": "Ich möchte darauf hinweisen, dass das falsch ist.",
-      "note": "Separable: hin-. 'Hinweis' = hint/note/reference. 'auf etwas hinweisen' = draw attention to something."
+      "note": "Separable: hin-. 'Hinweis' = hint/note/reference. 'auf etwas hinweisen' = draw attention to something.",
+      "ex_past": "Ich habe darauf hingewiesen, dass das falsch war."
     },
     {
       "de": "hervorheben",
@@ -12749,7 +12859,8 @@
         "sie/Sie": "heben...hervor"
       },
       "ex": "Ich möchte besonders hervorheben, dass...",
-      "note": "Separable: hervor-. Common in presentations and academic writing. 'Hervorhebung' = emphasis/highlighting."
+      "note": "Separable: hervor-. Common in presentations and academic writing. 'Hervorhebung' = emphasis/highlighting.",
+      "ex_past": "Ich habe besonders hervorgehoben, dass die Ergebnisse gut waren."
     },
     {
       "de": "einräumen",
@@ -12766,7 +12877,8 @@
         "sie/Sie": "räumen...ein"
       },
       "ex": "Ich räume ein, dass ich einen Fehler gemacht habe.",
-      "note": "Separable: ein-. Double meaning: (1) concede/admit, (2) tidy away. In academic argumentation: to concede a point."
+      "note": "Separable: ein-. Double meaning: (1) concede/admit, (2) tidy away. In academic argumentation: to concede a point.",
+      "ex_past": "Ich habe eingeräumt, dass ich einen Fehler gemacht hatte."
     },
     {
       "de": "anstreben",
@@ -12783,7 +12895,8 @@
         "sie/Sie": "streben...an"
       },
       "ex": "Wir streben eine Lösung an.",
-      "note": "Separable: an-. Formal synonym of 'anvisieren'. 'Streben nach' = striving for. 'Bestreben' = endeavour."
+      "note": "Separable: an-. Formal synonym of 'anvisieren'. 'Streben nach' = striving for. 'Bestreben' = endeavour.",
+      "ex_past": "Wir haben eine Lösung angestrebt."
     },
     {
       "de": "vorschlagen",
@@ -12800,7 +12913,8 @@
         "sie/Sie": "schlagen...vor"
       },
       "ex": "Ich schlage vor, morgen zu treffen.",
-      "note": "Separable: vor-. Vowel change a→ä (du/er). 'Vorschlag' = suggestion. 'auf Vorschlag von' = at the suggestion of."
+      "note": "Separable: vor-. Vowel change a→ä (du/er). 'Vorschlag' = suggestion. 'auf Vorschlag von' = at the suggestion of.",
+      "ex_past": "Ich habe vorgeschlagen, morgen zu treffen."
     },
     {
       "de": "ablehnen",
@@ -12816,8 +12930,9 @@
         "ihr": "lehnt...ab",
         "sie/Sie": "lehnen...ab"
       },
-      "ex": "Der Antrag wurde abgelehnt.",
-      "note": "Separable: ab-. Opposite of 'annehmen'. 'Ablehnung' = rejection. Polite alternative: 'leider ablehnen müssen'."
+      "ex": "Er lehnt den Antrag ab.",
+      "note": "Separable: ab-. Opposite of 'annehmen'. 'Ablehnung' = rejection. Polite alternative: 'leider ablehnen müssen'.",
+      "ex_past": "Der Antrag wurde abgelehnt."
     },
     {
       "de": "annehmen",
@@ -12834,7 +12949,8 @@
         "sie/Sie": "nehmen...an"
       },
       "ex": "Ich nehme an, dass er kommt. Das Angebot wurde angenommen.",
-      "note": "Separable: an-. Double meaning: (1) accept an offer, (2) assume/presume. 'Annahme' = acceptance/assumption."
+      "note": "Separable: an-. Double meaning: (1) accept an offer, (2) assume/presume. 'Annahme' = acceptance/assumption.",
+      "ex_past": "Das Angebot wurde angenommen."
     },
     {
       "de": "ermöglichen",
@@ -12851,7 +12967,8 @@
         "sie/Sie": "ermöglichen"
       },
       "ex": "Das Internet ermöglicht es, überall zu arbeiten.",
-      "note": "Inseparable (er-). Formal alternative to 'möglich machen'. Common in formal writing and presentations."
+      "note": "Inseparable (er-). Formal alternative to 'möglich machen'. Common in formal writing and presentations.",
+      "ex_past": "Das Internet hat es ermöglicht, überall zu arbeiten."
     },
     {
       "de": "verhindern",
@@ -12868,7 +12985,8 @@
         "sie/Sie": "verhindern"
       },
       "ex": "Wir müssen Fehler verhindern.",
-      "note": "Inseparable (ver-). 'Verhinderung' = prevention. 'Verhindert sein' = to be unable to attend (common business usage)."
+      "note": "Inseparable (ver-). 'Verhinderung' = prevention. 'Verhindert sein' = to be unable to attend (common business usage).",
+      "ex_past": "Wir haben den Fehler verhindert."
     },
     {
       "de": "verbessern",
@@ -12885,7 +13003,8 @@
         "sie/Sie": "verbessern"
       },
       "ex": "Ich möchte mein Deutsch verbessern.",
-      "note": "Inseparable (ver-). Reflexive: 'sich verbessern' = to improve (oneself). 'Verbesserung' = improvement."
+      "note": "Inseparable (ver-). Reflexive: 'sich verbessern' = to improve (oneself). 'Verbesserung' = improvement.",
+      "ex_past": "Ich habe mein Deutsch verbessert."
     },
     {
       "de": "vereinfachen",
@@ -12902,7 +13021,8 @@
         "sie/Sie": "vereinfachen"
       },
       "ex": "Können wir das vereinfachen?",
-      "note": "Inseparable (ver-). 'Vereinfachung' = simplification. 'Das ist eine Vereinfachung' = that's an oversimplification."
+      "note": "Inseparable (ver-). 'Vereinfachung' = simplification. 'Das ist eine Vereinfachung' = that's an oversimplification.",
+      "ex_past": "Wir haben das vereinfacht."
     },
     {
       "de": "nachfragen",
@@ -12919,7 +13039,8 @@
         "sie/Sie": "fragen...nach"
       },
       "ex": "Ich werde morgen nochmals nachfragen.",
-      "note": "Separable: nach-. 'Nachfrage' = demand (economics) OR enquiry. 'Rückfrage' = a specific clarifying question."
+      "note": "Separable: nach-. 'Nachfrage' = demand (economics) OR enquiry. 'Rückfrage' = a specific clarifying question.",
+      "ex_past": "Ich habe gestern nochmals nachgefragt."
     },
     {
       "de": "umsetzen",
@@ -12936,7 +13057,8 @@
         "sie/Sie": "setzen...um"
       },
       "ex": "Die Idee muss in die Praxis umgesetzt werden.",
-      "note": "Separable: um-. 'Umsetzung' = implementation. 'in die Praxis umsetzen' = put into practice. Key management/policy term."
+      "note": "Separable: um-. 'Umsetzung' = implementation. 'in die Praxis umsetzen' = put into practice. Key management/policy term.",
+      "ex_past": "Die Idee wurde erfolgreich in die Praxis umgesetzt."
     },
     {
       "de": "aufklären",
@@ -12953,7 +13075,8 @@
         "sie/Sie": "klären...auf"
       },
       "ex": "Können Sie das aufklären?",
-      "note": "Separable: auf-. Multiple meanings: clarify, enlighten, solve a crime. 'Aufklärung' = Enlightenment or clarification."
+      "note": "Separable: auf-. Multiple meanings: clarify, enlighten, solve a crime. 'Aufklärung' = Enlightenment or clarification.",
+      "ex_past": "Er hat das endlich aufgeklärt."
     },
     {
       "de": "überarbeiten",
@@ -12970,7 +13093,8 @@
         "sie/Sie": "überarbeiten"
       },
       "ex": "Den Bericht müssen wir noch überarbeiten.",
-      "note": "Inseparable (über-). 'Überarbeitung' = revision. Reflexive: 'sich überarbeiten' = to overwork oneself."
+      "note": "Inseparable (über-). 'Überarbeitung' = revision. Reflexive: 'sich überarbeiten' = to overwork oneself.",
+      "ex_past": "Wir haben den Bericht überarbeitet."
     },
     {
       "de": "vorantreiben",
@@ -12987,7 +13111,8 @@
         "sie/Sie": "treiben...voran"
       },
       "ex": "Wir müssen das Projekt vorantreiben.",
-      "note": "Separable: voran-. 'Vorantreiben' = push forward actively. Common in project management and business contexts."
+      "note": "Separable: voran-. 'Vorantreiben' = push forward actively. Common in project management and business contexts.",
+      "ex_past": "Wir haben das Projekt vorangetrieben."
     },
     {
       "de": "beraten",
@@ -13004,7 +13129,8 @@
         "sie/Sie": "beraten"
       },
       "ex": "Der Anwalt berät seine Klienten.",
-      "note": "Inseparable (be-). Vowel change a→ä (du/er). PP = beraten (same as infinitive). 'Beratung' = consultation/advice."
+      "note": "Inseparable (be-). Vowel change a→ä (du/er). PP = beraten (same as infinitive). 'Beratung' = consultation/advice.",
+      "ex_past": "Der Anwalt hat seine Klienten beraten."
     },
     {
       "de": "fördern",
@@ -13021,7 +13147,8 @@
         "sie/Sie": "fördern"
       },
       "ex": "Die Regierung fördert erneuerbare Energien.",
-      "note": "'Förderung' = funding/support. 'Bundesförderung' = federal funding. Key in policy and education. Also: to convey (mining)."
+      "note": "'Förderung' = funding/support. 'Bundesförderung' = federal funding. Key in policy and education. Also: to convey (mining).",
+      "ex_past": "Die Regierung hat erneuerbare Energien gefördert."
     },
     {
       "de": "beeinträchtigen",
@@ -13038,7 +13165,8 @@
         "sie/Sie": "beeinträchtigen"
       },
       "ex": "Lärm beeinträchtigt die Konzentration.",
-      "note": "Inseparable (be-). Formal word for negative impact. 'Beeinträchtigung' = impairment/impediment. Academic and legal writing."
+      "note": "Inseparable (be-). Formal word for negative impact. 'Beeinträchtigung' = impairment/impediment. Academic and legal writing.",
+      "ex_past": "Lärm hat die Konzentration beeinträchtigt."
     },
     {
       "de": "verfügen über",
@@ -13055,7 +13183,8 @@
         "sie/Sie": "verfügen"
       },
       "ex": "Das Museum verfügt über eine große Sammlung.",
-      "note": "Inseparable (ver-). Always with 'über' + accusative. Formal: 'to have/possess'. 'Verfügung' = disposal. 'zur Verfügung stehen' = to be available."
+      "note": "Inseparable (ver-). Always with 'über' + accusative. Formal: 'to have/possess'. 'Verfügung' = disposal. 'zur Verfügung stehen' = to be available.",
+      "ex_past": "Das Museum hat über eine große Sammlung verfügt."
     },
     {
       "de": "betragen",
@@ -13072,7 +13201,8 @@
         "sie/Sie": "betragen"
       },
       "ex": "Der Preis beträgt 50 Euro.",
-      "note": "Inseparable (be-). PP = betragen (same as infinitive). Used for prices, amounts, distances. 'Der Abstand beträgt 5 km.'"
+      "note": "Inseparable (be-). PP = betragen (same as infinitive). Used for prices, amounts, distances. 'Der Abstand beträgt 5 km.'",
+      "ex_past": "Der Preis hat 50 Euro betragen."
     },
     {
       "de": "aufweisen",
@@ -13089,7 +13219,8 @@
         "sie/Sie": "weisen...auf"
       },
       "ex": "Das Produkt weist mehrere Mängel auf.",
-      "note": "Separable: auf-. Formal: to display/exhibit (qualities or defects). 'Mängel aufweisen' = to show defects. Academic and technical writing."
+      "note": "Separable: auf-. Formal: to display/exhibit (qualities or defects). 'Mängel aufweisen' = to show defects. Academic and technical writing.",
+      "ex_past": "Das Produkt hat mehrere Mängel aufgewiesen."
     },
     {
       "de": "sich beziehen auf",
@@ -13106,7 +13237,8 @@
         "sie/Sie": "beziehen sich"
       },
       "ex": "Das bezieht sich auf unsere frühere Diskussion.",
-      "note": "Inseparable (be-), reflexive, + auf+acc. 'Bezug' = reference. 'in Bezug auf' = with regard to. Key academic phrase."
+      "note": "Inseparable (be-), reflexive, + auf+acc. 'Bezug' = reference. 'in Bezug auf' = with regard to. Key academic phrase.",
+      "ex_past": "Das hat sich auf unsere frühere Diskussion bezogen."
     },
     {
       "de": "sich ausdrücken",
@@ -13123,7 +13255,8 @@
         "sie/Sie": "drücken sich aus"
       },
       "ex": "Er kann sich sehr gut ausdrücken.",
-      "note": "Separable: aus-, reflexive. 'Ausdruck' = expression. 'sich klar ausdrücken' = to express oneself clearly."
+      "note": "Separable: aus-, reflexive. 'Ausdruck' = expression. 'sich klar ausdrücken' = to express oneself clearly.",
+      "ex_past": "Er hat sich sehr gut ausgedrückt."
     },
     {
       "de": "sich handeln um",
@@ -13140,7 +13273,8 @@
         "sie/Sie": "—"
       },
       "ex": "Es handelt sich um einen wichtigen Punkt.",
-      "note": "Impersonal: 'Es handelt sich um' = it is a matter of / it concerns. Formal alternative to 'es geht um'. Very common in formal German."
+      "note": "Impersonal: 'Es handelt sich um' = it is a matter of / it concerns. Formal alternative to 'es geht um'. Very common in formal German.",
+      "ex_past": "Es hat sich um einen wichtigen Punkt gehandelt."
     },
     {
       "de": "abweichen",
@@ -13157,7 +13291,8 @@
         "sie/Sie": "weichen...ab"
       },
       "ex": "Das Ergebnis weicht von der Erwartung ab.",
-      "note": "Separable: ab-, uses SEIN. 'Abweichung' = deviation. 'von der Norm abweichen' = to deviate from the norm."
+      "note": "Separable: ab-, uses SEIN. 'Abweichung' = deviation. 'von der Norm abweichen' = to deviate from the norm.",
+      "ex_past": "Das Ergebnis ist von der Erwartung abgewichen."
     },
     {
       "de": "überzeugend sein",
@@ -13173,8 +13308,9 @@
         "ihr": "überzeugt",
         "sie/Sie": "überzeugen"
       },
-      "ex": "Das Argument hat mich nicht überzeugt.",
-      "note": "Inseparable (über-). 'Überzeugung' = conviction. 'jemanden von etwas überzeugen' = to convince someone of something."
+      "ex": "Das Argument überzeugt mich nicht.",
+      "note": "Inseparable (über-). 'Überzeugung' = conviction. 'jemanden von etwas überzeugen' = to convince someone of something.",
+      "ex_past": "Das Argument hat mich nicht überzeugt."
     },
     {
       "de": "entsprechen",
@@ -13191,7 +13327,8 @@
         "sie/Sie": "entsprechen"
       },
       "ex": "Das Produkt entspricht nicht unseren Erwartungen.",
-      "note": "Inseparable (ent-). Takes dative. 'Entsprechend' = accordingly/corresponding. 'den Anforderungen entsprechen' = meet requirements."
+      "note": "Inseparable (ent-). Takes dative. 'Entsprechend' = accordingly/corresponding. 'den Anforderungen entsprechen' = meet requirements.",
+      "ex_past": "Das Produkt hat nicht unseren Erwartungen entsprochen."
     },
     {
       "de": "beantragen",
@@ -13207,8 +13344,9 @@
         "ihr": "beantragt",
         "sie/Sie": "beantragen"
       },
-      "ex": "Er hat ein Visum beantragt.",
-      "note": "Inseparable (be-). 'Antrag stellen' = synonym. 'Antragsteller' = applicant. Used for formal applications (visas, benefits, permits)."
+      "ex": "Er beantragt ein Visum.",
+      "note": "Inseparable (be-). 'Antrag stellen' = synonym. 'Antragsteller' = applicant. Used for formal applications (visas, benefits, permits).",
+      "ex_past": "Er hat ein Visum beantragt."
     },
     {
       "de": "feststellen",
@@ -13225,7 +13363,8 @@
         "sie/Sie": "stellen...fest"
       },
       "ex": "Die Untersuchung hat festgestellt, dass...",
-      "note": "Separable: fest-. 'Feststellung' = finding/determination. 'Es ist festzustellen, dass...' = It can be noted that... Common in academic writing."
+      "note": "Separable: fest-. 'Feststellung' = finding/determination. 'Es ist festzustellen, dass...' = It can be noted that... Common in academic writing.",
+      "ex_past": "Die Untersuchung hat festgestellt, dass der Fehler menschlich war."
     },
     {
       "de": "beurteilen",
@@ -13242,7 +13381,8 @@
         "sie/Sie": "beurteilen"
       },
       "ex": "Das ist schwer zu beurteilen.",
-      "note": "Inseparable (be-). 'Beurteilung' = judgement/assessment. 'sachlich beurteilen' = to assess objectively. Similar to 'bewerten'."
+      "note": "Inseparable (be-). 'Beurteilung' = judgement/assessment. 'sachlich beurteilen' = to assess objectively. Similar to 'bewerten'.",
+      "ex_past": "Das war schwer zu beurteilen."
     },
     {
       "de": "aufzeigen",
@@ -13259,7 +13399,8 @@
         "sie/Sie": "zeigen...auf"
       },
       "ex": "Die Studie zeigt deutliche Mängel auf.",
-      "note": "Separable: auf-. More formal/academic than 'zeigen'. 'Mängel aufzeigen' = point out deficiencies. Common in reports."
+      "note": "Separable: auf-. More formal/academic than 'zeigen'. 'Mängel aufzeigen' = point out deficiencies. Common in reports.",
+      "ex_past": "Die Studie hat deutliche Mängel aufgezeigt."
     },
     {
       "de": "sich vorbereiten auf",
@@ -13276,7 +13417,8 @@
         "sie/Sie": "bereiten sich...vor"
       },
       "ex": "Ich bereite mich auf die Prüfung vor.",
-      "note": "Separable: vor-, reflexive, + auf+acc. 'Vorbereitung' = preparation. 'gut vorbereitet sein' = to be well prepared."
+      "note": "Separable: vor-, reflexive, + auf+acc. 'Vorbereitung' = preparation. 'gut vorbereitet sein' = to be well prepared.",
+      "ex_past": "Ich habe mich auf die Prüfung vorbereitet."
     },
     {
       "de": "zuordnen",
@@ -13293,7 +13435,8 @@
         "sie/Sie": "ordnen...zu"
       },
       "ex": "Man kann diesen Begriff keiner Kategorie zuordnen.",
-      "note": "Separable: zu-. 'Zuordnung' = assignment/classification. Common in academic and analytical writing."
+      "note": "Separable: zu-. 'Zuordnung' = assignment/classification. Common in academic and analytical writing.",
+      "ex_past": "Man hat diesen Begriff keiner Kategorie zugeordnet."
     },
     {
       "de": "einwenden",
@@ -13310,7 +13453,8 @@
         "sie/Sie": "wenden...ein"
       },
       "ex": "Dagegen ließe sich einwenden, dass...",
-      "note": "Separable: ein-. 'Einwand' = objection. 'einen Einwand erheben' = formal synonym. Used in debates and legal contexts."
+      "note": "Separable: ein-. 'Einwand' = objection. 'einen Einwand erheben' = formal synonym. Used in debates and legal contexts.",
+      "ex_past": "Er hat dagegen eingewendet, dass die Kosten zu hoch seien."
     },
     {
       "de": "nachweisen",
@@ -13326,8 +13470,9 @@
         "ihr": "weist...nach",
         "sie/Sie": "weisen...nach"
       },
-      "ex": "Das konnte nicht nachgewiesen werden.",
-      "note": "Separable: nach-. 'Nachweis' = proof/evidence. 'nachweislich' = demonstrably/provably. Key in law and science."
+      "ex": "Er weist seine Unschuld nach.",
+      "note": "Separable: nach-. 'Nachweis' = proof/evidence. 'nachweislich' = demonstrably/provably. Key in law and science.",
+      "ex_past": "Das konnte nicht nachgewiesen werden."
     },
     {
       "de": "herausfordern",
@@ -13344,7 +13489,8 @@
         "sie/Sie": "fordern...heraus"
       },
       "ex": "Diese Aufgabe fordert mich wirklich heraus.",
-      "note": "Separable: heraus-. 'Herausforderung' = challenge. 'herausfordern' = challenge someone or something to push your limits."
+      "note": "Separable: heraus-. 'Herausforderung' = challenge. 'herausfordern' = challenge someone or something to push your limits.",
+      "ex_past": "Diese Aufgabe hat mich wirklich herausgefordert."
     },
     {
       "de": "anpassen",
@@ -13361,7 +13507,8 @@
         "sie/Sie": "passen...an"
       },
       "ex": "Wir müssen uns an die neuen Bedingungen anpassen.",
-      "note": "Separable: an-, often reflexive 'sich anpassen'. 'Anpassung' = adaptation. 'anpassungsfähig' = adaptable."
+      "note": "Separable: an-, often reflexive 'sich anpassen'. 'Anpassung' = adaptation. 'anpassungsfähig' = adaptable.",
+      "ex_past": "Wir haben uns an die neuen Bedingungen angepasst."
     },
     {
       "de": "einschließen",
@@ -13378,7 +13525,8 @@
         "sie/Sie": "schließen...ein"
       },
       "ex": "Das Angebot schließt die Unterkunft ein.",
-      "note": "Separable: ein-. 'einschließlich' = including (preposition). 'Einschluss' = inclusion. 'alles eingeschlossen' = all inclusive."
+      "note": "Separable: ein-. 'einschließlich' = including (preposition). 'Einschluss' = inclusion. 'alles eingeschlossen' = all inclusive.",
+      "ex_past": "Das Angebot hat die Unterkunft eingeschlossen."
     },
     {
       "de": "ausschließen",
@@ -13395,7 +13543,8 @@
         "sie/Sie": "schließen...aus"
       },
       "ex": "Das können wir nicht ausschließen.",
-      "note": "Separable: aus-. 'ausschließlich' = exclusively. 'ausgeschlossen!' = out of the question! Opposite of 'einschließen'."
+      "note": "Separable: aus-. 'ausschließlich' = exclusively. 'ausgeschlossen!' = out of the question! Opposite of 'einschließen'.",
+      "ex_past": "Das haben wir nicht ausgeschlossen."
     },
     {
       "de": "nachdenken",
@@ -13412,7 +13561,8 @@
         "sie/Sie": "denken...nach"
       },
       "ex": "Ich muss darüber nachdenken.",
-      "note": "Separable: nach-. 'Nachdenklichkeit' = thoughtfulness. 'nachdenken über' + accusative = to reflect on something."
+      "note": "Separable: nach-. 'Nachdenklichkeit' = thoughtfulness. 'nachdenken über' + accusative = to reflect on something.",
+      "ex_past": "Ich habe darüber nachgedacht."
     },
     {
       "de": "verzichten auf",
@@ -13429,7 +13579,8 @@
         "sie/Sie": "verzichten"
       },
       "ex": "Ich verzichte auf Fleisch.",
-      "note": "Inseparable (ver-), always + auf+acc. 'Verzicht' = renunciation. Common in discussions of diet, lifestyle choices, sacrifice."
+      "note": "Inseparable (ver-), always + auf+acc. 'Verzicht' = renunciation. Common in discussions of diet, lifestyle choices, sacrifice.",
+      "ex_past": "Ich habe auf Fleisch verzichtet."
     },
     {
       "de": "bestehen aus",
@@ -13446,7 +13597,8 @@
         "sie/Sie": "bestehen"
       },
       "ex": "Das Team besteht aus zehn Personen.",
-      "note": "Inseparable (be-), + aus+dat. Different meaning with 'auf': 'bestehen auf' = to insist on. 'bestehen' alone = to pass (exam)."
+      "note": "Inseparable (be-), + aus+dat. Different meaning with 'auf': 'bestehen auf' = to insist on. 'bestehen' alone = to pass (exam).",
+      "ex_past": "Das Team hat aus zehn Personen bestanden."
     },
     {
       "de": "sich auszeichnen durch",
@@ -13463,7 +13615,8 @@
         "sie/Sie": "zeichnen sich...aus"
       },
       "ex": "Die Stadt zeichnet sich durch ihre Architektur aus.",
-      "note": "Separable: aus-, reflexive, + durch+acc. 'ausgezeichnet' also means 'excellent' as adjective (different usage)."
+      "note": "Separable: aus-, reflexive, + durch+acc. 'ausgezeichnet' also means 'excellent' as adjective (different usage).",
+      "ex_past": "Die Stadt hat sich durch ihre Architektur ausgezeichnet."
     },
     {
       "de": "sich auswirken auf",
@@ -13480,7 +13633,8 @@
         "sie/Sie": "wirken sich...aus"
       },
       "ex": "Stress wirkt sich negativ auf die Gesundheit aus.",
-      "note": "Separable: aus-, reflexive, + auf+acc. 'Auswirkung' = effect/impact (noun). Common in scientific and policy writing."
+      "note": "Separable: aus-, reflexive, + auf+acc. 'Auswirkung' = effect/impact (noun). Common in scientific and policy writing.",
+      "ex_past": "Stress hat sich negativ auf die Gesundheit ausgewirkt."
     },
     {
       "de": "sich verpflichten zu",
@@ -13497,7 +13651,8 @@
         "sie/Sie": "verpflichten sich"
       },
       "ex": "Das Unternehmen verpflichtet sich zur Reduktion von CO2.",
-      "note": "Inseparable (ver-), reflexive, + zu+dat. 'Verpflichtung' = obligation/commitment. Common in corporate and legal contexts."
+      "note": "Inseparable (ver-), reflexive, + zu+dat. 'Verpflichtung' = obligation/commitment. Common in corporate and legal contexts.",
+      "ex_past": "Das Unternehmen hat sich zur Reduktion von CO2 verpflichtet."
     },
     {
       "de": "sich auseinandersetzen mit",
@@ -13514,7 +13669,8 @@
         "sie/Sie": "setzen sich...auseinander"
       },
       "ex": "Wir müssen uns mit diesem Thema intensiv auseinandersetzen.",
-      "note": "Separable: auseinander-, reflexive, + mit+dat. 'Auseinandersetzung' = engagement/confrontation/debate. Key academic verb for deep engagement with a topic."
+      "note": "Separable: auseinander-, reflexive, + mit+dat. 'Auseinandersetzung' = engagement/confrontation/debate. Key academic verb for deep engagement with a topic.",
+      "ex_past": "Wir haben uns mit diesem Thema intensiv auseinandergesetzt."
     },
     {
       "de": "werden",
