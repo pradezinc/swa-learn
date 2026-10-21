@@ -2139,7 +2139,7 @@
     },
     {
       "lvl": "A2",
-      "cat": "🏃 Gesundheit",
+      "cat": "🏥 Gesundheit",
       "emoji": "💪",
       "de": "gesund",
       "en": "healthy",
@@ -2151,7 +2151,7 @@
     },
     {
       "lvl": "A2",
-      "cat": "🏃 Gesundheit",
+      "cat": "🏥 Gesundheit",
       "emoji": "🤒",
       "de": "krank",
       "en": "sick",
@@ -2163,7 +2163,7 @@
     },
     {
       "lvl": "A2",
-      "cat": "🏃 Gesundheit",
+      "cat": "🏥 Gesundheit",
       "emoji": "💉",
       "de": "die Impfung",
       "en": "vaccination",
@@ -2895,7 +2895,7 @@
     },
     {
       "lvl": "A1",
-      "cat": "🎓 Schule",
+      "cat": "📚 Schule",
       "emoji": "📏",
       "de": "das Lineal",
       "en": "ruler",
@@ -2907,7 +2907,7 @@
     },
     {
       "lvl": "A1",
-      "cat": "🎓 Schule",
+      "cat": "📚 Schule",
       "emoji": "✂️",
       "de": "die Schere",
       "en": "scissors",
@@ -2919,7 +2919,7 @@
     },
     {
       "lvl": "A1",
-      "cat": "🎓 Schule",
+      "cat": "📚 Schule",
       "emoji": "📐",
       "de": "das Dreieck",
       "en": "triangle",
@@ -2931,7 +2931,7 @@
     },
     {
       "lvl": "A1",
-      "cat": "🎓 Schule",
+      "cat": "📚 Schule",
       "emoji": "🔵",
       "de": "der Kreis",
       "en": "circle",
@@ -2943,7 +2943,7 @@
     },
     {
       "lvl": "A1",
-      "cat": "🥗 Essen",
+      "cat": "🍽️ Essen",
       "emoji": "🍕",
       "de": "die Pizza",
       "en": "pizza",
@@ -2955,7 +2955,7 @@
     },
     {
       "lvl": "A1",
-      "cat": "🥗 Essen",
+      "cat": "🍽️ Essen",
       "emoji": "🥖",
       "de": "das Brötchen",
       "en": "bread roll",
@@ -2967,7 +2967,7 @@
     },
     {
       "lvl": "A1",
-      "cat": "🥗 Essen",
+      "cat": "🍽️ Essen",
       "emoji": "🍜",
       "de": "die Suppe",
       "en": "soup",
